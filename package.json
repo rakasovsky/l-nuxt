@@ -1,0 +1,19 @@
+{
+  "name": "lumex",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "nuxt",
+    "build": "nuxt build",
+    "start": "nuxt start",
+    "generate": "nuxt generate"
+  },
+  "dependencies": {
+    "@nuxtjs/axios": "^5.12.2",
+    "core-js": "^3.6.5",
+    "iview": "^3.5.4",
+    "nuxt": "^2.14.6",
+    "vue-slick-carousel": "^1.0.6"
+  },
+  "devDependencies": {}
+}
