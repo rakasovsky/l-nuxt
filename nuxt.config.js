@@ -43,5 +43,21 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
+    extends(config, { loaders }) {
+      config.module.rules.push({
+        test: /\.(mov|mp4)$/,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[name].[ext]'
+            }  
+          }
+        ]
+      })
+      if (isDev) {
+        config.mode = 'development'
+      }
+    }
   }
 }

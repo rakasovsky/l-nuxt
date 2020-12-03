@@ -1,12 +1,13 @@
 <template>
-  <div>
-   <section class="who-we-are">
+<div>
+  <section class="who-we-are">
             <div class="who-we-are__container">
                 <div class="who-we-are__row">
                     <div class="lumex__video">
                         <!-- <img src="https://cloudcalls.com.ua/wp-content/uploads/2018/02/stock-photo-211548267.jpg" alt="ffff"> -->
-                        <video class="bg-container mp4 desktop" autoplay loop muted>
-                            <source src="https://www.callofduty.com/cdn/mw/videos/mp/gunbench-alt-desktop-new.mp4" type="video/mp4">
+                        <video class="bg-container mp4 desktop" playsinline autoplay loop muted>
+                            <!-- <source src="https://www.callofduty.com/cdn/mw/videos/mp/gunbench-alt-desktop-new.mp4" type="video/mp4"> -->
+                            <!-- <source src="../static/assets/video/lumex_test.mov" type="video/mp4"> -->
                         </video>
                     </div>
                     <div class="lumex__content">
@@ -291,104 +292,77 @@
             </div>
         </section>
          <!-- MOBILE CATEGORY -->
-         <!-- CLOUDCALLS -->
+
+        <!-- CLOUDCALLS -->
         <section class="cloud__calls-main">
-            <!-- <div class="wrapper slogan">
-                <p class="label lbl">
-                    Lumex / Cloudcalls
-                </p>
-                <h3 class="h_title fs80 txt"><span class="lumex">L</span>umex Cloudcalls</h3>
-                <p class="fs28 txt">
-                    Облачная АТС CloudCalls это дополнение к телефонной бизнес-связи, которое открывает безграничные возможности по расширению функциональности такой консервативной, но актуальной системы коммуникации с клиентами.
-                </p>
-            </div> -->
-            <!-- <div class="wrapper how_it_works">
-                    <img class="txt" src="https://media.wired.com/photos/59265661af95806129f4f16b/master/w_1200,c_limit/PhoneCall_TA-476302596.gif" alt="">
-                    <div class="text_wrapper">
-                        <h3 class="h_title fs42 txt">
-                            Телефония для бизнеса
-                        </h3>
-                        <div class="tabs txt">
-                            <div id="Cloud" class="tab">
-                                <p  class="fc_grey">Мы предлагаем сервис облачных АТС и облачного видеонаблюдения. Упростите свою систему отказавшись от дорогостоящего оборудования, перенесите телефонию и видеонаблюдение  в облако, к которому сможете получить доступ из любой точки мира
-                                </p>
-                            </div>
-                            <div id="Analog" class="tab" style="display:none">
-                                <p  class="fc_grey">АТС и облачного видеонаблюдения. Упростите свою систему отказавшись от дорогостоящего оборудования, перенесите телефонию и видеонаблюдение  в облако, к которому сможете получить доступ из любой точки мира
-                                </p> 
-                            </div>
-                            <div id="Ip" class="tab" style="display:none">
-                                <p  class="fc_grey">Упростите свою систему отказавшись от дорогостоящего оборудования, перенесите телефонию и видеонаблюдение  в облако, к которому сможете получить доступ из любой точки мира
-                                </p>
-                            </div>
-                            <div class="tabs__links">
-                                <button class="tablink lumex_button lumex_button-active" onclick="openTab(event,'Cloud')">Cloud</button>
-                                <button class="tablink lumex_button" onclick="openTab(event,'Analog')">АТС</button>
-                                <button class="tablink lumex_button" onclick="openTab(event,'Ip')">Ip</button>
-                            </div>
-                        </div>
-                    </div>
-            </div> -->
             <div class="our_products">
                 <div class="card_wrapper mop">
                     <div class="left fl">
-                        <h3 class="h_title fs42">Meet our Products</h3>
+                        <h3 class="h_title fs42">Решения по телефонии для Вашего бизнеса	</h3>
                         <p class="text fc_grey">
-                            Our products are profoundly improving how the world makes things and moves things—for factory floors, distribution centers, retail stores, and everything in between.
+                            Современные решения на базе аппаратных и программных IP-АТС. Построение контакт-центров,
+                            запись телефонных разговоров. Объединение филиалов компании в одну систему. Реализация IPАТС для интернет-магазинов и диспетчерских служб такси.
+                        </p>
+                        <p class="text fc_grey" style="margin-top:20px">
+                            Интеграция телефонии с 1C, CRM-системами, базами данных.
                         </p>
                     </div>
                     <div class="right">
                         <div class="product_card txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/ukraine.jpg" alt="">
+                                <img src="static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Cloudcalls</p>
+                                <p class="c_title fs24">Облачная АТС</p>
                                 <p class="fc_grey">
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Сервис, объединяющий телефонные номера компании в одну сеть,
+                                    получайте весь функционал IP-АТС, не покупая дорогостоящее оборудование
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                <a href="telephony.html#t_cloud" class="primary_button">
                                     <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
                                 </a>
                             </div>
                         </div>
-                        <div class="product_card prod_grey txt2">
+                        <div class="product_card three prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/cloud-7.jpg" alt="">
+                                <img src="static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Ip-телефония</p>
+                                <p class="c_title fs24">Виртуальная IP-АТС</p>
                                 <p>
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Коробочная версия программной IP-АТС. Масштабируемое,
+                                    гибкое, настраиваемое решение на базе серверного оборудования, и операционной
+                                    системы Linux
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                <a href="telephony.html#t_ip" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
                                 </a>
                             </div>
                         </div>
-                        <div class="product_card prod_grey txt2">
+                        <div class="product_card  prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/cloud-7.jpg" alt="">
+                                <img src="static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Ip-телефония</p>
+                                <p class="c_title fs24">Аппаратная IP-АТС</p>
                                 <p>
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Специализированное оборудование, с предустановленным ПО от
+                                    мировых производителей - Panasonic, Cisco, Avaya и т.д
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                <a href="telephony.html#t_hardware" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -402,21 +376,25 @@
             <div class="our_products col">
                 <div class="card_wrapper mop">
                     <div class="left fl">
-                        <h3 class="h_title fs42">Meet our Products</h3>
-                        <p class="text fc_grey fs24">
-                            Our products are profoundly improving how the world makes things and moves things—for factory floors, distribution centers, retail stores, and everything in between.
-                        </p>
+                        <h3 class="h_title fs42">Видеонаблюдение</h3>
+                        <div class="text">
+                            <!-- <p class="fc_grey">
+                                Решения по безопасности, видеоаналитики. Контроль персонала, кассовых операций и другая автоматизация с помощью камер видеонаблюдения.
+                            </p> -->
+                        </div>
                     </div>
                     <div class="right">
-                        <div class="product_card txt2">
+                        <div class="product_card  txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/ukraine.jpg" alt="">
+                                <img src="static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Cloudcalls</p>
+                                <p class="c_title fs24">Аппаратное видеонаблюдение</p>
                                 <p class="fc_grey">
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Классическая система, включающая в себя камеры,
+                                    видеорегистратор, накопитель. Предлагаем решения IP, HD-TVI, HD-CVI от известных
+                                    брендов, таких как Hikvision, Dahua, Trassir
                                 </p>
                             </div>
                             <div class="card-button_container">
@@ -427,15 +405,17 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="product_card prod_grey txt2">
+                        <div class="product_card three prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/cloud-7.jpg" alt="">
+                                <img src="static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Ip-телефония</p>
+                                <p class="c_title fs24">Умное видеонаблюдение</p>
                                 <p>
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Профессиональные решения для производства, бизнеса и
+                                    других структур - включает нейро-аналитику, детекцию лиц, контроль кассовых
+                                    операций, определение автомобильных номеров и т.д
                                 </p>
                             </div>
                             <div class="card-button_container">
@@ -446,15 +426,17 @@
                                 </a>
                             </div>
                         </div>
-                        <div class="product_card prod_grey txt2">
+                        <div class="product_card  prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="../static/assets/img/cloud-7.jpg" alt="">
+                                <img src="static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Lumex / Ip-телефония</p>
+                                <p class="c_title fs24">Облачное видеонаблюдение</p>
                                 <p>
-                                    Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
+                                    Сервис позволяющий архивировать данные с ваших
+                                    камер наблюдения и предоставлять доступ к архиву и камерам в реальном времени из
+                                    любой точки мира
                                 </p>
                             </div>
                             <div class="card-button_container">
@@ -471,32 +453,73 @@
         </section>
 
         <!-- SLIDER -->
+        <section class="lumex_partners-wrapper"> 
+            <div class="slider-wrapper">
+                <p class="partners_text label"><span class="lumex">L</span>umex/ Partners</p>
+                <div class="partners_slideshow">
+                    <div class="glide">
+                        <div class="glide__track" data-glide-el="track">
+                            <ul class="glide__slides">
+                                <li class="glide__slide"><img src="static/assets/img/clients/comefor-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/denika-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/liqi_cleaning-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/elmag-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/zt-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/suzirja-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/liqidator-min.png" alt=""></li>
+                                <!-- <li class="glide__slide"><img src="static/assets/img/clients/gualos-min.png" alt=""></li> -->
+                                <li class="glide__slide"><img src="static/assets/img/clients/966-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/frc-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/htz-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/metalist-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/plarium-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/tehnoezh-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/uipa-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/vg-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/oblenergo-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/shahtar-min.png" alt=""></li>
+                                <li class="glide__slide"><img src="static/assets/img/clients/stroicity-min.png" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>
+                </div> 
+            </div>   
+        </section>
+
         <!-- SLIDER -->
 
         <!-- ABOUT US -->
-        <!-- <section class="lumex_team joc">
+        <section class="lumex_team lumex_team2 joc">
             <div class="team_left">
                 <div>
-                    <p class="label txt3">Lumex / Cloudcalls</p>
-                    <h3 class="h_title fs42 txt3">Join our cause</h3>
+                    <p class="label txt3"><span class="lumex">L</span>umex / Service</p>
+                    <h3 class="h_title fs42 txt3">Сервисный центр</h3>
                     <p class="txt3">
-                        In 2020 the only constant is volatility. Our lives, and our livelihoods, are interconnected. Radical efficiency across manufacturing and supply chains is more vital than ever. We help our customers by focusing on the heart of the global economy—where the waste is.
+                        Мы имеем свой сервис, что позволяет оперативно проводить ремонт базовых блоков АТС, плат расширения, блоков питания, системных телефонов, IP-телефонов и другого сетевого оборудования.   
+                    </p>
+                    <p class="txt3">
+                        Возможность предоставления оборудования на подмену, на время ремонта - позволяет Вам не нести финансовые потери, в случае простаивания бизнеса без связи, на время ремонта АТС 
+                    </p>
+                    <p class="txt3">
+                        Если у вас нет возможности снять и привезти АТС к нам в сервис, то наши специалисты смогут выехать и провести диагностику на объекте.
+                    </p>
+                    <p class="txt3">
+                        Гарантия на ремонт - 6 месяцев
                     </p>
                 </div>
             </div>
-            <div class="team_right txt3">
+            <div class="team_right srvc txt3">
                 <a href="" class="primary_button vertical-button">
-                    <span>About</span>
+                    <span>Service</span>
                     <svg>
                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                         </path>
                     </svg>
                 </a>
             </div>
-        </section> -->
+        </section>
         <!-- ABOUT US -->
-        <Slider />
-  </div>
+</div>
 </template>
 
 
