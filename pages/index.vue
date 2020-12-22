@@ -311,7 +311,7 @@
                         <div class="product_card txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/cloud-7.jpg" alt="">
+                                <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Облачная АТС</p>
@@ -321,17 +321,18 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="telephony.html#t_cloud" class="primary_button">
+                               
+                                <nuxt-link to="/category/telephony#t_cloud" class="primary_button">
                                     <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                </nuxt-link>
                             </div>
                         </div>
                         <div class="product_card three prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/cloud-7.jpg" alt="">
+                                <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Виртуальная IP-АТС</p>
@@ -342,17 +343,17 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="telephony.html#t_ip" class="primary_button">
+                                <nuxt-link to="/category/telephony#t_ip" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                </nuxt-link>
                             </div>
                         </div>
                         <div class="product_card  prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/ukraine.jpg" alt="">
+                                <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Аппаратная IP-АТС</p>
@@ -362,11 +363,12 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="telephony.html#t_hardware" class="primary_button">
+                                 
+                                <nuxt-link to="/category/telephony#t_hardware" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                </nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -387,7 +389,7 @@
                         <div class="product_card  txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/ukraine.jpg" alt="">
+                                <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Аппаратное видеонаблюдение</p>
@@ -408,7 +410,7 @@
                         <div class="product_card three prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/ukraine.jpg" alt="">
+                                <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Умное видеонаблюдение</p>
@@ -429,7 +431,7 @@
                         <div class="product_card  prod_grey txt2">
                             <div class="card-img">
                                 <div></div>
-                                <img src="static/assets/img/cloud-7.jpg" alt="">
+                                <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Облачное видеонаблюдение</p>
