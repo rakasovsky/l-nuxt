@@ -1,5 +1,6 @@
 <template>
-    <div>       
+    <div>     
+    <Header />  
     <section class="category">
         <div class="category_container">
             <div class="category_cover lumex__content">
@@ -108,27 +109,27 @@
             <section class="atc_img-wrapper">
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Базовый</p>
-                    <img src="/static/assets/img/category/tel/gxp1610-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/gxp1610-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Функциональный</p>
-                    <img src="/static/assets/img/category/tel/gxp2160-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/gxp2160-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Премиум</p>
-                    <img src="/static/assets/img/category/tel/gxv3380-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/gxv3380-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Беспроводной</p>
-                    <img src="/static/assets/img/category/tel/dp722-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/dp722-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Гарнитура</p>
-                    <img src="/static/assets/img/category/tel/softphone-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/softphone-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">VoIP-шлюз</p>
-                    <img src="/static/assets/img/category/tel/voip-fxs-min.png" alt="">
+                    <img src="~/static/assets/img/category/tel/voip-fxs-min.png" alt="">
                 </div>
             </section>
         </div>
@@ -277,5 +278,6 @@
             </a>
         </div>
     </section>
+    <Footer />
     </div>
 </template>

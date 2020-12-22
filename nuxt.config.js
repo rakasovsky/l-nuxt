@@ -43,7 +43,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extends(config, { loaders }) {
+    extend(config, { loaders }) {
       config.module.rules.push({
         test: /\.(mov|mp4)$/,
         use: [
@@ -55,9 +55,7 @@ export default {
           }
         ]
       })
-      if (isDev) {
-        config.mode = 'development'
-      }
+     
     }
   }
 }

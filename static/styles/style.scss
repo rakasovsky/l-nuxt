@@ -353,7 +353,7 @@ header {
             display: flex;
         
             li {
-                height: 100px;
+                height: 110px;
                 padding-left: 50px;
                 cursor: pointer;
                 display: flex;
@@ -373,114 +373,167 @@ header {
     }
 }
 // DROPDOWN
-.nav_dropdown {
-    position: absolute;
-    // top: 120px;
-    top: 220px;
-    right: 0;
-    display: flex;
-    // width: 1440px;
-    width: 50%;
-    transform: scaleY(0);
-    transform-origin: top;
+// .nav_dropdown {
+//     position: absolute;
+//     // top: 120px;
+//     top: 220px;
+//     right: 0;
+//     display: flex;
+//     width: 1440px;
+//     // width: 50%;
+//     transform: scaleY(0);
+//     transform-origin: top;
    
 
-    // display: none;
+//     // display: none;
     
-    .dropdown_container {
-        display: flex;
-        width: 100%;
-        height: 100%;
+//     .dropdown_container {
+//         display: flex;
+//         width: 100%;
+//         height: 100%;
 
-        .left {
-            // padding: 3em 1em 3em 3em;
-            padding:3em;
-            // flex: 0 0 24%;
-            flex: 0 0 100%;
-            // box-shadow: 15px 4px 50px rgba(0,0,0,.25);
-            background: #323539;
-            color: #fff;
-            font-size: 20px;
-            font-weight: 400;
-            display: flex;
-            flex-direction: column;
-            ul {
-                display: flex;
-                flex-direction: column;
-                li {
-                    position: relative;
-                    height: 24px;
-                    padding-left: 0;
-                    margin: 5px 0;
-                    font-size: 16px;
-                    margin-right: auto;
-                    color: $third-color;
-                    &:hover {
-                        color: $primary-color;
-                    }
-                }
-                li:first-child {
-                    margin-top: 10px;
-                }
-            }
+//         .left {
+//             padding: 3em 1em 3em 3em;
+//             // padding:3em;
+//             // flex: 0 0 24%;
+//             flex: 0 0 30%;
+//             // box-shadow: 15px 4px 50px rgba(0,0,0,.25);
+//             background: #323539;
+//             color: #fff;
+//             font-size: 20px;
+//             font-weight: 400;
+//             display: flex;
+//             flex-direction: column;
+//             ul {
+//                 display: flex;
+//                 flex-direction: column;
+//                 li {
+//                     position: relative;
+//                     height: 24px;
+//                     padding-left: 0;
+//                     margin: 5px 0;
+//                     font-size: 16px;
+//                     margin-right: auto;
+//                     color: $third-color;
+//                     &:hover {
+//                         color: $primary-color;
+//                     }
+//                 }
+//                 li:first-child {
+//                     margin-top: 10px;
+//                 }
+//             }
         
-        }
-        .right {
-            overflow: hidden;
-            // display: block;
-            display: none;
-            background: #2a2a2a;
+//         }
+//         .right {
+//             overflow: hidden;
+//             display: block;
+//             // display: none;
+//             background: #2a2a2a;
             
           
-             .cards_wrapper {
-                width: 100%;
-                overflow-x: scroll;
+//              .cards_wrapper {
+//                 width: 100%;
+//                 overflow-x: scroll;
 
-                .inner_container {
-                    display: flex;
-                    // flex-wrap: wrap;
-                    align-items: stretch;
-                    justify-content: space-between;
-                    flex-direction: row;
-                    flex: none;
-                    align-self: stretch;
-                    width: 125%;
-                }
+//                 .inner_container {
+//                     display: flex;
+//                     // flex-wrap: wrap;
+//                     align-items: stretch;
+//                     justify-content: space-between;
+//                     flex-direction: row;
+//                     flex: none;
+//                     align-self: stretch;
+//                     width: 125%;
+//                 }
 
-                .product_card {
-                    width: 33%;
-                    height: 100%;
-                    display: flex;
-                    min-height: 26.66vw;
-                    margin: 45px 30px 30px;
-                    color: #e9ecee;
-                    box-shadow: 0 4px 40px rgba(0,0,0,.25);
-                    color: #6b6b6b;
-                    background-color: #333;
-                    transition: all .5s ease;
-                    position: relative;
-                    .card-content {
-                        padding: 40px 7%;
-                    }
-                }
-                .active {
-                    opacity: 1;
-                    transition: all .5s ease;
-                    color: #e9ecee;
-                    box-shadow: 0 4px 40px rgba(0,0,0,.25);
-                }
-             }
-             .cards_wrapper::-webkit-scrollbar {
-                display: none;
-              }
-        }
+//                 .product_card {
+//                     width: 33%;
+//                     height: 100%;
+//                     display: flex;
+//                     min-height: 26.66vw;
+//                     margin: 45px 30px 30px;
+//                     color: #e9ecee;
+//                     box-shadow: 0 4px 40px rgba(0,0,0,.25);
+//                     color: #6b6b6b;
+//                     background-color: #333;
+//                     transition: all .5s ease;
+//                     position: relative;
+//                     .card-content {
+//                         padding: 40px 7%;
+//                     }
+//                 }
+//                 .active {
+//                     opacity: 1;
+//                     transition: all .5s ease;
+//                     color: #e9ecee;
+//                     box-shadow: 0 4px 40px rgba(0,0,0,.25);
+//                 }
+//              }
+//              .cards_wrapper::-webkit-scrollbar {
+//                 display: none;
+//               }
+//         }
+//     }
+
+//     .active_trigger {
+//         transform: translateX(-10%) !important;
+//         transition: all .5s ease;
+//     }
+// }
+
+.nav-item {
+    position: relative;
+    display: inline-block;
+}
+.sub-menu {
+    display: none;
+    position: absolute;
+    z-index: 55;
+    background: #2a2a2a;
+    color: white;
+    top: 110px;
+    min-width: 310px;
+    max-width: 400px;
+    padding: 30px;
+    white-space: nowrap;
+    .menu-item {
+        position: relative;
+        height: 24px;
+        padding-left: 0;
+        margin: 5px 0;
+        font-size: 16px;
+        margin-right: auto;
+        color: #a8a8a8;
     }
-
-    .active_trigger {
-        transform: translateX(-10%) !important;
-        transition: all .5s ease;
+    .menu-item:hover {
+        color: white;
     }
 }
+.sub-menu::before {
+    position: absolute;
+    margin: auto;
+    will-change: opacity;
+    opacity: 0;
+    left: 0;
+    right: 0;
+    bottom: -80px;
+    top: 0;
+    width: 0;
+    height: 0;
+    border-left: 25px solid transparent;
+    border-right: 25px solid transparent;
+    border-bottom: 25px solid #2a2a2a;
+}
+
+.nav-trigger:hover .sub-menu{
+    display: block;
+}
+
+
+
+
+
 
 .mob_menu {
     display: none;
@@ -621,7 +674,7 @@ header {
             }
           
             .title__back {
-                // background-image: url('');
+                background-image: url('');
                 position: absolute;
                 display: flex;
                 justify-content: flex-end;
@@ -927,6 +980,7 @@ header {
 .lumex_team {
     display: flex;
     padding-top: $pt;
+    
     .team_left {
         margin-left: 12.5%;
         margin-right: auto;
@@ -937,6 +991,9 @@ header {
         div {
             max-width: 420px;
         }
+    }
+    .main {
+        margin-left: 8.3333%;
     }
     .team_right {
         width: 50%;
@@ -989,16 +1046,15 @@ header {
 
 .category {
     padding-top: 220px;
-    height: 144vh;
     
     .category_container {
         display: flex;
         flex-direction: column;
         position: relative;
         height: 100%;
-        // height: 100vh;
+        
         .category_cover {
-            position: absolute;
+            position: relative;
             overflow: hidden;
             opacity: 1;
             background-image: url(../assets/img/cyberpunk2077.jpg);
@@ -1024,16 +1080,16 @@ header {
             opacity: 1
         }
         .category_text {
-            position: absolute;
+           
+            position: relative;
             align-self: stretch;
             width: 62.5%;
-            margin-top: 370px;
+            margin-top: -370px;
             padding: 135px 16.66667% 185px;
-            /* height: 100%; */
             overflow: hidden;
             background: #c9c9c9;
             color: #333;
-            // bottom: -5%;
+            
 
             .vertical-button {
                 position: absolute;
@@ -1477,6 +1533,11 @@ header {
         padding: 2% 0 0 2%;
         .tabs {
             padding:2%;
+            .tab {
+                p {
+                    margin-bottom: 15px;
+                }
+            }
         }
         .lumex_button {
             color: black;
@@ -1811,9 +1872,6 @@ footer {
 }
 
 @media screen and (min-width:2560px) {
-    .category {
-        height: 120vh;
-    }
     .lumex__main {
         .cloud__block2{
             .title {
@@ -1842,8 +1900,11 @@ footer {
     } 
     
     // Category PAGE
+    .category .category_container .category_cover {
+        height: 70vh;
+    }
     .category .category_container .category_text {
-        bottom: 5%;
+        margin-top: -570px;
     }
     .catalog_page-wrapper {
             .catalog_page-bottom .catalog_category .lumex__main .cloud__block3 {
@@ -1905,9 +1966,10 @@ footer {
 
     // CATEGORY Page
 
-    .category {
-        height: 170vh;
+    .category .category_container .category_cover {
+        height: 50vh;
     }
+
     .category_diogram {
         align-items: center;
     }
@@ -1955,11 +2017,16 @@ footer {
 }
 
 @media (max-width:1366px) {
-    .category .category_container .category_text {
-        margin-top: 340px;
+    .category .category_container .category_cover {
+        height: 75vh;
     }
 }
 
+
+@media (max-width:1280px) {
+
+
+}
 
 @media (max-width:1024px) {
 
@@ -2044,12 +2111,12 @@ footer {
 
     // Category PAGE
     .category {
-        height: 120vh;
+        // height: 120vh;
         .category_container {
                 // height: 70vh;
-                .category_cover {
-                    // height: 50vh;
-                }
+                // .category_cover {
+                //     height: 50vh;
+                // }
                 .category_text {
                     bottom: 0%;
                     width: 80%;
@@ -2496,7 +2563,6 @@ footer {
 
     // category page
     .category {
-        height: 95vh;
         padding-top: 150px;
         .category_container {
             .category_cover {
@@ -2507,11 +2573,9 @@ footer {
             }
         }
     }
-    .category .category_container {
-        height: 74vh;
-    }
+  
     .category .category_container .category_text {
-        margin-top: 130px;
+        
         bottom: unset;
     }
     .category_diogram .diogram_left {
@@ -2836,12 +2900,7 @@ footer {
     }
    
     // Category PAGE
-    .category {
-        height: 110vh;
-    }  
-    .category .category_container {
-        height: 85vh;
-    }
+    
     .category .category_container .category_text {
         padding: 60px 12.66667% 110px;
         width: 85%;
@@ -2991,6 +3050,9 @@ footer {
     .category {
         padding-top: 110px;
     }
+    .category .category_container .category_text {
+        margin-top: -180px;
+    }
     .catalog_main {
         .cloud__block3 {
             padding-top: 80%;
@@ -3019,10 +3081,7 @@ footer {
     .cloud__calls-main .our_products:before {
         display: none;
     }
-    .category {
-        height: 125vh;
-    }
-
+  
     .who-we-are .who-we-are__container .who-we-are__row .lumex__video {
         width: 100%;
         margin-top: 15px;
@@ -3066,9 +3125,8 @@ footer {
     .lumex_form .form_button {
         margin: 40px 0;
     }
-    .category .category_container {
-        height: 100vh;
-    }
+    
+
     .catalog_main {
         .cloud__block3 {
             padding-top: 100%;

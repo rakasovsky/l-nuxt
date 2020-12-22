@@ -28,84 +28,14 @@
                 <ul>
                     <li class="nav-item">
                         <div class="nav-trigger">
-                            <span>Телефония</span><span>▾</span>
+                            <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
-                            <div class="nav_dropdown">
-                                <div class="dropdown_container">
-                                    <div class="left drp-list">
-                                        <nuxt-link to="telephony.html" class="">Телефония</nuxt-link>
-                                        <ul>
-                                            <nuxt-link to="telephony.html#t_cloud"><li class="list_trigger" data-card="cloud_tel">Облачная телефония</li></nuxt-link>
-                                            <nuxt-link to="telephony.html#t_ip"><li class="list_trigger" data-card="ip_tel">Виртуальная АТС</li></nuxt-link>
-                                            <nuxt-link to="telephony.html#t_hardware"><li class="list_trigger" data-card="analog_tel">Аппаратные IP-АТС</li></nuxt-link>
-                                            <nuxt-link to="telephony.html#t_service"><li class="list_trigger" data-card="analog_tel">Сервисный центр</li></nuxt-link>
-                                        </ul>
-                                    </div>
-                                    <div class="right">
-                                        <div class="cards_wrapper">
-                                            <div class="inner_container">
-                                                <div class="product_card drp_card list_trigger" data-card="cloud_tel">
-                                                    <div class="card-img">
-                                                        <div></div>
-                                                        <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <p class="c_title fs24">Lumex</p>
-                                                        <p class="fc_grey">
-                                                            Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                        </p>
-                                                    </div>
-                                                    <div class="card-button_container">
-                                                        <a href="#" class="primary_button">
-                                                            <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                                <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="product_card drp_card list_trigger " data-card="ip_tel">
-                                                    <div class="card-img">
-                                                        <div></div>
-                                                        <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <p class="c_title fs24">Lumex</p>
-                                                        <p class="fc_grey">
-                                                            Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                        </p>
-                                                    </div>
-                                                    <div class="card-button_container">
-                                                        <a href="#" class="primary_button">
-                                                            <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                                <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                                <div class="product_card drp_card list_trigger" data-card="analog_tel">
-                                                    <div class="card-img">
-                                                        <div></div>
-                                                        <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                    </div>
-                                                    <div class="card-content">
-                                                        <p class="c_title fs24">Lumex / Cloudcalls</p>
-                                                        <p class="fc_grey">
-                                                            Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                        </p>
-                                                    </div>
-                                                    <div class="card-button_container">
-                                                        <a href="#" class="primary_button">
-                                                            <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                                <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                            </svg>
-                                                        </a>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
+                            <ol class="sub-menu">
+                                <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                              </ol>
                             <!-- DROPDOWN -->
                         </div>
                     </li>
@@ -113,94 +43,25 @@
                     <div class="nav-trigger">
                         <span>Видеонаблюдение</span><span>▾</span>
                         <!-- DROPDOWN -->
-                        <div class="nav_dropdown">
-                            <div class="dropdown_container">
-                                <div class="left drp-list">
-                                    <a href="category.html" class="">Видеонаблюдение</a>
-                                    <ul>
-                                        <a href="#"><li class="list_trigger" data-card="video_1">IP-видеонаблюдение</li></a>
-                                        <a href="#"><li class="list_trigger" data-card="video_2">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</li></a>
-                                        <a href="#"><li class="list_trigger" data-card="video_3">Умное видеонаблюдение</li></a>
-                                        <a href="#"><li class="list_trigger" data-card="video_4">Облачное видеонаблюдение</li></a>
-                                        <a href="#"><li class="list_trigger" data-card="video_4">Сервисный центр</li></a>
-                                    </ul>
-                                </div>
-                                <div class="right">
-                                    <div class="cards_wrapper">
-                                        <div class="inner_container">
-                                            <div class="product_card  drp_card list_trigger" data-card="video_1">
-                                                <div class="card-img">
-                                                    <div></div>
-                                                    <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                </div>
-                                                <div class="card-content">
-                                                    <p class="c_title fs24">Cloudcalls</p>
-                                                    <p class="fc_grey">
-                                                        Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                    </p>
-                                                </div>
-                                                <div class="card-button_container">
-                                                    <a href="#" class="primary_button">
-                                                        <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                            <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product_card drp_card list_trigger" data-card="video_2">
-                                                <div class="card-img">
-                                                    <div></div>
-                                                    <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                </div>
-                                                <div class="card-content">
-                                                    <p class="c_title fs24">Cloudcalls</p>
-                                                    <p class="fc_grey">
-                                                        Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                    </p>
-                                                </div>
-                                                <div class="card-button_container">
-                                                    <a href="#" class="primary_button">
-                                                        <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                            <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                            <div class="product_card drp_card list_trigger" data-card="video_3">
-                                                <div class="card-img">
-                                                    <div></div>
-                                                    <img src="../static/assets/img/ukraine.jpg" alt="">
-                                                </div>
-                                                <div class="card-content">
-                                                    <p class="c_title fs24">Lumex / Cloudcalls</p>
-                                                    <p class="fc_grey">
-                                                        Мы делаем сложные решения простыми. Надежность и удобство облачных технологий позволяют создать современную и многофункциональную АТС
-                                                    </p>
-                                                </div>
-                                                <div class="card-button_container">
-                                                    <a href="#" class="primary_button">
-                                                        <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
-                                                            <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                                                        </svg>
-                                                    </a>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        <ol class="sub-menu">
+                            <li class="menu-item"><a href="telephony.html#t_cloud">IP-видеонаблюдение</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_ip">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_hardware">Умное видеонаблюдение</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_hardware">Облачное видеонаблюдение</a></li>
+                            <li class="menu-item"> <a href="telephony.html#t_service">Сервисный центр</a></li>
+                          </ol>    
                         <!-- DROPDOWN -->
                     </div>
                   </li>
                   <li class="nav-item">
-                      <nuxt-link to="category/telephony" class="nav-trigger">Системы контроля доступа</nuxt-link>
+                      <a href="#" class="nav-trigger">Системы контроля доступа</a>
                   </li>
                   <li>
-                    <nuxt-link to="catalog" class="nav-trigger">Каталог</nuxt-link>
+                    <nuxt-link to="/catalog">Каталог</nuxt-link>
                   </li>
                 </ul>
-            </nav>
+            </nav> 
+           
             
             <!-- MOBILE MENU -->
 
