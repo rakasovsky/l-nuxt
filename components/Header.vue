@@ -17,7 +17,7 @@
                     </p>
                 </div>
             </div>
-            <nuxt-link to="contact"><div class="button"><svg class="arrow" enable-background="new 0 0 21 14" viewBox="0 0 21 14"><path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path></svg></div></nuxt-link>
+            <nuxt-link to="/contact"><div class="button"><svg class="arrow" enable-background="new 0 0 21 14" viewBox="0 0 21 14"><path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path></svg></div></nuxt-link>
         </div> 
     <!-- HEADER -->
      <header>
@@ -77,11 +77,11 @@
                             <a href="index.html" class="mob_logo-drp"><img src="static/assets/img/lumex_logo_white.svg" alt=""></a>
                             <li class="m_li">Телефония<div>▾</div>
                                 <ul class="dropdown_container_mobile">
-                                    <li><a href="telephony.html">Телефония</a></li>
-                                    <a href="telephony.html#t_cloud"><li class="list_trigger" data-card="cloud_tel">Облачная телефония</li></a>
-                                    <a href="telephony.html#t_ip"><li class="list_trigger" data-card="ip_tel">Виртуальная АТС</li></a>
-                                    <a href="telephony.html#t_hardware"><li class="list_trigger" data-card="analog_tel">Аппаратные IP-АТС</li></a>
-                                    <a href="telephony.html#t_service"><li class="list_trigger" data-card="analog_tel">Сервисный центр</li></a>
+                                    <li><nuxt-link to="/category/telephony">Телефония</nuxt-link></li>
+                                       <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
+                                       <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
+                                       <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
+                                       <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
                                 </ul>
                             </li>
                             <li class="m_li">Видеонаблюдение<div>▾</div>

@@ -32,9 +32,6 @@
             <p>All Rights Reserved</span></p>
         </div>
     </div>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
-    <script src="../static/js/main.js"></script>
 </footer>
  <!-- FOOTER -->
 </template>

@@ -1,6 +1,7 @@
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
+  loading: { color: '#3B8070' },
 
   // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
@@ -12,12 +13,19 @@ export default {
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
+    ],
+    script: [
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" },
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" },
+      { src: "https://cdn.jsdelivr.net/npm/@glidejs/glide" }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
-    'static/styles/style.css'
+    'static/styles/style.css',
+    // 'static/styles/glide.core.min.css',
+    // 'static/styles/glide.theme.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
