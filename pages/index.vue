@@ -4,7 +4,6 @@
             <div class="who-we-are__container">
                 <div class="who-we-are__row">
                     <div class="lumex__video">
-                        <!-- <img src="https://cloudcalls.com.ua/wp-content/uploads/2018/02/stock-photo-211548267.jpg" alt="ffff"> -->
                         <video class="bg-container mp4 desktop" playsinline autoplay loop muted>
                             <!-- <source src="https://www.callofduty.com/cdn/mw/videos/mp/gunbench-alt-desktop-new.mp4" type="video/mp4"> -->
                              <source src="../static/assets/video/lumex_test.mov" type="video/mp4"> 
@@ -458,41 +457,16 @@
         <section class="lumex_partners-wrapper"> 
             <div class="slider-wrapper">
                 <p class="partners_text label"><span class="lumex">L</span>umex/ Partners</p>
-                <div class="partners_slideshow">
-                    <div class="glide">
-                        <div class="glide__track" data-glide-el="track">
-                            <ul class="glide__slides">
-                                <li class="glide__slide"><img src="../static/assets/img/clients/comefor-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/denika-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/liqi_cleaning-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/elmag-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/zt-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/suzirja-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/liqidator-min.png" alt=""></li>
-                                <!-- <li class="glide__slide"><img src="static/assets/img/clients/gualos-min.png" alt=""></li> -->
-                                <li class="glide__slide"><img src="../static/assets/img/clients/966-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/frc-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/htz-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/metalist-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/plarium-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/tehnoezh-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/uipa-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/vg-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/oblenergo-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/shahtar-min.png" alt=""></li>
-                                <li class="glide__slide"><img src="../static/assets/img/clients/stroicity-min.png" alt=""></li>
-                            </ul>
-                        </div>
-                    </div>
-                </div> 
+                <div class="carousel-wrapper">
+                       <Slider />
+                </div>
             </div>   
         </section>
-      
         <!-- SLIDER -->
 
         <!-- ABOUT US -->
         <section class="lumex_team lumex_team2 joc">
-            <div class="team_left">
+            <div class="team_left main">
                 <div>
                     <p class="label txt3"><span class="lumex">L</span>umex / Service</p>
                     <h3 class="h_title fs42 txt3">Сервисный центр</h3>
@@ -524,15 +498,18 @@
 </div>
 </template>
 
+<style scoped>
+    
+</style>
 
 <script>
- 
+
   export default {
     layout: 'lumex',
 
+
     mounted () {
         // Q/A CARDS 
-
         document.querySelectorAll(".cat_block").forEach(function (f) {
         const qa = gsap.timeline({
             defaults: { duration: 1 },
@@ -576,8 +553,9 @@
         qa.reverse();
         });
         });
+
     }
   }
 
-</script>
 
+</script>

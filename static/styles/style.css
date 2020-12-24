@@ -83,11 +83,7 @@
 }
 
 body {
-  display: -ms-grid;
-  display: grid;
   position: relative;
-  -ms-grid-rows: auto 1fr auto;
-  grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   color: #333;
   font-family: "Aeonik";
@@ -96,16 +92,7 @@ body {
 }
 
 #app {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
   position: relative;
-  -ms-grid-rows: auto 1fr auto;
-      grid-template-rows: auto 1fr auto;
   min-height: 100vh;
   color: #333;
   font-family: "Aeonik", sans-serif;
@@ -767,7 +754,6 @@ header .header-desk__nav ul li a {
 }
 
 .lumex__main .cloud__block2 .title .title__back {
-  background-image: url("");
   position: absolute;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -1132,6 +1118,11 @@ header .header-desk__nav ul li a {
   width: 83.3333%;
 }
 
+.lumex_partners-wrapper .slider-wrapper .carousel-wrapper {
+  display: block;
+  margin-top: 5%;
+}
+
 .lumex_partners-wrapper .partners_slideshow {
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -1173,6 +1164,37 @@ header .header-desk__nav ul li a {
 .lumex_partners-wrapper .partners_slideshow .glide__slide:hover {
   -webkit-filter: none;
           filter: none;
+}
+
+.mySwiper {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.mySwiper .glide__slide {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-filter: grayscale(1);
+          filter: grayscale(1);
+  -webkit-transition: all .5s ease;
+  transition: all .5s ease;
+}
+
+.mySwiper .glide__slide:hover {
+  -webkit-filter: none;
+          filter: none;
+}
+
+.swiper-wrapper {
+  display: block;
 }
 
 .lumex_team {

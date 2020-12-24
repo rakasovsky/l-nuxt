@@ -17,20 +17,17 @@ export default {
     script: [
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" },
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" },
-      { src: "https://cdn.jsdelivr.net/npm/@glidejs/glide" }
     ]
   },
 
   // Global CSS (https://go.nuxtjs.dev/config-css)
   css: [
     'static/styles/style.css',
-    // 'static/styles/glide.core.min.css',
-    // 'static/styles/glide.theme.min.css'
   ],
 
   // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
   plugins: [
-    '@/plugins/VueSlickCarousel.js'
+    { src: '@/plugins/swiper.js', mode: 'client' },
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)

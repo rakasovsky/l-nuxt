@@ -1,4 +1,5 @@
 <template>
+
 <!-- FOOTER -->
 <footer>
     <div class="footer_top">
@@ -34,4 +35,5 @@
     </div>
 </footer>
  <!-- FOOTER -->
+
 </template>

@@ -9,7 +9,7 @@
                 <div class="contacts">
                     <p>
                         <span><a href="tel://0661082211">+380 66 108-2211</a></span> 
-                        <span ><nuxt-link to="contact"> г.Харьков, ул.Сумская 26</nuxt-link></span> 
+                        <span ><nuxt-link to="/contact"> г.Харьков, ул.Сумская 26</nuxt-link></span> 
                     </p>
                     <p>
                         <span><a href="tel://+380 57 714-3074"> +380 57 714-3074</a></span> 
@@ -66,7 +66,7 @@
             <!-- MOBILE MENU -->
 
             <div class="mob_menu">
-                <a href="index.html" class="mob_logo"><img src="static/assets/img/lumex_logo.svg" alt=""></a>
+                <a href="index.html" class="mob_logo"><img src="~/static/assets/img/lumex_logo.svg" alt=""></a>
                 <nav role="navigation">
                     <div id="menuToggle">
                         <input type="checkbox" />
@@ -74,7 +74,7 @@
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <a href="index.html" class="mob_logo-drp"><img src="static/assets/img/lumex_logo_white.svg" alt=""></a>
+                            <nuxt-link to="index.html" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt=""></nuxt-link>
                             <li class="m_li">Телефония<div>▾</div>
                                 <ul class="dropdown_container_mobile">
                                     <li><nuxt-link to="/category/telephony">Телефония</nuxt-link></li>
@@ -94,8 +94,8 @@
                                 </ul>
                             </li>
                             <li class="m_li"><a href="#">Системы контроля доступа</a></li>
-                            <li class="m_li"><a href="catalog.html">Каталог</a></li>
-                            <li class="m_li"><a href="contacts.html">Контакты</a></li>
+                            <li class="m_li"><nuxt-link to="catalog.html">Каталог</nuxt-link></li>
+                            <li class="m_li"><nuxt-link to="contacts.html">Контакты</nuxt-link></li>
                         </ul>
                     </div>
                 </nav>
