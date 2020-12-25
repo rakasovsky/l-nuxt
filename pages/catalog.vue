@@ -213,6 +213,20 @@
 
 <script>
 export default {
+
+
+    head: {
+        title: 'Lumex - каталог товаров',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Home page description2'
+        }
+        ],
+    },
+
+
     mounted () {
         const catBlck2 = gsap.timeline({
         scrollTrigger: {

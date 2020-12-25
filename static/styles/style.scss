@@ -298,6 +298,7 @@ p {
         display: flex;
         margin-left: 8.33333%;
         padding-top: 10px;
+        width: 100%;
         a {
             img {
                 width: 165px;
@@ -315,6 +316,40 @@ p {
         }
         span:last-child{
             margin-left: 25px;
+        }
+    }
+
+    .sticky-nav {
+        opacity: 0;
+        width: 100%;
+        ul {
+            display: flex;
+            width: 100%;
+            li {
+                display: flex;
+                align-items: center;
+                padding-left: 50px;
+                color: white;
+                height: 100px;
+              
+                .scroll-t {
+                    top: 60px;
+                }
+            }
+            li:hover {
+                color: $primary-color;
+            }
+        }
+        .sub-menu {
+            li {
+                position: relative;
+                height: 24px;
+                padding-left: 0;
+                margin: 5px 0;
+                font-size: 16px;
+                margin-right: auto;
+                color: #a8a8a8;
+            }
         }
     }
     .button {

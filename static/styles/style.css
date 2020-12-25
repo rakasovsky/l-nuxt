@@ -343,6 +343,7 @@ p {
   display: flex;
   margin-left: 8.33333%;
   padding-top: 10px;
+  width: 100%;
 }
 
 .sticky .sticky_container a img {
@@ -363,6 +364,48 @@ p {
 
 .sticky .contacts span:last-child {
   margin-left: 25px;
+}
+
+.sticky .sticky-nav {
+  opacity: 0;
+  width: 100%;
+}
+
+.sticky .sticky-nav ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+}
+
+.sticky .sticky-nav ul li {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-left: 50px;
+  color: white;
+  height: 100px;
+}
+
+.sticky .sticky-nav ul li .scroll-t {
+  top: 60px;
+}
+
+.sticky .sticky-nav ul li:hover {
+  color: #ffda00;
+}
+
+.sticky .sticky-nav .sub-menu li {
+  position: relative;
+  height: 24px;
+  padding-left: 0;
+  margin: 5px 0;
+  font-size: 16px;
+  margin-right: auto;
+  color: #a8a8a8;
 }
 
 .sticky .button {

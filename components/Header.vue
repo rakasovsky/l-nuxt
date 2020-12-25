@@ -17,6 +17,43 @@
                     </p>
                 </div>
             </div>
+                <nav class="header-desk__nav sticky-nav">
+                <ul>
+                    <li class="nav-item">
+                        <div class="nav-trigger">
+                            <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link>
+                            <!-- DROPDOWN -->
+                            <ol class="sub-menu scroll-t">
+                                <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
+                                <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                              </ol>
+                            <!-- DROPDOWN -->
+                        </div>
+                    </li>
+                  <li class="nav-item">
+                    <div class="nav-trigger">
+                        <span>Видеонаблюдение</span><span>▾</span>
+                        <!-- DROPDOWN -->
+                        <ol class="sub-menu scroll-t">
+                            <li class="menu-item"><a href="telephony.html#t_cloud">IP-видеонаблюдение</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_ip">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_hardware">Умное видеонаблюдение</a></li>
+                            <li class="menu-item"><a href="telephony.html#t_hardware">Облачное видеонаблюдение</a></li>
+                            <li class="menu-item"> <a href="telephony.html#t_service">Сервисный центр</a></li>
+                          </ol>    
+                        <!-- DROPDOWN -->
+                    </div>
+                  </li>
+                  <li class="nav-item">
+                      <a href="#" class="nav-trigger">Системы контроля доступа</a>
+                  </li>
+                  <li>
+                    <nuxt-link to="/catalog">Каталог</nuxt-link>
+                  </li>
+                </ul>
+            </nav> 
             <nuxt-link to="/contact"><div class="button"><svg class="arrow" enable-background="new 0 0 21 14" viewBox="0 0 21 14"><path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path></svg></div></nuxt-link>
         </div> 
     <!-- HEADER -->
@@ -77,7 +114,7 @@
                             <nuxt-link to="index.html" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt=""></nuxt-link>
                             <li class="m_li">Телефония<div>▾</div>
                                 <ul class="dropdown_container_mobile">
-                                    <li><nuxt-link to="/category/telephony">Телефония</nuxt-link></li>
+                                       <nuxt-link to="/category/telephony"><li class="menu-item">Телефония</li></nuxt-link>
                                        <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
                                        <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
                                        <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
@@ -105,3 +142,68 @@
     <!-- HEADER -->
     </div>
 </template>
+
+
+<script>
+export default {
+    
+
+
+mounted () {
+
+    // Mobile menu dropdown
+
+    function initAccordion(accordionElem){
+  
+    //when panel is clicked, handlePanelClick is called.          
+  
+    function handlePanelClick(event){
+        showPanel(event.currentTarget);
+    }
+  
+  //Hide currentPanel and show new panel.  
+    
+    function showPanel(panel){
+      //Hide current one. First time it will be null. 
+       var expandedPanel = accordionElem.querySelector(".is-Open");
+       if (expandedPanel){
+           expandedPanel.classList.remove("is-Open");
+       }
+       //Show new one
+       if (expandedPanel !== panel) {
+        panel.classList.add("is-Open");
+      }
+  
+    }
+  
+    var allPanelElems = accordionElem.querySelectorAll(".m_li");
+    for (var i = 0, len = allPanelElems.length; i < len; i++){
+         allPanelElems[i].addEventListener("click", handlePanelClick);
+    }
+  
+    //By Default Show first panel
+    // showPanel(allPanelElems[0])
+
+
+    // GSAP 
+
+    const mtl = gsap.timeline({
+        //  paused: true
+    })
+    mtl.to(".sticky-nav",{
+        duration: 2, opacity: 1, ease: "linear", 
+        scrollTrigger: { 
+            trigger:".header-desk__nav", 
+            start: "300",
+            markers: true,
+            toggleActions: "play play reverse "
+        }
+    })
+
+  
+  }
+  
+  initAccordion(document.getElementById("menu"));
+}
+}
+</script>
