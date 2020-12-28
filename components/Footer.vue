@@ -30,7 +30,7 @@
     <div class="footer_bottom">
         <div class="copyright">
             <p>©2020 <span class="lumex">L</span>umex.</p> 
-            <p>All Rights Reserved</span></p>
+            <p>All Rights Reserved</p>
         </div>
     </div>
 </footer>

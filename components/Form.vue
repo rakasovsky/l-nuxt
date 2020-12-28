@@ -1,10 +1,10 @@
 <template>
     <div>
-        <!-- <form action="/mail.php" method="post" class="lumex_form" id="ajax_form" @submit.prevent="false">
+        <!-- <form action="/mail.php" method="post" class="lumex_form" id="ajax_form">
                  <div><input type="text" name="name" id="f_name" class="form-control" placeholder="Имя"></div>
                  <div><input type="text" id="f_email" name="email" class="form-control" placeholder="Email"></div>
                  <div><input type="text" id="f_phone" name="phone" class="form-control" placeholder="Телефон"></div>
-                 <div><textarea type="textarea" id="f_message" class="form-control" placeholder="Сообщение"></textarea></div>
+                 <div><textarea type="textarea" id="f_message" name="message" class="form-control" placeholder="Сообщение"></textarea></div>
                  <div id="result_form"></div>
                  <button type="submit"  name="send" class="primary_button form_button">
                      <span> Отправить </span> 
@@ -13,11 +13,11 @@
                      </svg>
                  </button>
         </form> -->
-            <form action="/mail" method="post" class="lumex_form" id="ajax_form" @submit.prevent="false">
+        <form action="mail.php" method="post" class="lumex_form" id="ajax_form" >
                  <div><input type="text" name="name" id="f_name" v-model="name" class="form-control" placeholder="Имя"></div>
                  <div><input type="text" id="f_email" v-model="email" name="email" class="form-control" placeholder="Email"></div>
                  <div><input type="text" id="f_phone" v-model="phone" name="phone" class="form-control" placeholder="Телефон"></div>
-                 <div><textarea type="textarea" id="f_message" v-model="message"  class="form-control" placeholder="Сообщение"></textarea></div>
+                 <div><textarea type="textarea" id="f_message" v-model="message"  name="message" class="form-control" placeholder="Сообщение"></textarea></div>
                  <div id="result_form"></div>
                  <button type="submit"  name="send" class="primary_button form_button">
                      <span> Отправить </span> 
@@ -49,7 +49,7 @@
 //                     formData.set('phone', this.phone)
 //                     formData.set('message', this.message)
 
-//                     await this.$store.dispatch('form/mail', formData)
+//                     await this.$store.dispatch('mail.php', formData)
 //                 } catch (e) {
 //                     throw e
 //                 }
