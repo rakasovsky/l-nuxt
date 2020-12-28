@@ -11,19 +11,7 @@
                     <div class="alert_msg">
 
                     </div>
-                    <form action="POST" class="lumex_form">
-                        <div><input type="text" class="form-control" placeholder="Имя"></div>
-                        <div><input type="text" class="form-control" placeholder="Email"></div>
-                        <div><input type="text" class="form-control" placeholder="Фирма"></div>
-                        <div><input type="text" class="form-control" placeholder="Телефон"></div>
-                        <div><textarea type="textarea" class="form-control" placeholder="Сообщение"></textarea></div>
-                        <button class="primary_button form_button">
-                            <span> Отправить </span> 
-                            <svg class="btn_svg">
-                                <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
-                            </svg>
-                        </button>
-                    </form>
+                    <Form />
                 </div>
                 <div class="contact_map lumex__content">
                     <div id="map" style="width: 50vw; height: 100%; margin-left: 15%;">
@@ -225,3 +213,10 @@
     <Footer />
     </div>
 </template>
+
+
+<script>
+export default {
+    
+}
+</script>

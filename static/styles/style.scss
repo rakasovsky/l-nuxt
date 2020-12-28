@@ -320,7 +320,7 @@ p {
     }
 
     .sticky-nav {
-        opacity: 0;
+        display: none;
         width: 100%;
         ul {
             display: flex;

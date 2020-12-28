@@ -191,11 +191,11 @@ mounted () {
         //  paused: true
     })
     mtl.to(".sticky-nav",{
-        duration: 2, opacity: 1, ease: "linear", 
+        duration: 2, display: "block", ease: "linear", 
         scrollTrigger: { 
             trigger:".header-desk__nav", 
-            start: "300",
-            markers: true,
+            start: "100",
+            markers: false,
             toggleActions: "play play reverse "
         }
     })
