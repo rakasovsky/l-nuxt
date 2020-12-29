@@ -72,9 +72,9 @@
         </div>
     </section> 
 
-    <section class="category_diogram category_diogram2 joc" id="t_ip">
+    <section class="category_diogram category_diogram2 joc2" id="t_ip">
         <div class="diogram_left">
-            <div class="cloud__block4">
+            <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / Asterisk <span class="lumex">*</span></p>
                 <h3 class="h_title fs42 txt3">Виртуальная АТС<br>
                     Коробочная версия</h3>
@@ -94,7 +94,7 @@
                 <p class="txt3"><b>Настройка программной части</b>, веб-интерфейс с личным кабинетом, статистикой звонков и записью телефонных разговоров.</p> 
                 <p class="txt3"><b>GSM-шлюз</b> - оборудование, для подключения мобильных SIM-карт в IP-АТС</p>   
                 <p class="txt3" style="margin-bottom: 20px;"><b>IP-телефон</b> - телефонный аппарат, для работы с IP-АТС, условно разделяем на 5 типов:</p>
-                <ul class="category-list">
+                <ul class="category-list jt">
                     <li class="txt3"><span class="checkmark"></span>Начального уровня, базовый аппарат</li>
                     <li class="txt3"><span class="checkmark"></span>Многофункциональный, корпоративного уровня</li>
                     <li class="txt3"><span class="checkmark"></span>Премиум линейка, с сенсорным экраном, ОС Android</li>
@@ -105,7 +105,7 @@
                 </ul>
             </div>
         </div>
-        <div class="diogram_right">
+        <div class="diogram_right jt">
             <section class="atc_img-wrapper">
                 <div class="atc_img-container">
                     <p class="label fs24 fc_grey">Базовый</p>
@@ -289,48 +289,8 @@ export default {
         const tl = gsap.timeline();
 
         tl.from(".lumex__content", {duration: 2,   x: 1500});
-        tl.from(".content",{duration:2, opacity:0, y:200, stagger: 0.25});
+        
         gsap.from(".lumex__video", {duration: 2, scale: 0.3,  x: -1500});
-
-
-        const catBlck = gsap.timeline({
-        scrollTrigger: {
-            trigger: ".cat_block", 
-            start: "top bottom"
-        }
-        })
-
-        catBlck.from(".cat_block",{duration:1, opacity:0, y:200, stagger:0.5});
-
-           // For catalog page
-            const catBlck2 = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".cat_block2", 
-                start: "top bottom"
-            }
-            })
-
-            catBlck2.from(".cat_block2",{duration:1, opacity:0, y:200, stagger:0.5});
-            // For catalog page
-            const lbl = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".lbl",
-                start: "top bottom"
-            }
-            })
-
-            lbl.from(".lbl",{duration:1, opacity:0, x:-100}),
-            lbl.from(".txt", {duration:1, opacity:0, y: 100,stagger: 0.25})
-
-
-            const MoP = gsap.timeline({
-            scrollTrigger: {
-                trigger: ".mop",
-                start: "top bottom"
-            }
-            })
-            MoP.from(".fl", {duration:.5, opacity:0, x: -400})
-            MoP.from(".txt2", {duration:1, opacity:0, y: 100,stagger: 0.25})
 
 
             const JoC = gsap.timeline({
@@ -340,6 +300,14 @@ export default {
             }
             })
             JoC.from(".txt3", {duration:1, opacity:0, y: 100,stagger: 0.25})
+
+            const JoC2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".joc2",
+                start: "top bottom"
+            }
+            })
+            JoC2.from(".jt", {duration:1, opacity:0, y: 100,stagger: 0.25})
     }
 }
 </script>

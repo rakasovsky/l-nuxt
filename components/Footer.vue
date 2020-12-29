@@ -29,7 +29,7 @@
     </div>
     <div class="footer_bottom">
         <div class="copyright">
-            <p>©2020 <span class="lumex">L</span>umex.</p> 
+            <p><span class="copyright_year"></span> <span class="lumex">L</span>umex.</p> 
             <p>All Rights Reserved</p>
         </div>
     </div>
@@ -37,3 +37,18 @@
  <!-- FOOTER -->
 
 </template>
+
+
+<script>
+export default {
+
+    mounted () {
+        const copyright = document.querySelector('.copyright_year')
+
+        const newCopyright = new Date();
+        const newCopyYear = newCopyright.getFullYear();
+        copyright.textContent = `${newCopyYear}`
+        
+    }
+}
+</script>

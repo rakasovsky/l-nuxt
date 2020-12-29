@@ -9,7 +9,7 @@
 <script>
 export default {
     mounted() {
-              // GSAP
+        // GSAP
         const tl = gsap.timeline();
 
         tl.from(".lumex__content", {duration: 2,   x: 1500});

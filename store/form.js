@@ -1,10 +1,10 @@
-// export const actions = {
-//     async callback (formData) {
-//         try {
-//             const token = await this.axios.post('...', formData)
+export const actions = {
+    async callback (formData) {
+        try {
+            const token = await this.axios.post('mail.php', formData)
 
-//         } catch (err) {
-//             throw e
-//         }
-//     }
-// }
+        } catch (err) {
+            throw e
+        }
+    }
+}

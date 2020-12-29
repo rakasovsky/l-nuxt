@@ -13,7 +13,7 @@
                      </svg>
                  </button>
         </form> -->
-        <form action="mail.php" method="post" class="lumex_form" id="ajax_form" >
+        <form method="post" class="lumex_form" id="ajax_form" v-on:submit.prevent="onSubmit" noaction="mail.php">
                  <div><input type="text" name="name" id="f_name" v-model="name" class="form-control" placeholder="Имя"></div>
                  <div><input type="text" id="f_email" v-model="email" name="email" class="form-control" placeholder="Email"></div>
                  <div><input type="text" id="f_phone" v-model="phone" name="phone" class="form-control" placeholder="Телефон"></div>
@@ -30,33 +30,42 @@
 </template>
 
 
-// <script>
-// export default {
-//     data: () => ({
-//         name: '',
-//         email: '',
-//         phone: '',
-//         message: ''
-//     }),
-//     method: {
-//         onSubmit () {
-//             const asyncLog = async (asyncLog) => {
-//                 try {
-//                     const formData = new FormData()
+<script>
 
-//                     formData.set('name', this.name)
-//                     formData.set('email', this.email)
-//                     formData.set('phone', this.phone)
-//                     formData.set('message', this.message)
+export default {
+    data: () => ({
+        name: '',
+        email: '',
+        phone: '',
+        message: ''
+    }),
+    methods: {
+        onSubmit () {
+            // const asyncLog = async (asyncLog) => {
+            //     try {
+            //         const formData = new FormData()
 
-//                     await this.$store.dispatch('mail.php', formData)
-//                 } catch (e) {
-//                     throw e
-//                 }
-//             }
-//              asyncLog()
-//              console.log(asyncLog())
-//         }
-//     }
-// }
-// </script>
+            //         formData.set('name', this.name)
+            //         formData.set('email', this.email)
+            //         formData.set('phone', this.phone)
+            //         formData.set('message', this.message)
+
+            //         // await this.$store.dispatch('mail.php', formData)
+            //         await this.$axios.post('mail.php', formData)
+            //     } catch (e) {
+            //         throw e
+            //     }
+            // }
+            //  asyncLog()
+            //  console.log(asyncLog())
+            let formData = {
+                name: this.name,
+                email: this.email,
+                phone: this.phone,
+                message: this.message
+            };
+            axios.post(`/server/api/mail`, formData);
+        }
+    }
+}
+</script>
