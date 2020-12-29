@@ -17,6 +17,9 @@ export default {
     script: [
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" },
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" },
+      {
+        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
+      }
     ]
   },
 
