@@ -6,7 +6,7 @@
         <div class="contact_container">
             <div class="wrapper">
                 <div class="contact_form  lumex__video">
-                    <h3 class="h_title fs42 fc_white">Слыш, купи!</h3>
+                    <h3 class="h_title fs42 fc_white">Обратная связь</h3>
                     <p class="label fc_grey">Облачные и аппаратные решения в области безопасности и связи. Сервис и обслуживание.</p>
                     <div class="alert_msg">
 
@@ -15,7 +15,32 @@
                 </div>
                 <div class="contact_map lumex__content">
                     <div id="map" style="width: 50vw; height: 100%; margin-left: 15%;">
-
+                        <GMap
+                        ref="gMap"
+                        language="ru"
+                        style="height: 100%"
+                        :center="{lat: locations[0].lat, lng: locations[0].lng}"
+                        :options="{fullscreenControl: false, styles: mapStyle, mapTypeControl: false}"
+                        :zoom="17"
+                        >
+                        <GMapMarker
+                            v-for="location in locations"
+                            :key="location.id"
+                            :position="{lat: location.lat, lng: location.lng}"
+                            :options="{icon: location === currentLocation ? pins.selected : pins.notSelected}"
+                            @click="currentLocation = location"
+                        >
+                            <GMapInfoWindow :options="{maxWidth: 200}">
+                            <code>
+                              <p>Lumex</p>
+                              <p>Время работы:</p>
+                              <p>9:00 - 18:00</p>
+                              <p>Суббота, воскресенье - выходной</p>
+                            </code>
+                            </GMapInfoWindow>
+                        </GMapMarker>
+                     
+                        </GMap>
                     </div>
                     <div class="lumex_info content">
                         <h4 class="title fs24"><span class="lumex">L</span>umex</h4>
@@ -26,15 +51,29 @@
                         <p><a href="mailto:info@lumex.in.ua">info@lumex.in.ua</a></p>
                         <p><a href="mailto:support@lumex.in.ua">support@lumex.in.ua</a></p>
                     </div>
-        <script type="text/javascript">
-                function initMap() {
-                const myLatLng = {lat: 49.997589, lng:36.233797};
-                var map = new google.maps.Map(document.getElementById('map'), {
-                    zoom: 17,
-                    center: myLatLng,
-                    mapTypeId: google.maps.MapTypeId.ROADMAP,
-                    mapTypeControl: false,
-                    styles: [
+                </div>
+            </div>
+        </div>
+    <Footer />
+    </div>
+</template>
+
+
+<script>
+export default {
+
+    data() {
+        return {
+            currentLocation: {},
+            locations: [
+                {lat: 49.997589,
+                 lng:36.233797}
+            ],
+            pins: {
+            selected:"data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACf0lEQVRIiZ3UP4gdVRQG8N9Zdh+WIUYRCTILi0gqEQ1hLTKwIFaCxRKXFEEIIliltLK1sREbLQIaZGMRCRGbEHUKUQkiCouIBPdVIZVICMsyb9ljMfPiZHbe7sOvGO6ce+/3nT/3nHAItsvRYshVYgOryTOB5G5wG5uoiqquZ3HEbPKlZ0N8gFcwyuHDe/ievFRUk1/nFhiXoxfwFZ7u73WFOuu/sV5U9bf98wsDnq+k7JLv4jLWkieCx1O+jA/JB4mUx1NeG5ejFw+NoMm5a3itNd3DBdwqqnq/F6WUZ0JcwUobzQ9YK6p6dzCCkKfxaja/Nd4sqvpmnxyKqrZcTX5Kzqe835pPa2o2nKLkHEbNS8mruNknHkjBbXxCSrmI8zMFQqw2pSPYHPJ8KJLgc0I0GT8zUwAnO2XZOoq849oWps6c7O4s9k52PJ7ZIgeQ7TcPcByswZ3O8VPzCgSniIUmSfHXTIHgm6nnITbG5ehAn/QxLkew0TE90mx9gi+TnaZ5vJGUcwTwfPJ2m6IaXxwm8HtwK5poHgs+3S5HZevlI9gul6YjZTM41r6gnzXN9hAHKjkuR6v4DlPWneSz4Aq5RezjOZwjLxLH2vLuE68vV/WNowQWko9xcXi0pRAP38x0HdxIsb7cG92zpulT+A1PDu0P4H7Kl5aryZ/9jcFXUlT1PfJSspcdezs523X6LzXeGyKfKdAgrpKX+8R9JNfx0UyW2QKMy9FxfK03Xzr4g1wrqsnd/yXQiCytED/ixDQ5bWEf4OxyNfnlsPtHdmpRTe5gPfmnY94JLhxFPpdAg6yCd4LdEHt4l7g+z825R2Y7l97CCbxfVPXePPf+Beaf7x2BXz2wAAAAAElFTkSuQmCC",
+            notSelected: "data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAA7EAAAOxAGVKw4bAAACf0lEQVRIiZ3UP4gdVRQG8N9Zdh+WIUYRCTILi0gqEQ1hLTKwIFaCxRKXFEEIIliltLK1sREbLQIaZGMRCRGbEHUKUQkiCouIBPdVIZVICMsyb9ljMfPiZHbe7sOvGO6ce+/3nT/3nHAItsvRYshVYgOryTOB5G5wG5uoiqquZ3HEbPKlZ0N8gFcwyuHDe/ievFRUk1/nFhiXoxfwFZ7u73WFOuu/sV5U9bf98wsDnq+k7JLv4jLWkieCx1O+jA/JB4mUx1NeG5ejFw+NoMm5a3itNd3DBdwqqnq/F6WUZ0JcwUobzQ9YK6p6dzCCkKfxaja/Nd4sqvpmnxyKqrZcTX5Kzqe835pPa2o2nKLkHEbNS8mruNknHkjBbXxCSrmI8zMFQqw2pSPYHPJ8KJLgc0I0GT8zUwAnO2XZOoq849oWps6c7O4s9k52PJ7ZIgeQ7TcPcByswZ3O8VPzCgSniIUmSfHXTIHgm6nnITbG5ehAn/QxLkew0TE90mx9gi+TnaZ5vJGUcwTwfPJ2m6IaXxwm8HtwK5poHgs+3S5HZevlI9gul6YjZTM41r6gnzXN9hAHKjkuR6v4DlPWneSz4Aq5RezjOZwjLxLH2vLuE68vV/WNowQWko9xcXi0pRAP38x0HdxIsb7cG92zpulT+A1PDu0P4H7Kl5aryZ/9jcFXUlT1PfJSspcdezs523X6LzXeGyKfKdAgrpKX+8R9JNfx0UyW2QKMy9FxfK03Xzr4g1wrqsnd/yXQiCytED/ixDQ5bWEf4OxyNfnlsPtHdmpRTe5gPfmnY94JLhxFPpdAg6yCd4LdEHt4l7g+z825R2Y7l97CCbxfVPXePPf+Beaf7x2BXz2wAAAAAElFTkSuQmCC"
+            },
+            mapStyle: [
                         {
                             elementType: 'geometry',
                             stylers: [
@@ -196,27 +235,11 @@
                                 }
                             ]
                         }
-                    ],
-                });
-                new google.maps.Marker({
-                    position: myLatLng,
-                    map,
-                    title: "Hello World!",
-                });
-            }
-            
-            </script>
-            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCj0CTmW0SEtwx7gz6zkgokJASsemggRfE&callback=initMap" type="text/javascript"></script>
-                </div>
-            </div>
-        </div>
-    <Footer />
-    </div>
-</template>
+            ],
+      
+        }
+    },
 
-
-<script>
-export default {
       mounted() {
         // GSAP
         const tl = gsap.timeline();
@@ -224,6 +247,14 @@ export default {
         tl.from(".lumex__content", {duration: 2,   x: 1500});
         tl.from(".content",{duration:2, opacity:0, y:200, stagger: 0.25});
         gsap.from(".lumex__video", {duration: 2, scale: 0.3,  x: -1500});
+
+        
       }
 }
 </script>
+
+<style>
+    .GMap__Wrapper {
+        height: 100%  !important;
+    }
+</style>

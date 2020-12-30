@@ -1,26 +1,26 @@
-.page-enter-active, .page-leave-active {
-    transition: all .25s ease-out;
- }
-.page-enter, .page-leave-active {
-    opacity: 0;
-    transform-origin: 50% 50%;
-}
-.page-enter-active {
-    animation: acrossIn .45s ease-out both;
-  } 
+// .page-enter-active, .page-leave-active {
+//     transition: all .25s ease-out;
+//  }
+// .page-enter, .page-leave-active {
+//     opacity: 0;
+//     transform-origin: 50% 50%;
+// }
+// .page-enter-active {
+//     animation: acrossIn .45s ease-out both;
+//   } 
   
-  .page-leave-active {
-    animation: acrossOut .65s ease-in both;
-  } 
+//   .page-leave-active {
+//     animation: acrossOut .65s ease-in both;
+//   } 
   
-  @keyframes acrossIn {
-    0% {
-      transform: translate3d(-100%, 0, 0);
-    }
-    100% {
-      transform: translate3d(0, 0, 0);
-    }
-  }
+//   @keyframes acrossIn {
+//     0% {
+//       transform: translate3d(-100%, 0, 0);
+//     }
+//     100% {
+//       transform: translate3d(0, 0, 0);
+//     }
+//   }
   
   @keyframes acrossOut {
     0% {
@@ -732,6 +732,9 @@ header {
                 div {
                     max-width: 320px;
                     margin-left: auto;
+                    p {
+                        width: 300px;
+                    }
                 }
             }
           
@@ -1872,12 +1875,15 @@ header {
         font-family: "RobotoMono";
     }
     .form_button {
-        margin-top: 150px;
+        margin-top: 100px;
         justify-content: space-between;
         padding: 0 40px; 
         svg {
             margin: 0;
         }
+    }
+    #result_form {
+        height: 50px
     }
 }
 
@@ -1956,6 +1962,28 @@ footer {
     
 }
 
+
+@media (max-width:4096px) {
+    .lumex__main {
+        .cloud__block2{
+            .title {
+                .title__front { 
+                     div {
+                        max-width: 625px;
+                        p {
+                            width: 600px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .product_card {
+        height: 800px;
+
+    }
+}
+
 @media screen and (min-width:2560px) {
     .lumex__main {
         .cloud__block2{
@@ -1963,6 +1991,9 @@ footer {
                 .title__front { 
                      div {
                         max-width: 425px;
+                        p {
+                            width: 400px;
+                        }
                     }
                 }
             }
@@ -2006,6 +2037,21 @@ footer {
 }
 
 @media (max-width:1440px) { 
+
+    .sticky .contacts {
+        padding: 20px;
+    }
+    .sticky .contacts span:last-child {
+        margin-left: 10px;
+    }
+    .sticky .sticky-nav ul li {
+        padding-left: 10px;
+    }
+
+    .sticky .button {
+        width: 50px;
+    }
+        
    .nav_dropdown {
         width: 100%;
         .product_card .card-content {

@@ -53,8 +53,8 @@
                     </div>
                     <div class="title__back yellow">
                         <div>
-                            <p>Сервис облачной телефонии предусматривает оплату за аренду оборудования, использование вычислительных ресурсов и обслуживание системы.</p>
-                            <p>К каждому клиенту у нас индивидуальный подход и мы можем настроить облачную АТС именно под Ваши задачи</p>
+                            <p>Сервис облачной телефонии предусматривает оплату за аренду оборудования, использование вычислительных ресурсов и обслуживание системы.<br>
+                            К каждому клиенту у нас индивидуальный подход и мы можем настроить облачную АТС именно под Ваши задачи</p>
                             <a href="#" class="secondary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
@@ -519,7 +519,54 @@
     },
 
     mounted () {
+
+        // GSAP
+        const tl = gsap.timeline();
+
+        tl.from(".lumex__content", {duration: 2,   x: 1500});
+        tl.from(".content",{duration:2, opacity:0, y:200, stagger: 0.25});
+        gsap.from(".lumex__video", {duration: 2, scale: 0.3,  x: -1500});
+
+
+    
+
+        const MoP = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".mop",
+            start: "top bottom"
+        }
+        })
+        MoP.from(".fl", {duration:.5, opacity:0, x: -400})
+        MoP.from(".txt2", {duration:1, opacity:0, y: 100,stagger: 0.25})
+
+
+        const JoC = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".joc",
+            start: "top bottom"
+        }
+        })
+        JoC.from(".txt3", {duration:1, opacity:0, y: 100,stagger: 0.25})
+
+        // const mmTl = gsap.timeline({
+        //     paused: true
+        // });
+
+        // mmTl.from(".nav_dropdown",{duration:.5, opacity:0, y: gsap.utils.random(-100, 100, true), ease: Power3.easeOut});
+        // mmTl.to(".nav_dropdown",{duration:.5, opacity:0, y: 0, ease: Power3.easeOut});
+
+       
         // Q/A CARDS 
+        const catBlck = gsap.timeline({
+        scrollTrigger: {
+            trigger: ".cat_block", 
+            start: "top bottom"
+        }
+        })
+
+        catBlck.from(".cat_block",{duration:1, opacity:0, y:200, stagger:0.5});
+
+
         document.querySelectorAll(".cat_block").forEach(function (f) {
         const qa = gsap.timeline({
             defaults: { duration: 1 },
@@ -539,28 +586,6 @@
         });
         f.addEventListener("mouseout", function (e) {
             qa.reverse();
-        });
-        });
-
-        document.querySelectorAll(".cat_block2").forEach(function (f) {
-        const qa = gsap.timeline({
-        defaults: { duration: 1 },
-        paused: true,
-        });
-        var tf = f.querySelector(".title__front");
-        var tfd = f.querySelector(".title__front div");
-        var tb = f.querySelector(".title__back");
-        var tbd = f.querySelector(".title__back div");
-        qa.to(tf, { duration: 0.5, y: 20, opacity: 1 })
-        .to(tfd, { duration: 0.5, y: 20, opacity: 0 })
-        .to(tf, { duration: 0.5, opacity: 0 })
-        .to(tb, { duration: 0.5, opacity: 1 }, "-=1")
-        .from(tbd, { duration: 0.5, y: 20, opacity: 0 }, "-=1");
-        f.addEventListener("mouseover", function (e) {
-        qa.play();
-        });
-        f.addEventListener("mouseout", function (e) {
-        qa.reverse();
         });
         });
 

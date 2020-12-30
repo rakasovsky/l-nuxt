@@ -33,6 +33,14 @@
 <script>
 
 export default {
+     head: {
+      script: [
+        {
+          src:
+            'https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js'
+        }
+      ]
+    },
     // data: () => ({
     //     name: '',
     //     email: '',
@@ -80,13 +88,14 @@ export default {
 
         $.ajax({
             type: "POST",
-            url: "/mail",
+            url: "/mail.php",
             data: str,
             dataType: 'json',
             success: function(response) {
                 var result;
                 if (response.status == 'success') {
                 $("#f_name").val('');
+                $("#f_phone").val('');
                 $("#f_email").val('');
                 $("#f_message").val('');
                 $('#result_form').html('Спасибо, '+response.message);

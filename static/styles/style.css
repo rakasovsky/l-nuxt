@@ -1,47 +1,4 @@
 @charset "UTF-8";
-.page-enter-active, .page-leave-active {
-  -webkit-transition: all .25s ease-out;
-  transition: all .25s ease-out;
-}
-
-.page-enter, .page-leave-active {
-  opacity: 0;
-  -webkit-transform-origin: 50% 50%;
-          transform-origin: 50% 50%;
-}
-
-.page-enter-active {
-  -webkit-animation: acrossIn .45s ease-out both;
-          animation: acrossIn .45s ease-out both;
-}
-
-.page-leave-active {
-  -webkit-animation: acrossOut .65s ease-in both;
-          animation: acrossOut .65s ease-in both;
-}
-
-@-webkit-keyframes acrossIn {
-  0% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
-@keyframes acrossIn {
-  0% {
-    -webkit-transform: translate3d(-100%, 0, 0);
-            transform: translate3d(-100%, 0, 0);
-  }
-  100% {
-    -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
-  }
-}
-
 @-webkit-keyframes acrossOut {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -52,7 +9,6 @@
             transform: translate3d(100%, 0, 0);
   }
 }
-
 @keyframes acrossOut {
   0% {
     -webkit-transform: translate3d(0, 0, 0);
@@ -794,6 +750,10 @@ header .header-desk__nav ul li a {
 .lumex__main .cloud__block2 .title .title__front div {
   max-width: 320px;
   margin-left: auto;
+}
+
+.lumex__main .cloud__block2 .title .title__front div p {
+  width: 300px;
 }
 
 .lumex__main .cloud__block2 .title .title__back {
@@ -2268,7 +2228,7 @@ ul .checkmark:after {
 }
 
 .lumex_form .form_button {
-  margin-top: 150px;
+  margin-top: 100px;
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
@@ -2277,6 +2237,10 @@ ul .checkmark:after {
 
 .lumex_form .form_button svg {
   margin: 0;
+}
+
+.lumex_form #result_form {
+  height: 50px;
 }
 
 input, textarea {
@@ -2379,9 +2343,24 @@ footer .footer_bottom .copyright p:last-child {
   border-left: 1px solid #a8a8a8;
 }
 
+@media (max-width: 4096px) {
+  .lumex__main .cloud__block2 .title .title__front div {
+    max-width: 625px;
+  }
+  .lumex__main .cloud__block2 .title .title__front div p {
+    width: 600px;
+  }
+  .product_card {
+    height: 800px;
+  }
+}
+
 @media screen and (min-width: 2560px) {
   .lumex__main .cloud__block2 .title .title__front div {
     max-width: 425px;
+  }
+  .lumex__main .cloud__block2 .title .title__front div p {
+    width: 400px;
   }
   .lumex_team .team_right {
     background-size: cover;
@@ -2407,6 +2386,18 @@ footer .footer_bottom .copyright p:last-child {
 }
 
 @media (max-width: 1440px) {
+  .sticky .contacts {
+    padding: 20px;
+  }
+  .sticky .contacts span:last-child {
+    margin-left: 10px;
+  }
+  .sticky .sticky-nav ul li {
+    padding-left: 10px;
+  }
+  .sticky .button {
+    width: 50px;
+  }
   .nav_dropdown {
     width: 100%;
   }

@@ -17,9 +17,6 @@ export default {
     script: [
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js" },
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js" },
-      {
-        src: "https://code.jquery.com/jquery-3.3.1.slim.min.js",
-      }
     ]
   },
 
@@ -44,13 +41,10 @@ export default {
   modules: [
     // https://go.nuxtjs.dev/axios
     '@nuxtjs/axios',
-    ['nuxt-mail', {
-      smtp: {
-        host: "smtp.gmail.com.",
-        port: 465,
-      },
-    },
-  ],
+    ['nuxt-gmaps', {
+      key: 'AIzaSyCj0CTmW0SEtwx7gz6zkgokJASsemggRfE',
+     
+    }]
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)

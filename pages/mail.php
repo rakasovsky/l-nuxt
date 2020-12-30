@@ -7,7 +7,9 @@
     $error = '';
     $status = 'not sent';
 
-    if (trim($email) == ''){
+    if (trim($name) == ''){
+        $error = 'Введите ваш имя';
+    } elseif (trim($email) == '') {
         $error = 'Введите ваш email';
     } elseif (trim($message) == '') {
         $error = 'Введите сообщение';
@@ -20,7 +22,7 @@
 
         $message1 ="\n\nИмя: ".$name. "\n\nE-mail: " .$email."\n\nСообщение: ".$message."\n\n";
         $headers = "From: $email\r\nReplay-to: $email\r\nContent-type: text/html; charset=utf-8\r\n";
-        mail('rakasovsky1@gmail.com', $subject, $message1, $headers);
+        mail('info@lumex.in.ua', $subject, $message1, $headers);
         $result = '{"status": "success", "message": "ваше сообщение отправлено."}';
         $status = 'sent';
     } else {
