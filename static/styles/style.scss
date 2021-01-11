@@ -1815,7 +1815,7 @@ header {
         }
     }
     td, th {
-        padding: 10px 0;
+        padding: 10px;
         position: relative;
         outline: 0;
 
@@ -1963,7 +1963,7 @@ footer {
 }
 
 
-@media (max-width:4096px) {
+@media screen and  (min-width:4096px) {
     .lumex__main {
         .cloud__block2{
             .title {

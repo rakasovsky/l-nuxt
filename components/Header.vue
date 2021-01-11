@@ -37,11 +37,11 @@
                         <span>Видеонаблюдение</span><span>▾</span>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
-                            <li class="menu-item"><a href="telephony.html#t_cloud">IP-видеонаблюдение</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_ip">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_hardware">Умное видеонаблюдение</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_hardware">Облачное видеонаблюдение</a></li>
-                            <li class="menu-item"> <a href="telephony.html#t_service">Сервисный центр</a></li>
+                            <li class="menu-item"><nuxt-link to="#">IP-видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Умное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Облачное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Сервисный центр</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -81,11 +81,11 @@
                         <span>Видеонаблюдение</span><span>▾</span>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu">
-                            <li class="menu-item"><a href="telephony.html#t_cloud">IP-видеонаблюдение</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_ip">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_hardware">Умное видеонаблюдение</a></li>
-                            <li class="menu-item"><a href="telephony.html#t_hardware">Облачное видеонаблюдение</a></li>
-                            <li class="menu-item"> <a href="telephony.html#t_service">Сервисный центр</a></li>
+                            <li class="menu-item"><nuxt-link to="#">IP-видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Умное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Облачное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="#">Сервисный центр</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -103,7 +103,7 @@
             <!-- MOBILE MENU -->
 
             <div class="mob_menu">
-                <a href="index.html" class="mob_logo"><img src="~/static/assets/img/lumex_logo.svg" alt=""></a>
+                <nuxt-link to="/" class="mob_logo"><img src="~/static/assets/img/lumex_logo.svg" alt=""></nuxt-link >
                 <nav role="navigation">
                     <div id="menuToggle">
                         <input type="checkbox" />
@@ -111,7 +111,7 @@
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <nuxt-link to="index.html" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt=""></nuxt-link>
+                            <nuxt-link to="/" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt=""></nuxt-link>
                             <li class="m_li">Телефония<div>▾</div>
                                 <ul class="dropdown_container_mobile">
                                        <nuxt-link to="/category/telephony"><li class="menu-item">Телефония</li></nuxt-link>
@@ -131,8 +131,8 @@
                                 </ul>
                             </li>
                             <li class="m_li"><a href="#">Системы контроля доступа</a></li>
-                            <li class="m_li"><nuxt-link to="catalog.html">Каталог</nuxt-link></li>
-                            <li class="m_li"><nuxt-link to="contacts.html">Контакты</nuxt-link></li>
+                            <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li>
+                            <li class="m_li"><nuxt-link to="/contact">Контакты</nuxt-link></li>
                         </ul>
                     </div>
                 </nav>

@@ -2172,7 +2172,7 @@ ul .checkmark:after {
 }
 
 .tel_table-wrapper td, .tel_table-wrapper th {
-  padding: 10px 0;
+  padding: 10px;
   position: relative;
   outline: 0;
 }
@@ -2343,7 +2343,7 @@ footer .footer_bottom .copyright p:last-child {
   border-left: 1px solid #a8a8a8;
 }
 
-@media (max-width: 4096px) {
+@media screen and (min-width: 4096px) {
   .lumex__main .cloud__block2 .title .title__front div {
     max-width: 625px;
   }

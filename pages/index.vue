@@ -55,11 +55,11 @@
                         <div>
                             <p>Сервис облачной телефонии предусматривает оплату за аренду оборудования, использование вычислительных ресурсов и обслуживание системы.<br>
                             К каждому клиенту у нас индивидуальный подход и мы можем настроить облачную АТС именно под Ваши задачи</p>
-                            <a href="#" class="secondary_button">
+                            <nuxt-link to="/category/telephony#t_cloud" class="secondary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                 </svg>
-                            </a>
+                            </nuxt-link>
                         </div>
                     </div>
                 </div>
@@ -215,8 +215,14 @@
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
-                                        <p class="label fc_white">Cloudcalls</p>
-                                        <p class="fs24 fc_white">Нужно ли тратить деньги на оборудование и его настройку, когда можно использовать сервис?</p>
+                                        <p class="label fc_white">Защита от Covid-19:</p>
+                                        <p class="fs24 fc_white">   
+                                            Камеры, которые
+                                            измеряют температуру,
+                                            детектирование наличие
+                                            маски и соблюдение
+                                            социальной дистанции
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -226,8 +232,15 @@
                             <div class="title">
                                 <div class="title__front grey">
                                     <div>
-                                        <p class="label fc_white">Cloudcalls</p>
-                                        <p class="fs24 fc_white">Нужно ли тратить деньги на оборудование и его настройку, когда можно использовать сервис?</p>
+                                        <p class="label fc_white">Снижение потерь</p>
+                                        <p class="fs24 fc_white">  
+                                            Минимизация
+                                            убытков от
+                                            мошенничества,
+                                            воровства и хищений,
+                                            а также ошибок
+                                            сотрудников
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -237,8 +250,15 @@
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
-                                        <p class="label fc_white">Cloudcalls</p>
-                                        <p class="fs24 fc_white">Нужно ли тратить деньги на оборудование и его настройку, когда можно использовать сервис?</p>
+                                        <p class="label fc_white"> Видеоаналитика для бизнеса </p>
+                                        <p class="fs24 fc_white">   
+                                            Контроль кассовых
+                                            операций, счетчик
+                                            объектов, детектор
+                                            нахождения на
+                                            рабочем месте,
+                                            счетчик посетителей
+                                        </p>
                                     </div>
                                 </div>
                             </div>
@@ -267,10 +287,14 @@
                                 <div class="title__front yellow">
                                     <div>
                                     <p class="label">
-                                        Transportation
+                                       Облачное видеонаблюдение
                                     </p>
-                                    <p class="fs24">
-                                        What is the average stock-out rate in fast moving consumer product companies?
+                                    <p class="fs24">     
+                                        Сервис,
+                                        предоставляющий
+                                        доступ к вашим
+                                        камерам и архиву из
+                                        любой точки мира
                                     </p>
                                     </div>
                                 </div>
@@ -283,10 +307,10 @@
 
             <div class="cloud__block4 cat_block">
 
-                <h3 class="h_title fs42">Our not-so-secret plan: <br>
-                    Create a world without waste</h3>
+                <h3 class="h_title fs42">Корпоративная связь <br>
+                   для крупных предприятий</h3>
                 <p class="fc_grey">
-                    In 2020 the only constant is volatility. Our lives, and our livelihoods, are interconnected. Radical efficiency across manufacturing and supply chains is more vital than ever. We help our customers by focusing on the heart of the global economy—where the waste is.
+                    Коробочная версия виртуальной АТС или аппаратные IP-АТС. Полное сопровождение под ключ
                 </p>
             </div>
         </section>
