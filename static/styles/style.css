@@ -23,6 +23,7 @@
 @font-face {
   font-family: "Aeonik";
   src: url("../assets/fonts/pro/AeonikPro-Regular.otf");
+  font-display: swap;
 }
 
 @font-face {
