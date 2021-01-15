@@ -29,6 +29,7 @@
 @font-face {
   font-family: "RobotoMono";
   src: url("../assets/fonts/RobotoMono-Regular.ttf");
+  font-display: swap;
 }
 
 * {
@@ -199,6 +200,10 @@ button {
   -webkit-transform: rotate(90deg);
           transform: rotate(90deg);
   white-space: nowrap;
+}
+
+.mb10 {
+  margin-bottom: 10px;
 }
 
 .yellow {
@@ -1253,6 +1258,23 @@ header .header-desk__nav ul li a {
   background-image: url(../assets/img/category/tel/tv-repair-min.jpg);
 }
 
+.lumex_team .cctv_service_img {
+  background-image: url(../assets/img/category/cctv/cctv-rep.jpg);
+  padding-top: 8%;
+  background-size: cover;
+}
+
+.lumex_team .cloud_cctv {
+  background-image: url(../assets/img/category/cctv/cctv_cloud.jpg);
+  background-size: cover;
+  padding-top: 13%;
+}
+
+.lumex_team .ip_cctv {
+  background-image: url(../assets/img/category/cctv/hik.png);
+  background-size: cover;
+}
+
 .lumex_team + .rev {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: reverse;
@@ -1324,6 +1346,10 @@ header .header-desk__nav ul li a {
   width: 100%;
   height: 85vh;
   background-size: cover;
+}
+
+.category .category_container .cctv_cover {
+  background-image: url(../assets/img/category/cctv/cctv.jpg);
 }
 
 .category .category_container .category_cover:before {
@@ -1398,6 +1424,12 @@ header .header-desk__nav ul li a {
 
 .category_diogram .diogram_right {
   width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .category_diogram .diogram_right img {
@@ -1406,6 +1438,18 @@ header .header-desk__nav ul li a {
   display: flex;
   width: 100%;
   height: 100%;
+}
+
+.category_diogram .smart_tv {
+  background-image: url(../assets/img/category/cctv/cctv.jpg);
+  padding-top: 8%;
+  background-size: cover;
+}
+
+.category_diogram .hd_cctv {
+  background-image: url(../assets/img/category/cctv/hd-cctv.jpeg);
+  padding-top: 8%;
+  background-size: cover;
 }
 
 .category_diogram2 .diogram_left {
@@ -1530,6 +1574,10 @@ header .header-desk__nav ul li a {
 
 .atc_img-wrapper .atc_img-container:hover p {
   color: black;
+}
+
+.cctv_hd {
+  padding-bottom: calc(100% / 9);
 }
 
 .top {
@@ -1678,12 +1726,15 @@ header .header-desk__nav ul li a {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  height: 100%;
 }
 
 .catalog_main .cloud__block3 .title__back a {
   margin: 20px 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+  position: absolute;
+  bottom: 0;
 }
 
 .catalog_page-wrapper {

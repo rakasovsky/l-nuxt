@@ -144,11 +144,11 @@
                             <p>
                                Умное видеонаблюдение, обеспечивающий контроль кассовых операций, минимизирует убытки в розничной торговле. Содействует решениям конфликтных ситуаций с покупателями и персоналом
                             </p>
-                            <a href="#" class="primary_button">
+                            <nuxt-link to="/category/video_surveillance#v_smart" class="primary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                 </svg>
-                            </a>
+                            </nuxt-link>
                         </div>
                     </div>
                 </div>
@@ -173,11 +173,11 @@
                             <p class="fc_white">Используйте сервис облачного видеонаблюдения для удаленного доступа к камерам видеонаблюдения в реальном времени, а также доступ к архиву.<br>
                              Удаленное хранение арпхива позволит повысить уровень безопасности объекта.
                              </p>
-                            <a href="#" class="primary_button">
+                              <nuxt-link to="/category/video_surveillance#v_cloud" class="primary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                 </svg>
-                            </a>
+                              </nuxt-link>
                         </div>
                     </div>
                 </div>
@@ -198,20 +198,17 @@
 
         <!-- MOBILE CATEGORY -->
         <section class="lumex__main_mobile">
-            <div class="cloud__block1 cat_block">
+            <div class="cloud__block1 ">
                 <p class="label fs15"><span class="lumex">L</span>umex / Cloudcalls</p>
                 <h3 class="h_title fs42">Облачная АТС - <br>
                     сервис телефонии<br>
                      для Вашего бизнеса</h3>
-                <!-- <p>
-                    Объединяем телефонные номера в одну сеть. Контроль телефонных звонков через личный кабинет. Интеграция с 1с, Битрикс24 и другими CRM системами. Звонок с сайта, SMS сообщения и другие необходимые функции для современных задач
-                </p> -->
             </div>
             <div class="blocks_horizont">
                 <div class="blocks_scroll">
                     <div class="blocks_row">
 
-                        <div class="cloud__block cat_block">
+                        <div class="cloud__block ">
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
@@ -225,10 +222,11 @@
                                         </p>
                                     </div>
                                 </div>
+
                             </div>
                         </div>
                         
-                        <div class="cloud__block cat_block">
+                        <div class="cloud__block ">
                             <div class="title">
                                 <div class="title__front grey">
                                     <div>
@@ -246,7 +244,7 @@
                             </div>
                         </div>
             
-                        <div class="cloud__block cat_block">
+                        <div class="cloud__block ">
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
@@ -271,7 +269,7 @@
                 <div class="blocks_scroll">
                     <div class="blocks_row short">
 
-                        <div class="cloud__block cat_block">
+                        <div class="cloud__block">
                             <div class="title">
                                 <div class="title__front yellow">
                                     <div>
@@ -282,7 +280,7 @@
                             </div>
                         </div>
                         
-                        <div class="cloud__block cat_block">
+                        <div class="cloud__block ">
                             <div class="title">
                                 <div class="title__front yellow">
                                     <div>
@@ -305,7 +303,7 @@
             </div>
            
 
-            <div class="cloud__block4 cat_block">
+            <div class="cloud__block4 ">
 
                 <h3 class="h_title fs42">Корпоративная связь <br>
                    для крупных предприятий</h3>
@@ -386,7 +384,6 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                 
                                 <nuxt-link to="/category/telephony#t_hardware" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
@@ -423,11 +420,11 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                <nuxt-link to="/category/video_surveillance#v_ip" class="primary_button">
                                     <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                </nuxt-link>
                             </div>
                         </div>
                         <div class="product_card three prod_grey txt2">
@@ -444,11 +441,11 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                 <nuxt-link to="/category/video_surveillance#v_smart" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                 </nuxt-link>
                             </div>
                         </div>
                         <div class="product_card  prod_grey txt2">
@@ -465,11 +462,11 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <a href="#" class="primary_button">
+                                <nuxt-link to="/category/video_surveillance#v_cloud" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
-                                </a>
+                                </nuxt-link>
                             </div>
                         </div>
                     </div>
@@ -527,7 +524,7 @@
 </style>
 
 <script>
-
+    
   export default {
     layout: 'lumex',
 
@@ -541,8 +538,10 @@
         }
         ],
     },
+    
 
     mounted () {
+        
 
         // GSAP
         const tl = gsap.timeline();

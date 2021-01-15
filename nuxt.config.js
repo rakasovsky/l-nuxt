@@ -15,8 +15,8 @@ export default {
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ],
     script: [
-      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js", async: true, defer: true },
-      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js", async: true, defer: true },
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js"},
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js"},
     ]
   },
 
@@ -35,7 +35,9 @@ export default {
 
   // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
   buildModules: [
+   
   ],
+
 
   // Modules (https://go.nuxtjs.dev/config-modules)
   modules: [
@@ -66,5 +68,6 @@ export default {
       })
      
     }
-  }
+  },
+  transpile: ['gsap']
 }

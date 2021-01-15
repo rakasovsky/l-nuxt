@@ -34,14 +34,14 @@
                     </li>
                   <li class="nav-item">
                     <div class="nav-trigger">
-                        <span>Видеонаблюдение</span><span>▾</span>
+                        <nuxt-link to="/category/video_surveillance"><span>Видеонаблюдение</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
-                            <li class="menu-item"><nuxt-link to="#">IP-видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Умное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Облачное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Сервисный центр</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_smart">Умное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_ip">IP-видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_hd">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_service">Сервисный центр</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -78,14 +78,14 @@
                     </li>
                   <li class="nav-item">
                     <div class="nav-trigger">
-                        <span>Видеонаблюдение</span><span>▾</span>
+                        <nuxt-link to="/category/video_surveillance"><span>Видеонаблюдение</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu">
-                            <li class="menu-item"><nuxt-link to="#">IP-видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Умное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Облачное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="#">Сервисный центр</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_smart">Умное видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_ip">IP-видеонаблюдение</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_hd">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_service">Сервисный центр</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -123,11 +123,12 @@
                             </li>
                             <li class="m_li">Видеонаблюдение<div>▾</div>
                                 <ul class="dropdown_container_mobile">
-                                    <a href="#"><li class="list_trigger" data-card="video_1">IP-видеонаблюдение</li></a>
-                                    <a href="#"><li class="list_trigger" data-card="video_2">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</li></a>
-                                    <a href="#"><li class="list_trigger" data-card="video_3">Умное видеонаблюдение</li></a>
-                                    <a href="#"><li class="list_trigger" data-card="video_4">Облачное видеонаблюдение</li></a>
-                                    <a href="#"><li class="list_trigger" data-card="video_4">Сервисный центр</li></a>
+                                    <nuxt-link to="/category/video_surveillance"><li class="menu-item">Видеонаблюдение</li></nuxt-link>
+                                    <nuxt-link to="/category/video_surveillance#v_cloud"><li class="menu-item">Облачное видеонаблюдени</li></nuxt-link>
+                                    <nuxt-link to="/category/video_surveillance#v_smart"><li class="menu-item">Умное видеонаблюдени</li></nuxt-link>
+                                    <nuxt-link to="/category/video_surveillance#v_ip"><li class="menu-item">IP-видеонаблюдени</li></nuxt-link>
+                                    <nuxt-link to="/category/video_surveillance#v_hd"><li class="menu-item">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</li></nuxt-link> 
+                                    <nuxt-link to="/category/video_surveillance#v_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
                                 </ul>
                             </li>
                             <li class="m_li"><a href="#">Системы контроля доступа</a></li>

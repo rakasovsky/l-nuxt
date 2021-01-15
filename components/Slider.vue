@@ -45,9 +45,8 @@
           slidesPerView: 4,
           spaceBetween: 30,
           loop: true,
-          autoplay: true
-        },
-         breakpoints: {
+          autoplay: true,
+          breakpoints: {
            2560: {
               slidesPerView: 5,
               spaceBetween: 40
@@ -70,6 +69,8 @@
             }
           }
       }
+        }
+    
     }
   }
   
