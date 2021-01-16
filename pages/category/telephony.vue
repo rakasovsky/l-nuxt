@@ -1,5 +1,5 @@
 <template>
-    <div>     
+    <div class="antiowerflow_container">     
     <Header />  
     <section class="category">
         <div class="category_container">

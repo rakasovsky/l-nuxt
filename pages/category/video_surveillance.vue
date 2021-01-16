@@ -1,5 +1,5 @@
 <template>
-    <div>     
+    <div class="antiowerflow_container">     
     <Header />  
     <section class="category">
         <div class="category_container">
@@ -55,7 +55,7 @@
                 </p>
             </div>
         </div>
-        <div class="team_right cloud_cctv txt3">
+        <div class="team_right cloud_cctv cctv txt3">
             <a href="" class="primary_button vertical-button">
                 <span>Облачное видеонаблюдение</span>
                 <svg>
@@ -127,7 +127,7 @@
                 </p>
             </div>
         </div>
-        <div class="team_right ip_cctv">
+        <div class="team_right ip_cctv cctv">
             <a href="" class="primary_button vertical-button">
                 <span>IP-видеонаблюдение</span>
                 <svg>
@@ -184,7 +184,7 @@
                 </p>
             </div>
         </div>
-        <div class="team_right cctv_service_img">
+        <div class="team_right cctv_service_img cctv">
             <a href="" class="primary_button vertical-button">
                 <span>Сервис</span>
                 <svg>

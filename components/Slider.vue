@@ -63,9 +63,10 @@
               slidesPerView: 2,
               spaceBetween: 20
             },
-            320: {
+            375: {
               slidesPerView: 1,
-              spaceBetween: 10
+              spaceBetween: 10,
+              
             }
           }
       }
