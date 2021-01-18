@@ -1277,6 +1277,7 @@ header .header-desk__nav ul li a {
 .lumex_team .ip_cctv {
   background-image: url(../assets/img/category/cctv/hik.png);
   background-size: cover;
+  padding-top: 0;
 }
 
 .lumex_team + .rev {
@@ -1446,13 +1447,13 @@ header .header-desk__nav ul li a {
 
 .category_diogram .smart_tv {
   background-image: url(../assets/img/category/cctv/cctv.jpg);
-  padding-top: 8%;
+  padding-top: 13%;
   background-size: cover;
 }
 
 .category_diogram .hd_cctv {
   background-image: url(../assets/img/category/cctv/hd-cctv.jpeg);
-  padding-top: 8%;
+  padding-top: 13%;
   background-size: cover;
 }
 

@@ -8,8 +8,8 @@
 </template>
 
 <script>
-import CategoriesList from "../components/common/CategoriesList"
-import {mapState} from "vuex"
+import CategoriesList from "~~/components/common/CategoriesList"
+import { mapState } from "vuex"
 
 export default {
     head: {
@@ -28,7 +28,7 @@ export default {
     },
     async asyncData ({ app, route, params, error, store }) {
         try {
-        await store.dispatch('getCategoriesList')
+         await store.dispatch('getCategoriesList')
         } catch (err) {
         console.log(err)
         return error({

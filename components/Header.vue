@@ -30,6 +30,7 @@
                                 <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
                               </ol>
                             <!-- DROPDOWN -->
+                            <!-- JUST TEST -->
                         </div>
                     </li>
                   <li class="nav-item">
