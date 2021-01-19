@@ -297,7 +297,7 @@
                                 </div>
                             </div>
                         </div>
-            
+
                         <div class="cloud__block3 cat_block2">
                             <div class="title">
                                 <div class="title__front dark-grey">
@@ -322,6 +322,29 @@
                         </div>
 
                         <div class="cloud__block3 cat_block2">
+                            <div class="title">
+                                <div class="title__front dark-grey">
+                                    <div class="cat_card_wrapper">
+                                        <div class="cat_card_text">
+                                            <p class="label fs24 fc_grey">Сигнализация</p>
+                                        </div>
+                                        <img src="static/assets/img/cat.png" alt="">
+                                    </div>
+                                </div>
+                                <div class="title__back yellow">
+                                    <div>
+                                        <p>Сервис облачной телефонии предусматривает оплату за аренду оборудования, использование вычислительных ресурсов и обслуживание системы.</p>
+                                        <a href="#" class="secondary_button">
+                                            <svg class="btn_svg">
+                                                <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
+                                            </svg>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                          <div class="cloud__block3 cat_block2">
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div class="cat_card_wrapper">

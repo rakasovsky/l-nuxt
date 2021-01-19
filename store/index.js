@@ -86,13 +86,13 @@ const categories = [
         cClass2: 'fc_black',
         products: []
     },
-    // { 
-    //     cName: "Сетевое Оборудование",
-    //     сSlug: 'control',
-    //     cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-    //     cClass: 'yellow',
-    //     cClass2: 'fc_black'
-    // },
+    { 
+        cName: "Сетевое Оборудование",
+        сSlug: 'network',
+        cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
+        cClass: 'yellow',
+        cClass2: 'fc_black'
+    },
     // { 
     //     cName: "Сигнализация",
     //     сSlug: 'control',

@@ -1398,7 +1398,7 @@ header {
   display: flex;
   flex-wrap: wrap;
   align-items: stretch;
-  justify-content: space-between;
+//   justify-content: space-between;
   flex-direction: row;
   margin: 0 8.33333% 0;
   padding-top: 0;
@@ -1522,6 +1522,7 @@ header {
             .lumex__main {
                 padding-top: 0;
                 width: 100%;
+                justify-content: flex-start ;
                 .cat_card_wrapper {
                     display: flex;
                     flex-direction: column-reverse;

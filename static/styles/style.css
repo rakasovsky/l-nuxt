@@ -1635,9 +1635,6 @@ header .header-desk__nav ul li a {
   -webkit-box-align: stretch;
       -ms-flex-align: stretch;
           align-items: stretch;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
@@ -1827,6 +1824,9 @@ header .header-desk__nav ul li a {
 .catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main {
   padding-top: 0;
   width: 100%;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
 }
 
 .catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main .cat_card_wrapper {
