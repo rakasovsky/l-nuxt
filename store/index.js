@@ -1,39 +1,44 @@
-
+const sleep = m => new Promise(r => setTimeout(r, m))
 const categories = [
     {
-      
+        id: 'cctv-surveillance',
         cTitle: 'Видеонаблюдение',
         cName: 'Видеонаблюдение',
-        cDesc: "Ололо",
+        cDesc: "Описание",
         cSlug: 'cctv-surveillance',
         cClass: 'dark-grey',
-        cList: ['Dahua', 'Hikvision','Ezviz','IMOU'],
+        cList: ['Камеры', 'PTZ','Регистраторы','Комплекты','Кронштейны', 'Объективы'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
         products: []
     },
     {
+        id: "video-intercoms",
         cTitle: 'Домофоны',
         cName: 'Домофоны',
-        cSlug: 'intercoms',
+        cSlug: 'video-intercoms',
         cMetaDescription: 'video-intercoms',
         cDesc: 'Описание',
+        cList: ['Мониторы', 'Вызывные панели','Переговорные устройства','Аксесуары'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
         cClass: 'yellow',
         cClass2: 'fc_black',
         products: []
     },
     {
+        id: 'access-control',
         cTitle: 'Контроль доступа',
         cName: 'Контроль доступа',
         cSlug: 'access-control',
         cMetaDescription: 'access-control',
         cDesc: 'Описание',
+        cList: ['Контролеры', 'Считыватели','Терминалы','Замки'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
         cClass: 'grey',
         cClass2: 'fc_black',
         products: [],
     },
     {   
+        id: 'network',
         cTitle: 'Сетевое оборудование',
         cName: 'Сетевое оборудование',
         cSlug: 'network',
@@ -86,72 +91,206 @@ const categories = [
         cClass2: 'fc_black',
         products: []
     },
-    { 
-        cName: "Сетевое Оборудование",
-        сSlug: 'network',
-        cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'yellow',
-        cClass2: 'fc_black'
-    },
-    // { 
-    //     cName: "Сигнализация",
-    //     сSlug: 'control',
-    //     cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-    //     cClass: 'grey',
-    //     cClass2: 'fc_black'
-    // },
-    // { 
-    //     cName: "Дополнительное оборудование",
-    //     сSlug: 'control',
-    //     cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-    //     cClass: 'dark-grey',
-    // },
-    // { 
-    //     cName: "Домофоны",
-    //     сSlug: 'control',
-    //     cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-    //     cClass: 'grey',
-    //     cClass2: 'fc_black'
-
-    // },
-    // { 
-    //     cName: "Услуги",
-    //     сSlug: 'control',
-    //     cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-    //     cClass: 'dark-grey'
-    // },
-
 ]
 
-export const state = () => ({
+
+
+function getProduct (products, productsImages, productSlug) {
+    const innerProduct = products.find(p => p.pSlug === productSlug)
+    if (!innerProduct) return null
+    return {
+      ...innerProduct,
+    //   images: productsImages.find(img => img.id === innerProduct.id).urls,
+      category: categories.find(cat => cat.id === innerProduct.category_id)
+    }
+  }
+  function addProductsToCategory (products, productsImages, category) {
+    const categoryInner = { ...category, products: [] }
+    products.map(p => {
+      if (p.category_id === category.id) {
+        categoryInner.products.push({
+          id: p.id,
+          pName: p.pName,
+          pSlug: p.pSlug,
+          pPrice: p.pPrice,
+          //image: productsImages.find(img => img.id === p.id).urls
+          image: `https://source.unsplash.com/300x300/?${p.pName}`
+        })
+      }
+    })
+    return categoryInner
+  }
+  function getBreadcrumbs (pageType, route, data) {
+    const crumbs = []
+    crumbs.push({
+      title: 'Главная',
+      url: '/'
+    })
+    switch (pageType) {
+      case 'category':
+        crumbs.push({
+          title: data.cName,
+          url: `/category/${data.cSlug}`
+        })
+        break
+      case 'product':
+        crumbs.push({
+          title: data.category.cName,
+          url: `/category/${data.category.cSlug}`
+        })
+        crumbs.push({
+          title: data.pName,
+          url: `/product/${data.pSlug}`
+        })
+  
+        break
+  
+      default:
+        break
+    }
+    return crumbs
+  }
+  export const state = () => ({
     categoriesList: [],
-    currentCategory: {}
-})
-
-
-export const mutations = {
+    currentCategory: {},
+    currentProduct: {},
+    bredcrumbs: []
+  })
+  export const mutations = {
     SET_CATEGORIES_LIST (state, categories) {
-        state.categoriesList = categories
+      state.categoriesList = categories
     },
     SET_CURRENT_CATEGORY (state, category) {
-        state.currentCategory = category
-    }
-}
-
-export const actions = {
-    async getCategoriesList ({ commit }) {
-        try {
-            await commit('SET_CATEGORIES_LIST', categories)
-        } catch (err) {
-            console.log(err)
-            throw new  Error('Внутреняя ошибка сервера, сообщите администратору')
-        }
+      state.currentCategory = category
     },
-    async getCurrentCategory ({ commit }, { route }) {
-        const category = categories.find((cat) => cat.cSlug === route.params.CategorySlug)
-        await commit('SET_CURRENT_CATEGORY', category)
+    SET_CURRENT_PRODUCT (state, product) {
+      state.currentProduct = product
+    },
+    SET_BREADCRUMBS (state, crumbs) {
+      state.bredcrumbs = crumbs
+    },
+    RESET_BREADCRUMBS (state) {
+      state.bredcrumbs = []
+    }
+  }
+  export const actions = {
+    async setBreadcrumbs ({ commit }, data) {
+      await commit('SET_BREADCRUMBS', data)
+    },
+    async getCategoriesList ({ commit }) {
+      try {
+        await sleep(300)
+        await commit('SET_CATEGORIES_LIST', categories)
+      } catch (err) {
+        console.log(err)
+        throw new Error('Внутреняя ошибка сервера, сообщите администратору')
       }
-}
+    },
+    async getCurrentCategory ({ commit, dispatch }, { route }) {
+      await sleep(300)
+      const category = categories.find((cat) => cat.cSlug === route.params.CategorySlug)
+  
+      const [products, productsImages] = await Promise.all(
+        [
+          this.$axios.$get('/mock/MOCK_DATA.json'),
+        //  this.$axios.$get('/mock/products-images.json')
+        ]
+      )
+      const crubms = getBreadcrumbs('category', route, category)
+      await dispatch('setBreadcrumbs', crubms)
+  
+      await commit('SET_CURRENT_CATEGORY', addProductsToCategory(products, productsImages, category))
+    },
+    async getCurrentProduct ({ commit, dispatch }, { route }) {
+      await sleep(300)
+      const productSlug = route.params.ProductSlug
+      const [products, productsImages] = await Promise.all(
+        [
+          this.$axios.$get('/mock/MOCK_DATA.json'),
+         // this.$axios.$get('/mock/products-images.json')
+        ]
+  
+      )
+      const product = getProduct(products, productsImages, productSlug)
+      const crubms = getBreadcrumbs('product', route, product)
+      await dispatch('setBreadcrumbs', crubms)
+      await commit('SET_CURRENT_PRODUCT', product)
+    }
+  
+  }
+
+
+// function getProduct (products, productsImages, productSlug){
+//     const innerProduct = products.find(p => p.Slug === productSlug)
+//     if (!innerProduct) return null
+//     return {
+//         ...innerProduct,
+//         images: productsImages.find(img => img.id === innerProduct.id).urls,
+//         category: categories.find(cat => cat.id === innerProduct.category.id)
+//     }
+// }
+
+// function addProductsToCategory (products, category) {
+//     const categoryInner = { ...category, products: [] }
+//     products.map(p => {
+//         if (p.category_id === category.id) {
+//             categoryInner.products.push({
+//                 id: p.id,
+//                 pName: p.pName,
+//                 pSlug: p.pSlug,
+//                 pPrice: p.pPrice,
+//                 pDesc: p.pDesc,
+//                 image: `https://source.unsplash.com/300x300/?${p.pName}`
+//                 // image: productsImages.find(img => img.id === p.id).urls
+//             })
+//         }
+//     })
+//     return categoryInner
+// }
+
+
+
+// export const state = () => ({
+//     categoriesList: [],
+//     currentCategory: {},
+//     currentProduct: {},
+// })
+
+
+// export const mutations = {
+//     SET_CATEGORIES_LIST (state, categories) {
+//         state.categoriesList = categories
+//     },
+//     SET_CURRENT_CATEGORY (state, category) {
+//         state.currentCategory = category
+//     },
+//     SET_CURRENT_PRODUCT (state, product) {
+//         state.currentProduct = product
+//     }
+// }
+
+// export const actions = {
+//     async getCategoriesList ({ commit }) {
+//         try {
+//             await commit('SET_CATEGORIES_LIST', categories)
+//         } catch (err) {
+//             console.log(err)
+//             throw new  Error('Внутреняя ошибка сервера, сообщите администратору')
+//         }
+//     },
+//     async getCurrentCategory ({ commit }, { route }) {
+//         const category = categories.find((cat) => cat.cSlug === route.params.CategorySlug)
+        
+//         const products = await this.$axios.$get('/mock/MOCK_DATA.json')
+       
+
+//         await commit('SET_CURRENT_CATEGORY', addProductsToCategory(products, category))
+//       }
+// }
+
+
+
+
 
 // Для работы с полноценным API
 // export const actions = {
