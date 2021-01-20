@@ -123,8 +123,8 @@ function getProduct (products, productsImages, productSlug) {
   function getBreadcrumbs (pageType, route, data) {
     const crumbs = []
     crumbs.push({
-      title: 'Главная',
-      url: '/'
+      title: 'Каталог',
+      url: '/catalog'
     })
     switch (pageType) {
       case 'category':
@@ -154,7 +154,7 @@ function getProduct (products, productsImages, productSlug) {
     categoriesList: [],
     currentCategory: {},
     currentProduct: {},
-    bredcrumbs: []
+    breadcrumbs: []
   })
   export const mutations = {
     SET_CATEGORIES_LIST (state, categories) {
@@ -167,10 +167,10 @@ function getProduct (products, productsImages, productSlug) {
       state.currentProduct = product
     },
     SET_BREADCRUMBS (state, crumbs) {
-      state.bredcrumbs = crumbs
+      state.breadcrumbs = crumbs
     },
     RESET_BREADCRUMBS (state) {
-      state.bredcrumbs = []
+      state.breadcrumbs = []
     }
   }
   export const actions = {

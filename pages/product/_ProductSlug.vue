@@ -1,10 +1,13 @@
 <template>
         <div>
+           <Header />
            <div class="top"></div>
+           <Breadcrumbs />
            <section class="product_container"> 
             <div class="product_wrapper-top">
                 <div class="img_container">
-                    <img src="~~/static/assets/img/product/DS-2CD2183G0-IS-28.jpg" alt="">
+                    <!-- <img src="~~/static/assets/img/product/DS-2CD2183G0-IS-28.jpg" alt=""> -->
+                    <img :src="product.image" />
                 </div>
                 <div class="desc_container">
                     <div class="product-title p_title">
@@ -297,45 +300,22 @@
                 </div>
             </div>
         </section>
+        <Footer />
     </div>
 </template>
 
 
 <script>
-// import {mapState} from 'vuex'
-// export default {
-//     async asyncData ({ app, params, route, error }) {
-//         try {
-//             await app.store.dispatch('getCurrentProduct', { route })
-//         } catch (err) {
-//             console.log(err)
-//             return error({
-//                 status: 404,
-//                 message: 'Товар не найден или сервер не доступен'
-//             })
-//         }
-//     },
-//     computed: {
-//         ...mapState({
-//             product: 'currentProduct'
-//         })
-//     },
-//     head(){
-//     return {
-//       title: this.product.pTitle,
-//       meta: [
-//         {
-//           hid: 'description',
-//           name: 'description',
-//           content: this.product.pMetaDescription
-//         }
-//       ]
-//     }
-//   }
-    
-// }
+
 import { mapState } from 'vuex'
+import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
+
 export default {
+
+    components: {
+      Breadcrumbs
+  },  
+ 
   async asyncData ({ app, params, route, error }) {
     try {
       await app.store.dispatch('getCurrentProduct', { route })
@@ -347,10 +327,26 @@ export default {
       })
     }
   },
+  
   computed: {
     ...mapState({
       product: 'currentProduct'
     })
+  },
+  mounted () {
+      function openTab2(evt, tabName) {
+      var i, x, tablinks;
+      x = document.getElementsByClassName("tab");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablink");
+      for (i = 0; i < x.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" lumex_button-active", "");
+      }
+      document.getElementById(tabName).style.display = "block";
+      evt.currentTarget.className += " lumex_button-active";
+    }
   },
   head () {
     return {

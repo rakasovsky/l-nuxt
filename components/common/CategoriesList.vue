@@ -1,5 +1,4 @@
 <template>
-
         <section class="catalog_main">
             <div class="cloud__block3 cat_block2"
                      v-for="category in categories"

@@ -1,3 +1,5 @@
+const isDev = process.env.NODE_ENV !== 'production'
+
 export default {
   // Target (https://go.nuxtjs.dev/config-target)
   target: 'static',
@@ -46,6 +48,12 @@ export default {
     ['nuxt-gmaps', {
       key: 'AIzaSyCj0CTmW0SEtwx7gz6zkgokJASsemggRfE',
      
+    }],
+    ['nuxt-vuex-localstorage', {
+      ...(isDev && {
+        mode: 'debug'
+      }),
+      localStorage: ['cart'] //  If not entered, “localStorage” is the default value
     }]
   ],
 

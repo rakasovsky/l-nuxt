@@ -1,6 +1,7 @@
 <template>
   <div>     
             <Header />
+            <Breadcrumbs />
             <div class="catalog_page-wrapper">
 
             <div class="catalog_page-top">
@@ -143,12 +144,14 @@
 
 <script>
 import ProductBrief from '~~/components/category/ProductBrief'
+import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import { mapState } from 'vuex'
 
 export default {
 
   components: {
-      ProductBrief
+      ProductBrief,
+      Breadcrumbs,
   },  
 
   async asyncData ({ app, params, route, error }) {
