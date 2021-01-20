@@ -34,7 +34,7 @@ export default {
    .breadcrumbs ul li {
       display: inline;
    }
-   .breadcrumbs ul li::before {
+   .breadcrumbs ul li::after {
       padding: 8px;
       color: black;
       content: '/\00a0';

@@ -297,10 +297,16 @@
                         </tbody>
                     </table>
                     </div>
-                   
                 </div>
             </div>
         </section>
+        <!-- ALSO BUY -->
+        <div style="display: flex; flex-direction: column;">
+            <h2>Customers also buy</h2>
+            <ProductsList :products="product.alsoBuyProducts" />
+            <h2>Interesting goods</h2>
+            <ProductsList :products="product.interestingProducts" />
+        </div>
         <Footer />
     </div>
 </template>
@@ -311,12 +317,14 @@
 import { mapState } from 'vuex'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import BuyButton from '~~/components/common/BuyButton'
+import ProductsList from '~~/components/common/ProductsList'
 
 export default {
 
     components: {
       Breadcrumbs,
-      BuyButton
+      BuyButton,
+      ProductsList
   },  
  
   async asyncData ({ app, params, route, error }) {

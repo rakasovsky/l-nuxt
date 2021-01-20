@@ -1,4 +1,5 @@
-const sleep = m => new Promise(r => setTimeout(r, m))
+
+const sampleSize = require('lodash.samplesize')
 const categories = [
     {
         id: 'cctv-surveillance',
@@ -93,7 +94,17 @@ const categories = [
     },
 ]
 
-
+function getProductsByIds(products, productsImages, ids) {
+    const innerProduct = products.filter(p => p.id === ids.find(id => p.id === id))
+    if (!innerProduct) return null
+    return innerProduct.map(pr => {
+        return {
+            ...pr,
+            // images: productsImages.find(img => img.id === pr.id).urls,
+            images: `https://source.unsplash.com/300x300/`
+        }
+    })
+}
 
 function getProduct (products, productsImages, productSlug) {
     const innerProduct = products.find(p => p.pSlug === productSlug)
@@ -153,9 +164,13 @@ function getProduct (products, productsImages, productSlug) {
   export const state = () => ({
     categoriesList: [],
     currentCategory: {},
-    currentProduct: {},
+    currentProduct: {
+        alsoBuyProducts: [],
+        interestingProducts: []
+    },
     breadcrumbs: []
   })
+
   export const mutations = {
     SET_CATEGORIES_LIST (state, categories) {
       state.categoriesList = categories
@@ -171,15 +186,30 @@ function getProduct (products, productsImages, productSlug) {
     },
     RESET_BREADCRUMBS (state) {
       state.breadcrumbs = []
-    }
+    },
+    GET_PRODUCTS_BY_IDS () {}
   }
+
   export const actions = {
+
+    async getProductsListByIds({ commit }) {
+       const [products, productsImages] = await Promise.all(
+           [
+                this.$axios.$get('/mock/MOCK_DATA.json'),
+           ]
+       )
+       commit('GET_PRODUCTS_BY_IDS')
+       const idsArray = (sampleSize(products, 4)).map(p => p.id)
+       return getProductsByIds(products, productsImages, idsArray)
+    },
+
+
     async setBreadcrumbs ({ commit }, data) {
       await commit('SET_BREADCRUMBS', data)
     },
     async getCategoriesList ({ commit }) {
       try {
-        await sleep(300)
+        
         await commit('SET_CATEGORIES_LIST', categories)
       } catch (err) {
         console.log(err)
@@ -187,7 +217,7 @@ function getProduct (products, productsImages, productSlug) {
       }
     },
     async getCurrentCategory ({ commit, dispatch }, { route }) {
-      await sleep(300)
+      
       const category = categories.find((cat) => cat.cSlug === route.params.CategorySlug)
   
       const [products, productsImages] = await Promise.all(
@@ -202,19 +232,23 @@ function getProduct (products, productsImages, productSlug) {
       await commit('SET_CURRENT_CATEGORY', addProductsToCategory(products, productsImages, category))
     },
     async getCurrentProduct ({ commit, dispatch }, { route }) {
-      await sleep(300)
+     
       const productSlug = route.params.ProductSlug
-      const [products, productsImages] = await Promise.all(
+      const [products, productsImages, alsoBuyProducts, interestingProducts] = await Promise.all(
         [
           this.$axios.$get('/mock/MOCK_DATA.json'),
-         // this.$axios.$get('/mock/products-images.json')
+          // тут херня происходит, если диспатчить 2 то отрисовывает один
+         dispatch('getProductsListByIds'),
+         dispatch('getProductsListByIds'),
+         dispatch('getProductsListByIds')
         ]
   
       )
       const product = getProduct(products, productsImages, productSlug)
       const crubms = getBreadcrumbs('product', route, product)
       await dispatch('setBreadcrumbs', crubms)
-      await commit('SET_CURRENT_PRODUCT', product)
+      await commit('SET_CURRENT_PRODUCT', { ...product, alsoBuyProducts, interestingProducts })
+    
     }
   
   }
