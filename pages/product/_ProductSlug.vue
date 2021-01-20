@@ -301,10 +301,10 @@
             </div>
         </section>
         <!-- ALSO BUY -->
-        <div style="display: flex; flex-direction: column;">
-            <h2>Customers also buy</h2>
+        <div style="display: flex; flex-direction: column; margin-left: 8.5%;">
+            <h2>С этим товаром так же покупают</h2>
             <ProductsList :products="product.alsoBuyProducts" />
-            <h2>Interesting goods</h2>
+            <h2>Интересное предложение</h2>
             <ProductsList :products="product.interestingProducts" />
         </div>
         <Footer />

@@ -33,12 +33,14 @@ export default {
 .wrapper {
   display: flex;
   flex-wrap: wrap;
+  margin: 0;
+  justify-content: space-between;
 }
 .wrapper div {
-    margin: 1em;
+    /* margin: 1em; */
 }
 .wrapper div p { 
-     max-width: 270px;
+    max-width: 270px;
     height: 35px;
 }
 .image {
