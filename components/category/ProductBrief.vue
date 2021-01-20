@@ -17,6 +17,9 @@
                             <p>
                                 {{ product.pDesc }}
                             </p>
+                            <div>
+                                 <BuyButton :product="product" />
+                            </div>
                             <nuxt-link :to="`/product/${product.pSlug}`" class="secondary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
@@ -28,7 +31,12 @@
 </template>
 
 <script>
+import BuyButton from '~~/components/common/BuyButton'
+
 export default {
+    components: {
+        BuyButton
+    },
     props: {
         product: {
             type: Object,

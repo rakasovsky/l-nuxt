@@ -22,6 +22,7 @@
                     </div>
                     <div class="product_price">
                         <p class="fs24">Цена: {{ product.pPrice }}</p>
+                        <BuyButton :product="product" />
                     </div>
                     <!-- <div class="product_availability out_of_stock">
                        <p>Нет в наличии</p>
@@ -309,11 +310,13 @@
 
 import { mapState } from 'vuex'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
+import BuyButton from '~~/components/common/BuyButton'
 
 export default {
 
     components: {
-      Breadcrumbs
+      Breadcrumbs,
+      BuyButton
   },  
  
   async asyncData ({ app, params, route, error }) {
