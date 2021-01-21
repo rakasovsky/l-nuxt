@@ -37,7 +37,7 @@
     <section class="lumex_team joc" id="v_cloud">
         <div class="team_left">
             <div>
-                <p class="label txt3"><span class="lumex">L</span>umex /Cloud Video Surveillance</p>
+                <p class="label txt3"><span class="lumex">L</span>umex / Cloud Video Surveillance</p>
                 <h3 class="h_title fs42 txt3">Облачное видеонаблюдение</h3>
                 <p class="txt3" style="margin-bottom: 10px;">
                    Вам нужна только камера, остальное оборудование находится в нашем дата-центре.

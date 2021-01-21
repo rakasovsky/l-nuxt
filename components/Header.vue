@@ -48,7 +48,18 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                      <a href="#" class="nav-trigger">Системы контроля доступа</a>
+                    <div class="nav-trigger">
+                        <nuxt-link to="/category/skud"><span>Системы контроля доступа</span><span>▾</span></nuxt-link>
+                        <!-- DROPDOWN -->
+                        <ol class="sub-menu scroll-t">
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_auto">Автономные СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_net">Сетевые СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_bio">Биометрические СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_turnstile">Турникеты, шлагбаумы</nuxt-link></li>
+                          </ol>    
+                        <!-- DROPDOWN -->
+                    </div>
                   </li>
                   <li>
                     <nuxt-link to="/catalog">Каталог</nuxt-link>
@@ -92,7 +103,18 @@
                     </div>
                   </li>
                   <li class="nav-item">
-                      <a href="#" class="nav-trigger">Системы контроля доступа</a>
+                        <div class="nav-trigger">
+                        <nuxt-link to="/category/skud"><span>Системы контроля доступа</span><span>▾</span></nuxt-link>
+                        <!-- DROPDOWN -->
+                        <ol class="sub-menu scroll-t">
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_auto">Автономные СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_net">Сетевые СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_bio">Биометрические СКУД</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link to="/category/skud#s_turnstile">Турникеты, шлагбаумы</nuxt-link></li>
+                          </ol>    
+                        <!-- DROPDOWN -->
+                    </div>
                   </li>
                   <li>
                     <nuxt-link to="/catalog">Каталог</nuxt-link>
@@ -132,7 +154,16 @@
                                     <nuxt-link to="/category/video_surveillance#v_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li"><a href="#">Системы контроля доступа</a></li>
+                            <li class="m_li">Системы контроля доступа<div>▾</div>
+                                  <ul class="dropdown_container_mobile">
+                                    <nuxt-link to="/category/skud"><li class="menu-item">Системы контроля доступа</li></nuxt-link>
+                                    <nuxt-link to="/category/skud#s_cov19"><li class="menu-item">COVID-19</li></nuxt-link>
+                                    <nuxt-link to="/category/skud#s_auto"><li class="menu-item">Автономные СКУД</li></nuxt-link>
+                                    <nuxt-link to="/category/skud#s_net"><li class="menu-item">Сетевые СКУД</li></nuxt-link>
+                                    <nuxt-link to="/category/skud#s_bio"><li class="menu-item">Биометрические СКУД</li></nuxt-link> 
+                                    <nuxt-link to="/category/skud#s_turnstile"><li class="menu-item">Турникеты, шлагбаумы</li></nuxt-link>
+                                </ul>
+                            </li>
                             <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li>
                             <li class="m_li"><nuxt-link to="/contact">Контакты</nuxt-link></li>
                         </ul>

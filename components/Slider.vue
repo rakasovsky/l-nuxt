@@ -1,19 +1,15 @@
 <template>
   <client-only>
     <swiper class="mySwiper" :options="swiperOption">
-      <!-- <swiper-slide><img src="~/assets/img/clients/2.png" alt=""></swiper-slide>
-      <swiper-slide><img src="~/assets/img/clients/denika-min.png" alt=""></swiper-slide>
-      <swiper-slide><img src="~/assets/img/clients/elmag-min.png" alt=""></swiper-slide>
-      <swiper-slide><img src="~/assets/img/clients/liqi_cleaning-min.png" alt=""></swiper-slide>
-      <swiper-slide><img src="~/assets/img/clients/zt-min.png" alt=""></swiper-slide> -->
-         <swiper-slide class="glide__slide"><img src="~/assets/img/clients/1.png" alt=""></swiper-slide>
+         <swiper-slide class="glide__slide"><img src="~/assets/img/clients/966-min.png" alt=""></swiper-slide>
+         <swiper-slide class="glide__slide"><img src="~/assets/img/clients/comefor-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/denika-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/liqi_cleaning-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/elmag-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/zt-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/suzirja-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/liqidator-min.png" alt=""></swiper-slide>
-         <swiper-slide class="glide__slide"><img src="~/assets/img/clients/2.png" alt=""></swiper-slide>
+         <swiper-slide class="glide__slide"><img src="~/assets/img/clients/gualos-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/frc-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/htz-min.png" alt=""></swiper-slide>
          <swiper-slide class="glide__slide"><img src="~/assets/img/clients/metalist-min.png" alt=""></swiper-slide>

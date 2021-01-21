@@ -1,0 +1,241 @@
+<template>
+    <div class="antiowerflow_container">     
+    <Header />  
+    <section class="category">
+        <div class="category_container">
+            <div class="category_cover skud_cover lumex__content">
+
+            </div>
+            <div class="category_text lumex__video">
+                <div class="cloud__block4">
+                    <h3 class="h_title fs42">Система контроля доступа</h3>
+                    <ul style="margin-top: 20px;" class="category-list">
+                        <li><span class="checkmark"></span>Детекция температуры тела, для борьбе с Covid-19</li>
+                        <li><span class="checkmark"></span>Автономные системы</li>
+                        <li><span class="checkmark"></span>Сетевые СКУД</li>
+                        <li><span class="checkmark"></span>Биометрические СКУД</li>
+                        <li><span class="checkmark"></span>Турникеты и шлагбаумы</li>
+                    </ul>
+
+                    <!-- <p class="fs24" style="margin-top: 20px;">
+                           Измерение температуры тела. Противодействие COVID-19           
+                    </p>
+                    <p class="txt3" style="margin-top: 20px;">
+                        Терминалы для идентификации по лицу, измерение температуры тела, наличие маски -
+                        позволяют обезопасить попадание зараженного человека на территорию, тем самым
+                        снижая вероятность заражения короно-вирусом Covid 19
+                    </p>
+                    <p class="txt3" style="margin-top: 10px;">
+                        Такие системы также поддерживают учет рабочего времени и подключение в локальную сеть.
+                    </p> -->
+                </div>
+                <a href="" class="primary_button vertical-button">
+                    <span>PACS</span>
+                </a>
+                <div class="transform90">
+                    <span class="fs15">Ваш контроль</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="lumex_team joc" id="s_cov19">
+        <div class="team_left">
+            <div>
+                <p class="label txt3"><span class="lumex">L</span>umex / COVID-19</p>
+                <h3 class="h_title fs42 txt3">Измерение температуры тела. Противодействие COVID-19  </h3>
+                <p class="txt3" style="margin-bottom: 10px;">
+                    Терминалы для идентификации по лицу, измерение температуры тела, наличие маски -
+                        позволяют обезопасить попадание зараженного человека на территорию, тем самым
+                        снижая вероятность заражения короно-вирусом Covid 19
+                </p>
+                <p  class="txt3">
+                  Такие системы также поддерживают учет рабочего времени и подключение в локальную сеть.
+                </p>
+            </div>
+        </div>
+        <div class="team_right cov19_skud cctv txt3">
+            <a href="" class="primary_button vertical-button">
+                <span>COVID</span>
+                <svg>
+                    <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section> 
+
+    <section class="category_diogram category_diogram2 joc2" id="s_auto">
+        <div class="diogram_left">
+            <div class="cloud__block4 jt">
+                <p class="label txt3"><span class="lumex">L</span>umex / Access Control</p>
+                <h3 class="h_title fs42 txt3">Автономные СКУД</h3>
+                <p class="txt3 mb10" >
+                    Самыми простыми системами контроля доступа являются автономные.
+                    В простейшей схеме предусмотрен контроллер, кнопка открытия двери, электро-замок и
+                    бесперебойный блок питания.   
+                </p>
+                <p class="txt3 mb10">
+                   Считыватели могут быть
+                </p>
+                <ul style="margin-top: 20px;" class="category-list">
+                        <li><span class="checkmark"></span>Считыватель карт и ключей RFID</li>
+                        <li><span class="checkmark"></span>Биометрический считыватель</li>
+                        <li><span class="checkmark"></span>Кодовая клавиатура</li>
+                </ul>
+            </div>
+        </div>
+       <div class="diogram_right auto_skud txt3">
+            <a href="" class="primary_button vertical-button">
+                <span>Access Control</span>
+                <svg>
+                    <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+
+    <section class="lumex_team joc" id="s_net">
+        <div class="team_left">
+            <div>
+                <p class="label "><span class="lumex">L</span>umex / Network Access Control</p>
+                <h3 class="h_title fs42 ">Сетевые СКУД</h3>
+                <p class="mb10">
+                   Сетевые системы контроля доступа имеют разветвленную архитектуру, которая позволяет
+                    строить систему на большое количество точек прохода:
+                </p>
+                <p class="mb10" style="text-indent: 1.5em;">
+                    Главный контроллер, с сетевым интерфейсом, который управляется отдельным ПО, имеет учет рабочего времени и дополнительные возможности.
+                </p>
+                <p class="mb10" style="text-indent: 1.5em;">
+                    Дверной контроллер, который отвечает за конкретную точку прохода и является
+                    исполнительным устройством, все данные о входе и выходе он передает на главный
+                    контроллер.
+                </p>
+                <p class="mb10" style="text-indent: 1.5em;">
+                    Считыватель - конечное устройство, которое принимает карты доступа или
+                    биометрические данные и передает на контроллер. Именно контроллер принимает
+                    решение - открывать дверь или нет. 
+                </p>
+                <p class="mb10">
+                   Основными достоинствами сетевых СКУД являются:
+                </p>
+                <ul style="margin-top: 20px;" class="category-list">
+                        <li><span class="checkmark"></span>Высокий уровень безопасности</li>
+                        <li><span class="checkmark"></span>Учет рабочего времени</li>
+                        <li><span class="checkmark"></span>Разветвленная архитектура</li>
+                        <li><span class="checkmark"></span>Больше количество точек прохода</li>
+                        <li><span class="checkmark"></span>Единое ПО</li>
+                </ul>
+            </div>
+        </div>
+        <div class="team_right net_skud cctv">
+            <a href="" class="primary_button vertical-button">
+                <span>Network Access Control</span>
+                <svg>
+                    <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section> 
+
+    <section class="category_diogram category_diogram2  cctv_hd" id="s_bio">
+        <div class="diogram_left">
+            <div class="cloud__block4 jt">
+                <p class="label txt3"><span class="lumex">L</span>umex / Biometric Security System</p>
+                <h3 class="h_title fs42 txt3">Биометрические СКУД</h3>
+                <p class="txt3 mb10">
+                    Наиболее распространенным методом идентификации является распознование по
+                    отпечатку пальца, по геометрии лица или сетчатке глаза.    
+                </p>
+                <p class="txt3 mb10">
+                   Биометрическая СКУД обеспечивает лучшую защиту по сравнению с традиционными
+                   средствами учета и контроля доступа – бесконтактными картами, брелоками. 
+                </p>
+                <p class="txt3 mb10">
+                   Карту доступа можно потерять, обменять, скопировать или подделать. 
+                </p>
+            </div>
+        </div>
+           <div class="diogram_right bio_skud txt3">
+            <a href="" class="primary_button vertical-button">
+                <span>Biometric Access Control</span>
+                <svg>
+                    <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+
+    <section class="lumex_team lumex_team2" id="s_turnstile" >
+        <div class="team_left">
+            <div>
+                <p class="label"><span class="lumex">L</span>umex / Service</p>
+                <h3 class="h_title fs42 ">Турникеты, шлагбаумы</h3>
+                <p class="mb10">
+                    Являются исполнительными устройствами для ограничения доступа.
+                    Могут подключаться как к сетевым, так и автономным СКУД.
+                    Такие системы могут использоваться на производстве, КПП, государственных
+                    учреждениях и т.д. 
+                </p>
+                <p class="">
+                    Для автоматизации точки прохода можно оборудовать видеонаблюдение, которое
+                    распознает автомобильные номера, лица людей
+                </p>
+            </div>
+        </div>
+        <div class="team_right turn_skud cctv">
+            <a href="" class="primary_button vertical-button">
+                <span>Access Turnstile</span>
+                <svg>
+                    <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
+                    </path>
+                </svg>
+            </a>
+        </div>
+    </section>
+    <Footer />
+    </div>
+</template>
+
+<script>
+export default {
+    mounted () {
+
+        const tl = gsap.timeline();
+
+        tl.from(".lumex__content", {duration: 2,   x: 1500});
+        
+        gsap.from(".lumex__video", {duration: 2, scale: 0.3,  x: -1500});
+
+
+            const JoC = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".joc",
+                start: "top bottom"
+            }
+            })
+            JoC.from(".txt3", {duration:1, opacity:0, y: 100,stagger: 0.25})
+
+            const JoC2 = gsap.timeline({
+            scrollTrigger: {
+                trigger: ".joc2",
+                start: "top bottom"
+            }
+            })
+            JoC2.from(".jt", {duration:1, opacity:0, y: 100,stagger: 0.25})
+    }
+}
+</script>
+
+<style scoped>
+
+.lumex_team .team_left div {
+    max-width: 100%;
+}
+</style>

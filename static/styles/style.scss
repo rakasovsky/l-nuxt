@@ -1102,6 +1102,9 @@ header {
         background-position: center;
         background-image: url("https://cloudcalls.com.ua/wp-content/uploads/2018/02/stock-photo-211548267.jpg");
     }
+
+
+    // Изображения для страниц категорий
     .srvc {
         background-image: url(../assets/img/category/tel/electronic-repairs-min.jpg);
     }
@@ -1116,16 +1119,31 @@ header {
         padding-top: 8%;
         background-size: cover;
     }
+    .turn_skud {
+        background-image: url(../assets/img/category/skud/acces.jpg);
+        padding-top: 8%;
+        background-size: cover;
+    }
     .cloud_cctv {
         background-image: url(../assets/img/category/cctv/cctv_cloud.jpg);
         background-size: cover;
         padding-top: 13%;
+    }
+    .cov19_skud {
+        background-image: url(../assets/img/category/skud/cov.jpg);
+        background-size: cover;
     }
     .ip_cctv {
         background-image: url(../assets/img/category/cctv/hik.png);
         background-size: cover;
         padding-top: 0;
     }
+    .net_skud {
+        background-image: url(../assets/img/category/skud/face.jpg);
+        background-size: cover;
+        padding-top: 0;
+    }
+
 }
 .lumex_team + .rev{
     flex-direction: row-reverse;
@@ -1181,6 +1199,9 @@ header {
         }
         .cctv_cover {
             background-image: url(../assets/img/category/cctv/cctv.jpg);
+        }
+        .skud_cover {
+            background-image: url(../assets/img/category/skud/acces2.jpg);
         }
         .category_cover:before {
             content: '';
@@ -1251,8 +1272,18 @@ header {
                 height: 100%;
             }
         }
+
+
+
+        // Изображения для страниц категорий 
+
         .smart_tv {
             background-image: url(../assets/img/category/cctv/cctv.jpg);
+            padding-top: 13%;
+            background-size: cover;
+        }
+        .auto_skud {
+            background-image: url(../assets/img/category/skud/ac-min.jpg);
             padding-top: 13%;
             background-size: cover;
         }
@@ -1261,6 +1292,13 @@ header {
             padding-top: 13%;
             background-size: cover;
         }
+        .bio_skud {
+            background-image: url(../assets/img/category/skud/finger.png);
+            padding-top: 13%;
+            background-size: cover;
+        }
+
+
 }
 .category_diogram2{
     .diogram_left {

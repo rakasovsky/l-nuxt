@@ -1268,14 +1268,31 @@ header .header-desk__nav ul li a {
   background-size: cover;
 }
 
+.lumex_team .turn_skud {
+  background-image: url(../assets/img/category/skud/acces.jpg);
+  padding-top: 8%;
+  background-size: cover;
+}
+
 .lumex_team .cloud_cctv {
   background-image: url(../assets/img/category/cctv/cctv_cloud.jpg);
   background-size: cover;
   padding-top: 13%;
 }
 
+.lumex_team .cov19_skud {
+  background-image: url(../assets/img/category/skud/cov.jpg);
+  background-size: cover;
+}
+
 .lumex_team .ip_cctv {
   background-image: url(../assets/img/category/cctv/hik.png);
+  background-size: cover;
+  padding-top: 0;
+}
+
+.lumex_team .net_skud {
+  background-image: url(../assets/img/category/skud/face.jpg);
   background-size: cover;
   padding-top: 0;
 }
@@ -1355,6 +1372,10 @@ header .header-desk__nav ul li a {
 
 .category .category_container .cctv_cover {
   background-image: url(../assets/img/category/cctv/cctv.jpg);
+}
+
+.category .category_container .skud_cover {
+  background-image: url(../assets/img/category/skud/acces2.jpg);
 }
 
 .category .category_container .category_cover:before {
@@ -1451,8 +1472,20 @@ header .header-desk__nav ul li a {
   background-size: cover;
 }
 
+.category_diogram .auto_skud {
+  background-image: url(../assets/img/category/skud/ac-min.jpg);
+  padding-top: 13%;
+  background-size: cover;
+}
+
 .category_diogram .hd_cctv {
   background-image: url(../assets/img/category/cctv/hd-cctv.jpeg);
+  padding-top: 13%;
+  background-size: cover;
+}
+
+.category_diogram .bio_skud {
+  background-image: url(../assets/img/category/skud/finger.png);
   padding-top: 13%;
   background-size: cover;
 }
