@@ -63,6 +63,7 @@
                   </li>
                   <li>
                     <nuxt-link to="/catalog">Каталог</nuxt-link>
+                     <!-- <nuxt-link to="/under_construction">Каталог</nuxt-link> -->
                   </li>
                 </ul>
             </nav> 
@@ -118,6 +119,7 @@
                   </li>
                   <li>
                     <nuxt-link to="/catalog">Каталог</nuxt-link>
+                    <!-- <nuxt-link to="/under_construction">Каталог</nuxt-link> -->
                   </li>
                 </ul>
             </nav> 

@@ -16,21 +16,24 @@
                         <li><span class="checkmark"></span>Биометрические СКУД</li>
                         <li><span class="checkmark"></span>Турникеты и шлагбаумы</li>
                     </ul>
-
-                    <!-- <p class="fs24" style="margin-top: 20px;">
-                           Измерение температуры тела. Противодействие COVID-19           
-                    </p>
-                    <p class="txt3" style="margin-top: 20px;">
-                        Терминалы для идентификации по лицу, измерение температуры тела, наличие маски -
-                        позволяют обезопасить попадание зараженного человека на территорию, тем самым
-                        снижая вероятность заражения короно-вирусом Covid 19
-                    </p>
-                    <p class="txt3" style="margin-top: 10px;">
-                        Такие системы также поддерживают учет рабочего времени и подключение в локальную сеть.
-                    </p> -->
+                    <p class="fs24" style="margin-top: 20px;">Интеграция систем контроля и управления доступом:</p>
+                      <ul style="margin-top: 20px;" class="category-list">
+                        <li><span class="checkmark"></span>Установка, настройка биометрических СКУД</li>
+                        <li><span class="checkmark"></span>Установка, ремонт и обслуживание турникетов</li>
+                        <li><span class="checkmark"></span>Установка, обслуживание сетевых и автономных СКУД</li>
+                      </ul>
+                    <p class="fs24" style="margin-top: 20px;">В нашем кейсе есть решения для:</p>
+                     <ul style="margin-top: 20px;" class="category-list">
+                        <li><span class="checkmark"></span>IT-компаний</li>
+                        <li><span class="checkmark"></span>Складов</li>
+                        <li><span class="checkmark"></span>Парковок</li>
+                        <li><span class="checkmark"></span>Производственных помещений</li>
+                        <li><span class="checkmark"></span>Офисных помещений</li>
+                        <li><span class="checkmark"></span>Бизнес-центров</li>
+                      </ul>
                 </div>
                 <a href="" class="primary_button vertical-button">
-                    <span>PACS</span>
+                    <span>Access Control Solutions</span>
                 </a>
                 <div class="transform90">
                     <span class="fs15">Ваш контроль</span>
@@ -108,15 +111,15 @@
                     строить систему на большое количество точек прохода:
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    Главный контроллер, с сетевым интерфейсом, который управляется отдельным ПО, имеет учет рабочего времени и дополнительные возможности.
+                    <strong>Главный контроллер</strong>, с сетевым интерфейсом, который управляется отдельным ПО, имеет учет рабочего времени и дополнительные возможности.
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    Дверной контроллер, который отвечает за конкретную точку прохода и является
+                    <strong> Дверной контроллер</strong>, который отвечает за конкретную точку прохода и является
                     исполнительным устройством, все данные о входе и выходе он передает на главный
                     контроллер.
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    Считыватель - конечное устройство, которое принимает карты доступа или
+                    <strong> Считыватель</strong> - конечное устройство, которое принимает карты доступа или
                     биометрические данные и передает на контроллер. Именно контроллер принимает
                     решение - открывать дверь или нет. 
                 </p>
@@ -175,7 +178,7 @@
     <section class="lumex_team lumex_team2" id="s_turnstile" >
         <div class="team_left">
             <div>
-                <p class="label"><span class="lumex">L</span>umex / Service</p>
+                <p class="label"><span class="lumex">L</span>umex / Access Turnstile</p>
                 <h3 class="h_title fs42 ">Турникеты, шлагбаумы</h3>
                 <p class="mb10">
                     Являются исполнительными устройствами для ограничения доступа.

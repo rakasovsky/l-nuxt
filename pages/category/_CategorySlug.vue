@@ -2,6 +2,8 @@
   <div>     
             <Header />
             <Breadcrumbs />
+            <CartButton />
+
             <div class="catalog_page-wrapper">
 
             <div class="catalog_page-top">
@@ -145,6 +147,7 @@
 <script>
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
+import CartButton from '~~/components/cart/CartButton'
 import { mapState } from 'vuex'
 
 export default {
