@@ -12,8 +12,11 @@
           @click.native="onRemoveClickHandler(product)"
         />
         <nuxt-link :to="`/product/${product.meta.pSlug}`">
-          <img
+          <!-- <img
             v-lazy="product.meta.images.imgL"
+            :class="$style.image"
+          /> -->
+           <img
             :class="$style.image"
           />
         </nuxt-link>

@@ -59,7 +59,10 @@ export default {
   ],
 
   // Axios module configuration (https://go.nuxtjs.dev/config-axios)
-  axios: {},
+  axios: {
+    baseURL: isDev ? 'http://localhost:3000/' : 'http://1896990.lumex.web.hosting-test.net/'
+   // baseURL: isDev ? 'http://localhost:3000/static/' : 'https://domain/api'
+  },
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
@@ -80,3 +83,7 @@ export default {
   },
   transpile: ['gsap']
 }
+
+
+
+
