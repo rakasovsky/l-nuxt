@@ -11,7 +11,7 @@
           {{ productsQuantity }}
         </div>
         <!-- <CartSvg :class="$style.svg1" /> -->
-        <button class="svg1"></button>
+        <button class="svg1">C</button>
       </a>
     </client-only>
   </div>
@@ -43,10 +43,19 @@ export default {
 
 <style lang="scss" scoped>
 .block {
-//   position: relative;
+  // position: relative;
+    // top: 150px;
+    // z-index: 500;
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
     position: absolute;
-    top: 150px;
-    z-index: 500;
+    top: 0;
+    right: 70px;
+    height: 100%;
+    width: 70px;
+    background: #5a5959;  
 }
 .cartButton {
   position: relative;

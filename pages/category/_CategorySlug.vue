@@ -2,8 +2,8 @@
   <div>     
             <Header />
             <Breadcrumbs />
-            <CartButton />
-            <CustomerCartModal />
+            <!-- <CartButton />
+            <CustomerCartModal /> -->
 
             <div class="catalog_page-wrapper">
 

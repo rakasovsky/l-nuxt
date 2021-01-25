@@ -67,6 +67,7 @@
                   </li>
                 </ul>
             </nav> 
+            <CartButton />
             <nuxt-link to="/contact"><div class="button"><svg class="arrow" enable-background="new 0 0 21 14" viewBox="0 0 21 14"><path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path></svg></div></nuxt-link>
         </div> 
     <!-- HEADER -->
@@ -175,14 +176,20 @@
         </header>
     </div>
     <!-- HEADER -->
+     <CustomerCartModal />
     </div>
 </template>
 
 
 <script>
+import CartButton from '@/components/cart/CartButton'
+import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
+
 export default {
     
-
+components: {
+ CustomerCartModal
+},
 
 mounted () {
 
