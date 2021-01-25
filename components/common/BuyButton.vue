@@ -19,8 +19,37 @@
 </template>
 
 <script>
-import { mapActions, mapState } from 'vuex'
+// import { mapActions, mapState } from 'vuex'
+import { mapGetters, mapActions } from 'vuex'
 
+// export default {
+//   props: {
+//     product: {
+//       type: Object,
+//       required: true
+//     }
+//   },
+//   computed: {
+//     ...mapState({
+//       products: state => state.cart.products
+//     }),
+//     isProductAdded () {
+//       return this.products.find(p => p.id === this.product.id)
+//     }
+//   },
+//   methods: {
+//     ...mapActions({
+//       addProduct: 'cart/addProduct',
+//       removeProduct: 'cart/removeProduct'
+//     }),
+//     buyClickHandler () {
+//       this.addProduct(this.product)
+//     },
+//     addedClickHandler () {
+//       this.removeProduct(this.product.id)
+//     }
+//   }
+// }
 export default {
   props: {
     product: {
@@ -29,23 +58,23 @@ export default {
     }
   },
   computed: {
-    ...mapState({
-      products: state => state.cart.products
+    ...mapGetters({
+      getProductsInCart: 'cart/getProductsInCart'
     }),
     isProductAdded () {
-      return this.products.find(p => p.id === this.product.id)
+      return this.getProductsInCart.find(p => p.productId === this.product.id)
     }
   },
   methods: {
     ...mapActions({
-      addProduct: 'cart/addProduct',
-      removeProduct: 'cart/removeProduct'
+      addProduct: 'cart/addProduct'
     }),
     buyClickHandler () {
-      this.addProduct(this.product)
+      this.addProduct(this.product.id)
+      this.$modal.show('customer-cart', { addedProduct: this.product.id })
     },
     addedClickHandler () {
-      this.removeProduct(this.product.id)
+      this.$modal.show('customer-cart', { addedProduct: this.product.id })
     }
   }
 }

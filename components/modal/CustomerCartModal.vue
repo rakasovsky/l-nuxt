@@ -147,8 +147,7 @@ export default {
   }
 }
 </script>
-<style lang="scss">
-</style>
+
 <style lang="scss" scoped>
 .submit-error {
   font-weight: 500;

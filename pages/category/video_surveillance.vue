@@ -227,3 +227,10 @@ export default {
     }
 }
 </script>
+
+<style scoped>
+
+.lumex_team .team_left div {
+    max-width: 100%;
+}
+</style>

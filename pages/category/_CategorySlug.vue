@@ -3,6 +3,7 @@
             <Header />
             <Breadcrumbs />
             <CartButton />
+            <CustomerCartModal />
 
             <div class="catalog_page-wrapper">
 
@@ -147,6 +148,7 @@
 <script>
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
+import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
 import CartButton from '~~/components/cart/CartButton'
 import { mapState } from 'vuex'
 
@@ -155,6 +157,7 @@ export default {
   components: {
       ProductBrief,
       Breadcrumbs,
+      CustomerCartModal
   },  
 
   async asyncData ({ app, params, route, error }) {

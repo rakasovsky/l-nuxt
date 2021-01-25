@@ -102,7 +102,7 @@ export const state = () => ({
     alsoBuyProducts: [],
     interestingProducts: []
   },
-  bredcrumbs: []
+  breadcrumbs: []
 })
 
 export const mutations = {
@@ -116,10 +116,10 @@ export const mutations = {
     state.currentProduct = product
   },
   SET_BREADCRUMBS (state, crumbs) {
-    state.bredcrumbs = crumbs
+    state.breadcrumbs = crumbs
   },
   RESET_BREADCRUMBS (state) {
-    state.bredcrumbs = []
+    state.breadcrumbs = []
   }
 
 }
@@ -135,7 +135,7 @@ export const actions = {
 
     )
     commit('GET_PRODUCTS_BY_IDS')
-    const idsArray = (mock.sampleSize(products, 5)).map(p => p.id)
+    const idsArray = (mock.sampleSize(products, 4)).map(p => p.id)
     return mock.getProductsByIds(products, productsImages, idsArray)
   },
 
@@ -161,8 +161,8 @@ export const actions = {
         // this.$axios.$get('/mock/products-images.json')
       ]
     )
-    const crubms = mock.getBreadcrumbs('category', route, category)
-    await dispatch('setBreadcrumbs', crubms)
+    const crumbs = mock.getBreadcrumbs('category', route, category)
+    await dispatch('setBreadcrumbs', crumbs)
 
     await commit('SET_CURRENT_CATEGORY', mock.addProductsToCategory(products, productsImages, category))
   },
@@ -175,7 +175,8 @@ export const actions = {
         this.$axios.$get('/mock/MOCK_DATA.json'),
         // this.$axios.$get('/mock/products-images.json'),
         dispatch('getProductsListRandom'),
-        dispatch('getProductsListRandom')
+        dispatch('getProductsListRandom'),
+        dispatch('getProductsListRandom'),
       ]
 
     )

@@ -1,23 +1,24 @@
 <template>
-  <div :class="$style.block">
+  <div class="block">
     <client-only>
       <a
         :href="'#'"
-        :class="$style.cartButton"
+        class="cartButton"
         :disabled="!productsQuantity > 0 "
         @click.prevent="onClickHandler"
       >
-        <div v-if="productsQuantity > 0" :class="$style.quantity">
+        <div v-if="productsQuantity > 0" class="quantity">
           {{ productsQuantity }}
         </div>
         <!-- <CartSvg :class="$style.svg1" /> -->
+        <div class="svg1"></div>
       </a>
     </client-only>
   </div>
 </template>
 <script>
 import { mapState } from 'vuex'
-// import CartSvg from '~~/assets/svg/shopping-cart.svg?inline'
+// import CartSvg from '@/assets/svg/shopping-cart.svg?inline'
 export default {
   components: {
     // CartSvg
@@ -40,7 +41,7 @@ export default {
 }
 </script>
 
-<style lang="scss" module>
+<style lang="scss" scoped>
 .block {
 //   position: relative;
     position: absolute;
@@ -60,6 +61,8 @@ export default {
 .svg1 {
   margin-right: 3px;
   width: 40px;
+  height: 40px;
+  background-color: rebeccapurple;
   fill: #000;
   // noselect
   -webkit-user-select: none; /* webkit (safari, chrome) browsers */
