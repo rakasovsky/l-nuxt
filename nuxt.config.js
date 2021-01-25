@@ -55,6 +55,31 @@ export default {
         mode: 'debug'
       }),
       localStorage: ['cart'] //  If not entered, “localStorage” is the default value
+    }],
+    ['nuxt-i18n', {
+      detectBrowserLanguage: {
+        useCookie: true,
+        cookieKey: 'i18n_redirected',
+        alwaysRedirect: false,
+        fallbackLocale: 'en'
+      },
+    locales: [
+      {
+        name: 'Ru',
+        code: 'ru',
+        iso: 'ru-RU',
+        file: 'ru-RU.js'
+      },
+      {
+        name: 'Ua',
+        code: 'ua',
+        iso: 'ua-UA',
+        file: 'ua-UA.js'
+      },
+    ],
+    lazy: true,
+    langDir: 'lang/',
+    defaultLocale: 'ru',
     }]
   ],
 

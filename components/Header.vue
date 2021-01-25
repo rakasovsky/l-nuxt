@@ -67,6 +67,15 @@
                   </li>
                 </ul>
             </nav> 
+            <div class="lang_switcher">
+                 <nuxt-link
+                    v-for="locale in $i18n.locales"
+                    v-if="locale.code !== $i18n.locale"
+                    :key="locale.code"
+                    :to="switchLocalePath(locale.code)">
+                    {{ locale.name }}
+                </nuxt-link>
+            </div>
             <CartButton />
             <nuxt-link to="/contact"><div class="button"><svg class="arrow" enable-background="new 0 0 21 14" viewBox="0 0 21 14"><path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path></svg></div></nuxt-link>
         </div> 
@@ -249,3 +258,18 @@ mounted () {
 }
 }
 </script>
+
+<style scoped>
+    .lang_switcher {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+        justify-content: center;
+        position: absolute;
+        top: 0;
+        right: 140px;
+        height: 100%;
+        width: 70px;
+        background: #5a5959;  
+    }
+</style>
