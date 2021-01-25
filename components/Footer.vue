@@ -13,7 +13,7 @@
             </div>
             <div class="footer_contacts">
                 <p class="label fs24">Контакты</p>
-                <p><nuxt-link to="/contact">г.Харьков, ул.Сумская 26</nuxt-link></p>
+                <p><nuxt-link :to="localePath('/contact')">{{ $t('contact_info')}}</nuxt-link></p>
                 <p><a href="tel://380577143074">+380 57 714-3074</a></p>
                 <p><a href="tel://0661082211">+380 66 108-2211</a></p>
                 <a href="mailto:info@lumex.in.ua"> info@lumex.in.ua</a>

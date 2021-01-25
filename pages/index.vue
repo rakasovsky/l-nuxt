@@ -13,7 +13,6 @@
                         <div class="content">
                             <div></div>
                             <div>
-                                 <h1>{{ $t('hello') }}</h1>
                                 <p class="fs28">Системы безопасности и связи</p>
                                 <p class="fs80"><span class="lumex">L</span>umex</p>
                             </div>

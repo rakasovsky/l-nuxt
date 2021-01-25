@@ -3,13 +3,13 @@
     <div>
          <div class="sticky">
             <div class="sticky_container">
-                <nuxt-link to="/">
+                <nuxt-link :to="localePath('/')">
                     <img src="../static/assets/img/lumex_logo_white.svg" alt="lumex logo">
                 </nuxt-link>
                 <div class="contacts">
                     <p>
                         <span><a href="tel://0661082211">+380 66 108-2211</a></span> 
-                        <span ><nuxt-link to="/contact"> г.Харьков, ул.Сумская 26</nuxt-link></span> 
+                        <span ><nuxt-link :to="localePath('/contact')">{{ $t('contact_info')}}</nuxt-link></span> 
                     </p>
                     <p>
                         <span><a href="tel://+380 57 714-3074"> +380 57 714-3074</a></span> 
@@ -21,7 +21,7 @@
                 <ul>
                     <li class="nav-item">
                         <div class="nav-trigger">
-                            <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link>
+                            <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
                             <ol class="sub-menu scroll-t">
                                 <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
@@ -35,7 +35,7 @@
                     </li>
                   <li class="nav-item">
                     <div class="nav-trigger">
-                        <nuxt-link to="/category/video_surveillance"><span>Видеонаблюдение</span><span>▾</span></nuxt-link>
+                        <nuxt-link :to="localePath('/category/video_surveillance')"><span>{{ $t('video_surveillance')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
                             <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
@@ -49,7 +49,7 @@
                   </li>
                   <li class="nav-item">
                     <div class="nav-trigger">
-                        <nuxt-link to="/category/skud"><span>Системы контроля доступа</span><span>▾</span></nuxt-link>
+                        <nuxt-link :to="localePath('/category/skud')"><span>{{ $t('skud')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
                             <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
@@ -88,7 +88,8 @@
                 <ul>
                     <li class="nav-item">
                         <div class="nav-trigger">
-                            <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link>
+                            <!-- <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link> -->
+                            <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
                             <ol class="sub-menu">
                                 <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
@@ -101,7 +102,7 @@
                     </li>
                   <li class="nav-item">
                     <div class="nav-trigger">
-                        <nuxt-link to="/category/video_surveillance"><span>Видеонаблюдение</span><span>▾</span></nuxt-link>
+                        <nuxt-link :to="localePath('/category/video_surveillance')"><span>{{ $t('video_surveillance')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu">
                             <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
@@ -115,7 +116,7 @@
                   </li>
                   <li class="nav-item">
                         <div class="nav-trigger">
-                        <nuxt-link to="/category/skud"><span>Системы контроля доступа</span><span>▾</span></nuxt-link>
+                        <nuxt-link :to="localePath('/category/skud')"><span>{{ $t('skud')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
                             <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
