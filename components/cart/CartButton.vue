@@ -11,7 +11,7 @@
           {{ productsQuantity }}
         </div>
         <!-- <CartSvg :class="$style.svg1" /> -->
-        <div class="svg1"></div>
+        <button class="svg1"></button>
       </a>
     </client-only>
   </div>
@@ -46,6 +46,7 @@ export default {
 //   position: relative;
     position: absolute;
     top: 150px;
+    z-index: 500;
 }
 .cartButton {
   position: relative;

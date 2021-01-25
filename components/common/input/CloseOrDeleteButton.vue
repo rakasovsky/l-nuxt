@@ -1,6 +1,7 @@
 <template>
   <div class="svg-icon-block">
-    <SvgClose :class="{'svg-icon-close': buttonType === 'close', 'svg-icon-delete': buttonType === 'delete'}" />
+    <!-- <SvgClose :class="{'svg-icon-close': buttonType === 'close', 'svg-icon-delete': buttonType === 'delete'}" /> -->
+    <button :class="{'svg-icon-close': buttonType === 'close', 'svg-icon-delete': buttonType === 'delete'}">X</button>
   </div>
 </template>
 
