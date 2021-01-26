@@ -65,13 +65,13 @@ export default {
       },
     locales: [
       {
-        name: 'Ru',
+        name: 'RU',
         code: 'ru',
         iso: 'ru-RU',
         file: 'ru-RU.js'
       },
       {
-        name: 'Ua',
+        name: 'UA',
         code: 'ua',
         iso: 'ua-UA',
         file: 'ua-UA.js'

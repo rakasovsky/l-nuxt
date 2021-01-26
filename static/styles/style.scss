@@ -833,13 +833,22 @@ header {
               div {
                 display: flex;
                 flex-direction: column;
-    
+                
+                .cart_wrapper {
+                    display: flex;
+                    flex-direction: row;
+                    align-items: center;
+                    justify-content: space-between;
+                }
                 a{
                     margin: 20px 0;
                     align-self: flex-end;
                 }
             
             }
+            }
+            .cat_desc {
+                padding: 10.66667%
             }
         }
        
@@ -3244,13 +3253,18 @@ footer {
     .category_diogram {
         flex-direction: column;
         .diogram_left {
-            width: 85%;
             margin-left: 12.5%;
+            margin-right: auto;
+            width: 75%;
             margin-bottom: 40px;
         }
         .diogram_right {
             width: 100%;
             // margin-left: 12.5%;
+        }
+        .cat_block-img {
+            width: 88%;
+            margin-left: 12%;
         }
     }
 

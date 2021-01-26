@@ -87,7 +87,7 @@
                 <p class="txt3">Эти и ряд других модулей видеоаналитики доступны для реализации Ваших задач.</p>
             </div>
         </div>
-       <div class="diogram_right smart_tv txt3">
+       <div class="diogram_right cat_block-img smart_tv txt3">
             <a href="" class="primary_button vertical-button">
                 <span>Умное видеонаблюдение</span>
                 <svg>
@@ -156,7 +156,7 @@
                 </p>
             </div>
         </div>
-           <div class="diogram_right hd_cctv txt3">
+           <div class="diogram_right cat_block-img hd_cctv txt3">
             <a href="" class="primary_button vertical-button">
                 <span>HD-видеонаблюдение</span>
                 <svg>

@@ -149,7 +149,6 @@
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
-import CartButton from '~~/components/cart/CartButton'
 import { mapState } from 'vuex'
 
 export default {
@@ -175,6 +174,18 @@ export default {
     ...mapState({
       category: 'currentCategory'
     })
+  },
+    head () {
+    return {
+      title: this.category.cTitle,
+      meta: [
+        {
+          hid: 'description',
+          name: 'description',
+          content: this.category.cMetaDescription
+        }
+      ]
+    }
   },
     // GSAP
      mounted () {

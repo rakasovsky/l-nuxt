@@ -4,7 +4,6 @@
       <nuxt-link :to="`/product/${product.pSlug}`">
         <p>{{ product.pName }}</p>
         <img
-         
           class="image"
         />
       </nuxt-link>

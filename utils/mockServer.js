@@ -99,7 +99,8 @@ function getProductsByIds(products, productsImages, ids) {
       return {
           ...pr,
           // images: productsImages.find(img => img.id === pr.id).urls,
-          images: `https://source.unsplash.com/300x300/`
+          images: `https://source.unsplash.com/300x300/`,
+          category: categories.find(cat => cat.id === pr.category_id)
       }
   })
 }
@@ -121,6 +122,7 @@ function addProductsToCategory (products, productsImages, category) {
         pName: p.pName,
         pSlug: p.pSlug,
         pPrice: p.pPrice,
+        pDesc: p.pDesc,
         //image: productsImages.find(img => img.id === p.id).urls
         image: `https://source.unsplash.com/300x300/?${p.pName}`
       })

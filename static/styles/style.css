@@ -880,10 +880,30 @@ header .header-desk__nav ul li a {
           flex-direction: column;
 }
 
+.lumex__main .cloud__block3 .title .title__back div .cart_wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
 .lumex__main .cloud__block3 .title .title__back div a {
   margin: 20px 0;
   -ms-flex-item-align: end;
       align-self: flex-end;
+}
+
+.lumex__main .cloud__block3 .title .cat_desc {
+  padding: 10.66667%;
 }
 
 .lumex__main .cloud__block4 {
@@ -3647,12 +3667,17 @@ footer .footer_bottom .copyright p:last-child {
             flex-direction: column;
   }
   .category_diogram .diogram_left {
-    width: 85%;
     margin-left: 12.5%;
+    margin-right: auto;
+    width: 75%;
     margin-bottom: 40px;
   }
   .category_diogram .diogram_right {
     width: 100%;
+  }
+  .category_diogram .cat_block-img {
+    width: 88%;
+    margin-left: 12%;
   }
   .atс_container {
     font-size: 13px;

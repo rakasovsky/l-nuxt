@@ -89,7 +89,7 @@
                 </ul>
             </div>
         </div>
-       <div class="diogram_right auto_skud txt3">
+       <div class="diogram_right cat_block-img auto_skud txt3">
             <a href="" class="primary_button vertical-button">
                 <span>Access Control</span>
                 <svg>
@@ -164,7 +164,7 @@
                 </p>
             </div>
         </div>
-           <div class="diogram_right bio_skud txt3">
+           <div class="diogram_right cat_block-img bio_skud txt3">
             <a href="" class="primary_button vertical-button">
                 <span>Biometric Access Control</span>
                 <svg>

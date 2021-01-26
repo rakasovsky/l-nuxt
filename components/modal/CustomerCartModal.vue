@@ -29,12 +29,12 @@
             </p>
           </div>
           <template v-else>
-            <div class="wrapper">
+            <div class="wrapper modal1">
               <template v-if="getAddedProduct">
                 <p class="added-product ">
                   You've added
                 </p>
-                <ProductsList class="" :products-from-cart="getAddedProduct" />
+                <ProductsList class="modal2" :products-from-cart="getAddedProduct" />
                 <p v-if="getProducts.length > 0" class="added-product ">
                   Previously added products
                 </p>
@@ -213,6 +213,7 @@ p.added-product {
   // height: 100%;
   flex-grow: 1;
   position: relative;
+  justify-content: center;
 }
 .header-block {
   flex-shrink: 0;

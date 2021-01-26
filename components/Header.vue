@@ -67,7 +67,7 @@
                   </li>
                 </ul>
             </nav> 
-            <div class="lang_switcher">
+            <div class="lang_switcher fs20">
                  <nuxt-link
                     v-for="locale in $i18n.locales"
                     v-if="locale.code !== $i18n.locale"
@@ -167,9 +167,9 @@
                                     <nuxt-link to="/category/video_surveillance#v_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li">Системы контроля доступа<div>▾</div>
+                            <li class="m_li">Контроль доступа<div>▾</div>
                                   <ul class="dropdown_container_mobile">
-                                    <nuxt-link to="/category/skud"><li class="menu-item">Системы контроля доступа</li></nuxt-link>
+                                    <nuxt-link to="/category/skud"><li class="menu-item">Контроль доступа</li></nuxt-link>
                                     <nuxt-link to="/category/skud#s_cov19"><li class="menu-item">COVID-19</li></nuxt-link>
                                     <nuxt-link to="/category/skud#s_auto"><li class="menu-item">Автономные СКУД</li></nuxt-link>
                                     <nuxt-link to="/category/skud#s_net"><li class="menu-item">Сетевые СКУД</li></nuxt-link>
@@ -235,8 +235,12 @@ mounted () {
   
     //By Default Show first panel
     // showPanel(allPanelElems[0])
+  
+  }
+  
+  initAccordion(document.getElementById("menu"));
 
-
+  
     // GSAP 
 
     const mtl = gsap.timeline({
@@ -251,17 +255,13 @@ mounted () {
             toggleActions: "play play reverse "
         }
     })
-
-  
-  }
-  
-  initAccordion(document.getElementById("menu"));
 }
 }
 </script>
 
 <style scoped>
     .lang_switcher {
+        color:white;
         display: flex;
         flex-flow: row nowrap;
         align-items: center;
@@ -273,4 +273,7 @@ mounted () {
         width: 70px;
         background: #5a5959;  
     }
+    .lang_switcher:hover {
+        color:#ffda00;
+     }
 </style>

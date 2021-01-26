@@ -11,7 +11,8 @@
           {{ productsQuantity }}
         </div>
         <!-- <CartSvg :class="$style.svg1" /> -->
-        <button class="svg1">C</button>
+        <!-- <button class="svg1">C</button> -->
+        <img class="svg_cart" src="@/assets/svg/cart.svg">
       </a>
     </client-only>
   </div>
@@ -68,6 +69,10 @@ export default {
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
+.svg_cart {
+  width: 50%;
+  height: 50%;
+}
 .svg1 {
   margin-right: 3px;
   width: 40px;
@@ -82,16 +87,16 @@ export default {
 }
 .quantity {
     position: absolute;
-    right: 5px;
-    top: 5px;
-    border-radius: 50px;
-    background-color: #fb3f4c;
-    width: 20px;
+    
+    right: 23px;
+    top: 25px;
+    background-color: #ff0000;
+    width: 15px;
     color: #fff;
-    height: 20px;
+    height: 16px;
     text-align: center;
     line-height: 20px;
-    font-size: .8rem;
+    font-size: 0.7rem;
     font-weight: 600;
   // noselect
   -webkit-user-select: none; /* webkit (safari, chrome) browsers */
