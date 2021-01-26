@@ -3345,6 +3345,12 @@ footer .footer_bottom .copyright p:last-child {
   }
 }
 
+@media only screen and (min-width: 414px) and (max-width: 767px) {
+  .tel_table-wrapper {
+    display: none;
+  }
+}
+
 @media (max-width: 500px) {
   header #menu {
     height: 200vh;
