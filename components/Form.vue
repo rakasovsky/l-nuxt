@@ -83,7 +83,7 @@ export default {
 // }
 
     mounted () {
-        $("#ajax_form").submit(function() {
+        $("#ajax_form").submit(function(e) {
         const str = $(this).serialize();
 
         $.ajax({
@@ -109,6 +109,7 @@ export default {
 
         });
         return false;
+        e.preventDefault();
     });
     }
 }

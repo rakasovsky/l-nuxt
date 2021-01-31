@@ -18,8 +18,8 @@
                                 <!-- <p>Dahua</p>
                                 <p>Hikvision</p> -->
                                 <ul>
-                                    <li v-for="firm in category.cList">
-                                       {{ firm }}
+                                    <li v-for="cat in category.cList">
+                                       {{ cat }}
                                     </li>
                                 </ul>
                             </div>
@@ -46,3 +46,30 @@ export default {
     }
 }
 </script>
+
+<style lang="scss" scoped>
+    .cloud__block3:nth-child(-3n+4), .cloud__block3:nth-child(6){
+        .title__front {
+            background-color: #282124;
+            p{ 
+                    color: #a8a8a8;
+            }
+        }
+    }
+    .cloud__block3:nth-child(-2n+4), .cloud__block3:nth-child(2n+5){
+        .title__front {
+            background-color: #ffda00;
+            p {
+                color: black;
+            }
+        }
+    }
+    .cloud__block3:nth-child(5n-2){
+        .title__front {
+            background-color: #a8a8a8;
+            p {
+                color: black;
+            }
+        }
+    }
+</style>

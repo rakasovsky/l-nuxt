@@ -6,7 +6,6 @@ const categories = [
         cName: 'Видеонаблюдение',
         cDesc: "Описание",
         cSlug: 'cctv-surveillance',
-        cClass: 'dark-grey',
         cList: ['Камеры', 'PTZ','Регистраторы','Комплекты','Кронштейны', 'Объективы'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
         products: []
@@ -20,8 +19,6 @@ const categories = [
         cDesc: 'Описание',
         cList: ['Мониторы', 'Вызывные панели','Переговорные устройства','Аксесуары'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'yellow',
-        cClass2: 'fc_black',
         products: []
     },
     {
@@ -33,8 +30,6 @@ const categories = [
         cDesc: 'Описание',
         cList: ['Контролеры', 'Считыватели','Терминалы','Замки'],
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'grey',
-        cClass2: 'fc_black',
         products: [],
     },
     {   
@@ -45,7 +40,6 @@ const categories = [
         cMetaDescription: 'network',
         cDesc: 'Описание',
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'dark-grey',
         products: [],
     },
     {   
@@ -55,8 +49,6 @@ const categories = [
         cMetaDescription: 'alarms',
         cDesc: 'Описание',
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'grey',
-        cClass2: 'fc_black',
         products: [],
     },
     {   
@@ -66,7 +58,6 @@ const categories = [
         cMetaDescription: 'мониторы',
         cDesc: 'Описание',
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'dark-grey',
         products: [],
     },
     {
@@ -76,8 +67,6 @@ const categories = [
         cMetaDescription: 'video-intercoms',
         cDesc: 'Описание',
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'yellow',
-        cClass2: 'fc_black',
         products: []
     },
     {
@@ -87,8 +76,6 @@ const categories = [
         cMetaDescription: 'video-intercoms',
         cDesc: 'Описание',
         cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
-        cClass: 'grey',
-        cClass2: 'fc_black',
         products: []
     },
 ]
