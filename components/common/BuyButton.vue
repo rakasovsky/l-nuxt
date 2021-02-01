@@ -54,7 +54,7 @@ export default {
 
 <style scoped>
     .buy {
-        background-color: yellow; 
+        background-color: #ffda00; 
         border: none;
         color: #000;
         padding: 15px 32px;
@@ -62,6 +62,7 @@ export default {
         text-decoration: none;
         display: inline-block;
         font-size: 16px;
+        cursor: pointer;
     }
     .added {
         text-decoration: none;

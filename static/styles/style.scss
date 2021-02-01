@@ -1692,8 +1692,8 @@ header {
 // Product page
 .product_container {
     display: flex;
-    // flex-direction: column;
-    flex-direction:row-reverse;
+    flex-direction: column;
+    // flex-direction:row-reverse;
     min-height: 100vh;
     height: 100%;
     margin: 0 8.33333%;
@@ -1702,7 +1702,7 @@ header {
     .product_wrapper-top {
         display: flex;
         justify-content: space-between;
-        width: 50%;
+        width: 100%;
         background-color: white;
         padding: 2% 0 2% 2%;
         .desc_container {
@@ -1716,7 +1716,7 @@ header {
     }
     .product_wrapper-bottom {
         display: flex;
-        width: 50%;
+        width: 100%;
         background-color: white;
         padding: 2% 0 0 2%;
         .tabs {
@@ -1734,9 +1734,12 @@ header {
     .product_availability {
         padding: 2% 5%;
         margin: 20px 0;
-        width: 150px;
+        width: 180px;
         color: black;
         background: $primary-color;
+    }
+    .product_buy {
+        margin: 20px 0;
     }
     .out_of_stock {
         color: #fff;

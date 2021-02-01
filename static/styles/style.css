@@ -2012,10 +2012,10 @@ ul .checkmark:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: reverse;
-      -ms-flex-direction: row-reverse;
-          flex-direction: row-reverse;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   min-height: 100vh;
   height: 100%;
   margin: 0 8.33333%;
@@ -2030,7 +2030,7 @@ ul .checkmark:after {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 50%;
+  width: 100%;
   background-color: white;
   padding: 2% 0 2% 2%;
 }
@@ -2054,7 +2054,7 @@ ul .checkmark:after {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 50%;
+  width: 100%;
   background-color: white;
   padding: 2% 0 0 2%;
 }
@@ -2074,9 +2074,13 @@ ul .checkmark:after {
 .product_container .product_availability {
   padding: 2% 5%;
   margin: 20px 0;
-  width: 150px;
+  width: 180px;
   color: black;
   background: #ffda00;
+}
+
+.product_container .product_buy {
+  margin: 20px 0;
 }
 
 .product_container .out_of_stock {

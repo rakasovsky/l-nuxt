@@ -93,6 +93,9 @@ export default {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
+  width: 100%;
+  padding: 5% 4%;
+
   .product {
     position: relative;
     margin: 1em;
