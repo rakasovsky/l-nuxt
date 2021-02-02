@@ -53,9 +53,9 @@ export default {
     justify-content: center;
     position: absolute;
     top: 0;
-    right: 70px;
+    right: 50px;
     height: 100%;
-    width: 70px;
+    width: 50px;
     background: #5a5959;  
 }
 .cartButton {
@@ -64,8 +64,8 @@ export default {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  width: 68px;
-  height: 72px;
+  width: 60px;
+  height: 45px;
   text-align: center;
   transition: all 0.3s ease-in-out;
 }
@@ -87,9 +87,9 @@ export default {
 }
 .quantity {
     position: absolute;
-    
-    right: 23px;
-    top: 25px;
+    right: 15px;
+    top: 5px;
+    border-radius: 2px;
     background-color: #ff0000;
     width: 15px;
     color: #fff;

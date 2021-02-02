@@ -55,7 +55,7 @@ export default {
 <style scoped>
     .buy {
         background-color: #ffda00; 
-        border: none;
+        border: 1px solid black;
         color: #000;
         padding: 15px 32px;
         text-align: center;
@@ -63,6 +63,7 @@ export default {
         display: inline-block;
         font-size: 16px;
         cursor: pointer;
+        height: 70px;
     }
     .added {
         text-decoration: none;

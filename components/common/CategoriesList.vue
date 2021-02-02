@@ -72,4 +72,8 @@ export default {
             }
         }
     }
+    .catalog_main .cloud__block3 .title .title__front {
+        width: 100%;
+    }
+    
 </style>

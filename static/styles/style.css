@@ -397,7 +397,7 @@ p {
   top: 0;
   right: 0;
   height: 100%;
-  width: 70px;
+  width: 50px;
   background: #5a5959;
   -webkit-transition: background-color .25s linear;
   transition: background-color .25s linear;

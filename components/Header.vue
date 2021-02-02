@@ -268,9 +268,9 @@ mounted () {
         justify-content: center;
         position: absolute;
         top: 0;
-        right: 140px;
+        right: 100px;
         height: 100%;
-        width: 70px;
+        width: 50px;
         background: #5a5959;  
     }
     .lang_switcher:hover {
