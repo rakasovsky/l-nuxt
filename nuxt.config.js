@@ -91,7 +91,7 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-    extend(config, { loaders }) {
+    extend(config, { loaders, isClient }) {
       config.module.rules.push({
         test: /\.(mov|mp4)$/,
         use: [
@@ -103,8 +103,11 @@ export default {
           }
         ]
       })
-     
-    }
+      if (isClient) {
+        config.devtool = '#source-map'
+      }
+    },
+
   },
   transpile: ['gsap']
 }

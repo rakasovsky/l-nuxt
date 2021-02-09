@@ -79,6 +79,27 @@ const categories = [
         products: []
     },
 ]
+
+const subcategories = [
+  {
+      id: 'Камеры',
+      cTitle: 'Камеры',
+      cName: 'Камеры',
+      cDesc: "Описание",
+      subSlug: 'Камеры',
+      cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
+  },
+  {
+    id: 'PTZ-Камеры',
+    cTitle: 'PTZ-Камеры',
+    cName: 'PTZ-Камеры',
+    cDesc: "Описание",
+    subSlug: 'PTZ-Камеры',
+    cImage: 'https://lumex.in.ua/_nuxt/img/cat.d1df2b6.png',
+  },
+]
+
+
 function getProductsByIds(products, productsImages, ids) {
   const innerProduct = products.filter(p => p.id === ids.find(id => p.id === id))
   if (!innerProduct) return null
@@ -130,6 +151,14 @@ function getBreadcrumbs (pageType, route, data) {
         url: `/category/${data.cSlug}`
       })
       break
+
+    case 'subcategory':
+      crumbs.push({
+        title: data.cName,
+        url: `/category/${data.cSlug}`
+      })  
+      break
+
     case 'product':
       crumbs.push({
         title: data.category.cName,
@@ -147,4 +176,4 @@ function getBreadcrumbs (pageType, route, data) {
   }
   return crumbs
 }
-export default { categories, sampleSize, getProductsByIds, getProduct, addProductsToCategory, getBreadcrumbs }
+export default { categories, subcategories, sampleSize, getProductsByIds, getProduct, addProductsToCategory, getBreadcrumbs }

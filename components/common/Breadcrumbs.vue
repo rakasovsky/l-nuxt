@@ -35,9 +35,12 @@ export default {
       display: inline;
    }
    .breadcrumbs ul li::after {
+      content: '/\00a0';
       padding: 8px;
       color: black;
-      content: '/\00a0';
+   }
+   .breadcrumbs ul li:last-child:after {
+    content: '';
    }
    .breadcrumbs ul li a {
      color: #a8a8a8;
