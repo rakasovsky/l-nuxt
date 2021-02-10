@@ -112,7 +112,6 @@
 
 
 
-  
 import mock from '../utils/mockServer'
 // const sampleSize = require('lodash.samplesize')
 
@@ -162,7 +161,9 @@ export const mutations = {
 }
 
 export const getters = {
-  currentCategory: (state) => state.currentCategory,
+  currentCategory: (state) => {
+    return state.currentCategory;
+  }
 }
 
 export const actions = {
@@ -206,14 +207,24 @@ export const actions = {
     await dispatch('setBreadcrumbs', crumbs)
   },
 
-  async getCurrentSubcategory ({ commit, dispatch }, { route }) {
-    const c = getters.currentCategory();
+  async getCurrentSubcategory ({ commit, dispatch }, { route, category }) {
     const sc = encodeURIComponent(route.params.SubcategorySlug);
-    const result = await fetch("http://phpnuxt.vior.link/handlers/api.php?category="+c+"&subcategory="+sc, { options });
+    const start = '';
+    const count = '';
+    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&start=${start}&count=${count}`;
+    console.error('>>>url', url)
+    const result = await fetch(url, { options });
     const json = await result.json();
-    await commit('SET_CURRENT_CATEGORY', mock.addProductsToCategory(products, productsImages, category))
-    console.error('>>>getCurrentCategory', json);
-    const crumbs = mock.getBreadcrumbs('category', route, category)
+    const subcategory = json.subcategory;
+    // {
+    //   category: {},
+    //   subcategory: {}
+    //   products: {},
+    //   brands: {}
+    // }
+    // await commit('SET_CURRENT_SUBCATEGORY', mock.addProductsToCategory(products, productsImages, category))
+    // console.error('>>>getCurrentCategory', json);
+    const crumbs = mock.getBreadcrumbs('subcategory', route, subcategory)
     await dispatch('setBreadcrumbs', crumbs)
   },
 
@@ -223,7 +234,6 @@ export const actions = {
     const [products, productsImages, alsoBuyProducts, interestingProducts] = await Promise.all(
       [
         this.$axios.$get('/mock/MOCK_DATA.json'),
-        // this.$axios.$get('/mock/products-images.json'),
         dispatch('getProductsListRandom'),
         dispatch('getProductsListRandom'),
         dispatch('getProductsListRandom'),

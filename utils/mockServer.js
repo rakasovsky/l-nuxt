@@ -138,6 +138,7 @@ function addProductsToCategory (products, productsImages, category) {
   })
   return categoryInner
 }
+
 function getBreadcrumbs (pageType, route, data) {
   const crumbs = []
   crumbs.push({
@@ -151,14 +152,18 @@ function getBreadcrumbs (pageType, route, data) {
         url: `/category/${data.cSlug}`
       })
       break
+    
+    // case 'subcategory':
+    //   crumbs.push({
+    //     title: data.category.cName.subcategory.cName,
+    //     url: `category/${data.category.cSlug}`
+    //   })  
+      // crumbs.push({
+      //   title: data.cName,
+      //   url: `/subcategory/${data.cSlug}`
+      // })
 
-    case 'subcategory':
-      crumbs.push({
-        title: data.cName,
-        url: `/category/${data.cSlug}`
-      })  
       break
-
     case 'product':
       crumbs.push({
         title: data.category.cName,

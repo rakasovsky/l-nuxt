@@ -1,5 +1,5 @@
 <template>
-  <div>     
+  <div>
             <Header />
             <Breadcrumbs />
             <!-- <CartButton />
@@ -8,7 +8,7 @@
             <div class="catalog_page-wrapper">
 
             <div class="catalog_page-top">
-                <span class="h_title label fs28">{{ category.cName }}</span>
+                <span class="h_title label fs28">{{ subcategory.cName }}</span>
                 <p>{{ category.cDesc }}</p>
                 <button class="secondary_button select-btn2">Z</button>
             </div>
@@ -109,8 +109,8 @@
                                 </div>
                             </div>
                         </li>
-                    </ul>        
-                </aside> 
+                    </ul>
+                </aside>
 
                 <div class="catalog_category">
                     <div class="sorting fs20">
@@ -120,9 +120,9 @@
                             <p><span>Наличие</span><span>▾</span></p>
                     </div>
                     <!-- <section class="lumex__main catalog_wrapper"> -->
-       
-     
-           
+
+
+
                         <div  class="lumex__main catalog_wrapper">
                         <div
                             v-for="product in category.products"
@@ -132,10 +132,10 @@
                             <ProductBrief :product="product" />
                         </div>
                         </div>
-                   
-                    
-      
-        
+
+
+
+
 
                     <!-- </section> -->
                 </div>
@@ -149,19 +149,17 @@
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
-import { mapState } from 'vuex'
-
+import { mapState, mapGetters } from 'vuex'
 export default {
-
   components: {
       ProductBrief,
       Breadcrumbs,
       CustomerCartModal
-  },  
-
+  },
   async asyncData ({ app, params, route, error }) {
+    const category = app.store.state.currentCategory;
     try {
-      await app.store.dispatch('getCurrentCategory', { route })
+      await app.store.dispatch('getCurrentSubcategory', { route, category })
     } catch (err) {
       console.log(err)
       return error({
@@ -172,8 +170,9 @@ export default {
   },
   computed: {
     ...mapState({
-      category: 'currentCategory'
-    })
+      category: 'currentCategory',
+      subcategory: 'currentSubcategory'
+    }),
   },
     head () {
     return {
@@ -191,13 +190,11 @@ export default {
      mounted () {
         const catBlck2 = gsap.timeline({
         scrollTrigger: {
-            trigger: ".cat_block2", 
+            trigger: ".cat_block2",
             start: "top bottom"
         }
         })
-
         catBlck2.from(".cat_block2",{duration:1, opacity:0, y:200, stagger:0.2});
-
         document.querySelectorAll(".cat_block2").forEach(function (f) {
         const qa = gsap.timeline({
         defaults: { duration: 1 },
@@ -219,21 +216,6 @@ export default {
         qa.reverse();
         });
         });
- 
-    },
-
-
-  head () {
-    return {
-      title: this.category.cTitle,
-      meta: [
-        {
-          hid: 'description',
-          name: 'description',
-          content: this.category.cMetaDescription
-        }
-      ]
     }
-  }
 }
 </script>
