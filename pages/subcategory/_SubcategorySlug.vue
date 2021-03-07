@@ -8,8 +8,7 @@
             <div class="catalog_page-wrapper">
 
             <div class="catalog_page-top">
-                <span class="h_title label fs28">{{ subcategory.cName }}</span>
-                <p>{{ category.cDesc }}</p>
+                <span class="h_title label fs28">{{ subcategoryProducts.subcategory.cName }}</span>
                 <button class="secondary_button select-btn2">Z</button>
             </div>
 
@@ -22,7 +21,7 @@
                     </div>
                     <ul>
                         <li class="filter-wrapper">
-                            <div>
+                            <!-- <div>
                                 <p class="label fs20">Категория товара</p>
                                 <div class="filter-items">
                                     <div class="filter-item">
@@ -50,7 +49,7 @@
                                         </label>
                                     </div>
                                 </div>
-                            </div>
+                            </div> -->
                         </li>
                         <li class="filter-wrapper">
                             <div>
@@ -125,18 +124,25 @@
 
                         <div  class="lumex__main catalog_wrapper">
                         <div
-                            v-for="product in category.products"
+                            v-for="product in subcategoryProducts.products"
                             :key="product.id"
                             class="cloud__block3 cat_block2"
                         >
                             <ProductBrief :product="product" />
+                          
                         </div>
+                            <div id="app">
+                                <h2><a target="_blank" href="https://www.npmjs.com/package/vue-pagination-2">Vue Pagination 2</a></h2>
+                                <p>Selected page: {{page}}</p>
+                                <!-- <pagination :records="10000" v-model="page" :per-page="100" @paginate="callback">
+                                </pagination> -->
+                            </div>
                         </div>
 
 
 
-
-
+                     
+                    
                     <!-- </section> -->
                 </div>
             </div>
@@ -149,14 +155,17 @@
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
+import Pagination from 'vue-pagination-2'
+
 import { mapState, mapGetters } from 'vuex'
 export default {
   components: {
       ProductBrief,
       Breadcrumbs,
-      CustomerCartModal
+      CustomerCartModal,
+      Pagination
   },
-  async asyncData ({ app, params, route, error }) {
+  async asyncData ({ app, params, route, error}) {
     const category = app.store.state.currentCategory;
     try {
       await app.store.dispatch('getCurrentSubcategory', { route, category })
@@ -171,8 +180,14 @@ export default {
   computed: {
     ...mapState({
       category: 'currentCategory',
-      subcategory: 'currentSubcategory'
+      subcategoryProducts: 'currentSubcategory'
     }),
+  },
+  methods: {
+      page(){},
+      callback: function(page) {
+      console.log(`Page ${page} was selected. Do something about it`);
+    }
   },
     head () {
     return {

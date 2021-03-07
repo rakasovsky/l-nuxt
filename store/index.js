@@ -1,119 +1,4 @@
-// import mock from '../utils/mockServer'
-// const options = {
-//     method: 'GET',
-//     headers: { "Content-Type": "application/json" }
-// };
-
-// export const state = () => ({
-//   categoriesList: [],
-//   subcategoriesList: [],
-//   currentCategory: {},
-//   currentProduct: {
-//     alsoBuyProducts: [],
-//     interestingProducts: []
-//   },
-//   breadcrumbs: []
-// })
-
-// export const mutations = {
-//     SET_SUBCATEGORIES_LIST (state, sub) {
-//         state.subcategoriesList = sub
-//     },
-//   SET_CATEGORIES_LIST (state, categories) {
-//     state.categoriesList = categories
-//   },
-//   SET_CURRENT_CATEGORY (state, category) {
-//     state.currentCategory = category
-//   },
-//   SET_CURRENT_PRODUCT (state, product) {
-//     state.currentProduct = product
-//   },
-//   SET_BREADCRUMBS (state, crumbs) {
-//     state.breadcrumbs = crumbs
-//   },
-//   RESET_BREADCRUMBS (state) {
-//     state.breadcrumbs = []
-//   }
-
-// }
-// export const actions = {
-//   async getProductsListRandom ({ commit }) {
-//     // simulate api work
-    
-//     const [products, productsImages] = await Promise.all(
-//       [
-//         this.$axios.$get('/mock/MOCK_DATA.json'),
-//         // this.$axios.$get('/mock/products-images.json')
-//       ]
-
-//     )
-//     commit('GET_PRODUCTS_BY_IDS')
-//     const idsArray = (mock.sampleSize(products, 4)).map(p => p.id)
-//     return mock.getProductsByIds(products, productsImages, idsArray)
-//   },
-
-//   async setBreadcrumbs ({ commit }, data) {
-//     await commit('SET_BREADCRUMBS', data)
-//   },
-
-//   async getCategoriesList ({ commit }) {
-//     try {
-//     //   await commit('SET_CATEGORIES_LIST', mock.categories)
-//       const result = await fetch("http://phpnuxt.vior.link/handlers/api.php?root_categories", { options });
-//       const json = await result.json();
-//       await commit('SET_CATEGORIES_LIST', json);
-//     } catch (err) {
-//       console.log(err)
-//       throw new Error('Внутреняя ошибка сервера, сообщите администратору')
-//     }
-//   },
-
-//   async getSubcategoriesList ({ commit, dispatch }, { route }) {
-//     const result = await fetch("http://phpnuxt.vior.link/handlers/api.php?category="+route.params.CategorySlug, { options });
-//     const json = await result.json();
-//     await commit('SET_SUBCATEGORIES_LIST', json)
-//   },
-//   async getCurrentCategory ({ commit, dispatch }, { route }) {
-//     // simulate api work
-    
-//     const category = mock.categories.find((cat) => cat.cSlug === route.params.CategorySlug)
-//     const [products, productsImages] = await Promise.all(
-//       [
-//         this.$axios.$get('/mock/MOCK_DATA.json'),
-//         // this.$axios.$get('/mock/products-images.json')
-//       ]
-//     )
-//     const crumbs = mock.getBreadcrumbs('category', route, category)
-//     await dispatch('setBreadcrumbs', crumbs)
-
-//     await commit('SET_CURRENT_CATEGORY', mock.addProductsToCategory(products, productsImages, category))
-//   },
-//   async getCurrentProduct ({ commit, dispatch }, { route }) {
-//     // simulate api work
-   
-//     const productSlug = route.params.ProductSlug
-//     const [products, productsImages, alsoBuyProducts, interestingProducts] = await Promise.all(
-//       [
-//         this.$axios.$get('/mock/MOCK_DATA.json'),
-//         // this.$axios.$get('/mock/products-images.json'),
-//         dispatch('getProductsListRandom'),
-//         dispatch('getProductsListRandom'),
-//         dispatch('getProductsListRandom'),
-//       ]
-
-//     )
-//     const product = mock.getProduct(products, productsImages, productSlug)
-//     const crubms = mock.getBreadcrumbs('product', route, product)
-//     await dispatch('setBreadcrumbs', crubms)
-//     await commit('SET_CURRENT_PRODUCT', { ...product, alsoBuyProducts, interestingProducts })
-//   }
-
-// }
-
-
-
 import mock from '../utils/mockServer'
-// const sampleSize = require('lodash.samplesize')
 
 const options = {
   method: 'GET',
@@ -201,9 +86,14 @@ export const actions = {
     const json = await result.json();
     await commit('SET_CURRENT_CATEGORY', json.category);
     await commit('SET_SUBCATEGORIES_LIST', json.subcategories);
-    const category = json.category;
-    console.error('>>>category', category)
-    const crumbs = mock.getBreadcrumbs('category', route, category)
+    const crumbs = [{
+        title: 'Каталог',
+        url: '/catalog'
+      }, {
+        title: json.category.cTitle,
+        url: `/category/${json.category.cSlug}`
+      },
+    ];
     await dispatch('setBreadcrumbs', crumbs)
   },
 
@@ -211,20 +101,24 @@ export const actions = {
     const sc = encodeURIComponent(route.params.SubcategorySlug);
     const start = '';
     const count = '';
-    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&start=${start}&count=${count}`;
-    console.error('>>>url', url)
+    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&start=${start}&count=${count}&orderby=`;
     const result = await fetch(url, { options });
     const json = await result.json();
-    const subcategory = json.subcategory;
-    // {
-    //   category: {},
-    //   subcategory: {}
-    //   products: {},
-    //   brands: {}
-    // }
-    // await commit('SET_CURRENT_SUBCATEGORY', mock.addProductsToCategory(products, productsImages, category))
-    // console.error('>>>getCurrentCategory', json);
-    const crumbs = mock.getBreadcrumbs('subcategory', route, subcategory)
+    await commit('SET_CURRENT_SUBCATEGORY', json);
+
+    const crumbs = [{
+        title: 'Каталог',
+        url: '/catalog'
+      }, {
+        title: category.cTitle,
+        url: `/category/${category.cSlug}`
+      },
+      {
+        title: json.subcategory.cTitle,
+        url: `/subcategory/${json.subcategory.cSlug}`
+      }
+    ]
+    // const crumbs = mock.getBreadcrumbs('subcategory', route, subcategory)
     await dispatch('setBreadcrumbs', crumbs)
   },
 

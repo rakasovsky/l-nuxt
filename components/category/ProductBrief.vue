@@ -1,21 +1,26 @@
 <template>
             <div class="title">
+
                     <div class="title__front dark-grey">
                         <div class="cat_card_wrapper">
                             <div class="cat_card_text">
-                                <p class="label fs24 fc_grey product_title">{{ product.pName }}</p>
-                                <p>{{product.pSlug}}</p>
-                                <p class="fc_grey fs24">{{ product.pPrice }} грн</p>
+                                <p class="label fs24 fc_grey product_title">{{ product.model }}</p>
+                                <p>{{product.title}}</p>
+                                <p class="fc_grey fs24">{{ product.price_uah }} грн</p>
                             </div>
                             <div class="cat_card_img">
+                                <div class="product_availability out_of_stock">
+                                    <p style="color:red;">{{ product.stock }}</p>
+                                 </div> 
                                <img :src="product.image" />
                             </div>
                         </div>
                     </div>
+
                     <div class="title__back cat_desc yellow">
                         <div>
                             <p>
-                                {{ product.pDesc }}
+                                {{ product.descr }}
                             </p>
                             <div class="cart_wrapper">
                                  <BuyButton :product="product" />

@@ -31,6 +31,7 @@ export default {
   plugins: [
     { src: '@/plugins/swiper.js', mode: 'client' },
     { src: '@/plugins/vue-modal.js', mode: 'client' },
+    { src: '@/plugins/vue-pagination.js'}
   ],
 
   // Auto import components (https://go.nuxtjs.dev/config-components)
