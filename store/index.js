@@ -42,7 +42,21 @@ export const mutations = {
   GET_CURRENT_CATEGORY (state) {
     return state.currentCategory
   },
-
+  SET_CURPAGE(state, curpage) {
+    state.curpage = curpage;
+  },
+  GET_CURPAGE(state) {
+    if (!state.curpage || state.curpage < 0) {
+      state.curpage = 0;
+    }
+    return state.curpage;
+  },
+  SET_PAGETOTAL(state, total) {
+    state.pagetotal = total;
+  },
+  GET_PAGETOTAL(state) {
+    return state.pagetotal;
+  },
 }
 
 export const getters = {
@@ -97,13 +111,19 @@ export const actions = {
     await dispatch('setBreadcrumbs', crumbs)
   },
 
-  async getCurrentSubcategory ({ commit, dispatch }, { route, category }) {
-    const sc = encodeURIComponent(route.params.SubcategorySlug);
-    const start = '';
-    const count = '';
-    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&start=${start}&count=${count}&orderby=`;
+  async getCurrentSubcategory ({ commit, dispatch }, { route, category, subcategory }) {
+    console.error('>>>getCurrentSubcategory', category, subcategory);
+    // const sc = encodeURIComponent(route.params.SubcategorySlug);
+    const sc = encodeURIComponent(subcategory.subcategory.cSlug);
+    const curpage = subcategory.curpage || 0;
+    const pagetotal = 0;
+    const perpage = 12;
+    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&curpage=${curpage}&pagetotal=${pagetotal}&perpage=${perpage}&orderby=`;
     const result = await fetch(url, { options });
     const json = await result.json();
+    json.curpage = parseInt(json.curpage);
+    json.pagetotal = parseInt(json.pagetotal);
+    json.perpage = parseInt(json.perpage);
     await commit('SET_CURRENT_SUBCATEGORY', json);
 
     const crumbs = [{

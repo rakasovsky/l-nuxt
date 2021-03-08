@@ -1598,7 +1598,7 @@ header .header-desk__nav ul li a {
   -ms-grid-rows: 1fr 1fr;
       grid-template-rows: 1fr 1fr;
   gap: 2px 2px;
-      grid-template-areas: ". . ." ". . .";
+      grid-template-areas: ". . ." ". . .";
 }
 
 .atc_img-wrapper .atc_img-container {
@@ -1898,14 +1898,23 @@ header .header-desk__nav ul li a {
   -webkit-box-align: start;
       -ms-flex-align: start;
           align-items: flex-start;
+  height: 100%;
 }
 
 .catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main .cat_card_wrapper .cat_card_text {
   padding: 5% 10%;
+  height: 40%;
+}
+
+.catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main .cat_card_wrapper .cat_card_img {
+  height: 60%;
 }
 
 .catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main .cat_card_wrapper img {
   width: 100%;
+  height: 92%;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .catalog_page-wrapper .catalog_page-bottom .catalog_category .lumex__main .cloud__block3 {
@@ -2006,6 +2015,67 @@ ul .checkmark:after {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.pagination_block {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding-top: 24px;
+  -ms-flex-item-align: center;
+      align-self: center;
+}
+
+.pagination_block .VuePagination nav ul {
+  display: inline-block;
+  padding-left: 0;
+  margin: 20px 0;
+  border-radius: 4px;
+}
+
+.pagination_block .VuePagination nav ul li {
+  display: inline;
+  cursor: pointer;
+}
+
+.pagination_block .VuePagination nav ul li a {
+  position: relative;
+  float: left;
+  padding: 6px 12px;
+  margin-left: -1px;
+  line-height: 1.42857143;
+  color: black;
+  text-decoration: none;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+
+.pagination_block .VuePagination nav ul li a .active {
+  background-color: #ffda00;
+}
+
+.pagination_block .VuePagination nav ul li a:hover {
+  z-index: 2;
+  color: black;
+  background-color: #eee;
+  border-color: #ddd;
+}
+
+.pagination_block .VuePagination nav ul li .active {
+  z-index: 3;
+  color: black;
+  cursor: default;
+  background-color: #ffda00;
+  border-color: black;
+  cursor: default;
+}
+
+.pagination_block .VuePagination nav ul .active a:hover {
+  background-color: #ffda00;
 }
 
 .product_container {
@@ -2680,7 +2750,7 @@ footer .footer_bottom .copyright p:last-child {
     -ms-grid-rows: 1fr 1fr;
         grid-template-rows: 1fr 1fr;
     gap: 2px 2px;
-        grid-template-areas: ". . " ". . " ". .";
+        grid-template-areas: ". . " ". . " ". .";
   }
   .category_diogram .diogram_left {
     padding-top: 0px;

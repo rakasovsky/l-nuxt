@@ -1579,11 +1579,19 @@ header {
                     display: flex;
                     flex-direction: column-reverse;
                     align-items: flex-start;
+                    height: 100%;
                     .cat_card_text {
                         padding: 5% 10%;
+                        height: 40%;
+                    }
+                    .cat_card_img {
+                        height: 60%;
+
                     }
                     img {
                         width: 100%;
+                        height: 92%;
+                        object-fit: cover;
                     }
                 }
                 .cloud__block3 {
@@ -1689,6 +1697,62 @@ header {
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
     }
+
+
+// PAGINATION
+.pagination_block {
+    display: flex;
+    flex-direction: column;
+    padding-top: 24px;
+    align-self: center;
+    .VuePagination {
+        nav {
+            ul {
+                display: inline-block;
+                padding-left: 0;
+                margin: 20px 0;
+                border-radius: 4px;
+                li {
+                    display: inline;
+                    cursor: pointer;
+                    a{
+                        position: relative;
+                        float: left;
+                        padding: 6px 12px;
+                        margin-left: -1px;
+                        line-height: 1.42857143;
+                        color: black;
+                        text-decoration: none;
+                        background-color: #fff;
+                        border: 1px solid #ddd; 
+                        .active {
+                            background-color: $primary-color;
+                        } 
+                    }
+                    a:hover{
+                        z-index: 2;
+                        color: black;
+                        background-color: #eee;
+                        border-color: #ddd;
+                    }
+                    .active {
+                        z-index: 3;
+                        color: black;
+                        cursor: default;
+                        background-color: $primary-color;
+                        border-color: black;
+                        cursor: default;
+                    }
+                }
+                .active {
+                    a:hover {
+                        background-color: $primary-color;
+                    }
+                }
+            }
+        }
+    }
+}
     
 // Product page
 .product_container {

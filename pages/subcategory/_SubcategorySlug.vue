@@ -129,20 +129,21 @@
                             class="cloud__block3 cat_block2"
                         >
                             <ProductBrief :product="product" />
-                          
+
                         </div>
-                            <div id="app">
-                                <h2><a target="_blank" href="https://www.npmjs.com/package/vue-pagination-2">Vue Pagination 2</a></h2>
-                                <p>Selected page: {{page}}</p>
-                                <!-- <pagination :records="10000" v-model="page" :per-page="100" @paginate="callback">
-                                </pagination> -->
-                            </div>
+                           
                         </div>
 
+                         <div class="pagination_block">
+                            <p>Selected page: {{subcategoryProducts.curpage}}</p>
+                            <pagination :records="subcategoryProducts.pagetotal" v-model="subcategoryProducts.curpage" :per-page="subcategoryProducts.perpage" @paginate="callback">
+                            </pagination>
+                        </div>
 
 
-                     
-                    
+
+
+
                     <!-- </section> -->
                 </div>
             </div>
@@ -151,12 +152,12 @@
   </div>
 </template>
 
+
 <script>
 import ProductBrief from '~~/components/category/ProductBrief'
 import Breadcrumbs from '~~/components/common/Breadcrumbs.vue'
 import CustomerCartModal from '@/components/modal/CustomerCartModal.vue'
 import Pagination from 'vue-pagination-2'
-
 import { mapState, mapGetters } from 'vuex'
 export default {
   components: {
@@ -167,8 +168,15 @@ export default {
   },
   async asyncData ({ app, params, route, error}) {
     const category = app.store.state.currentCategory;
+    const subcategorySlug = route.params.SubcategorySlug;
+    const subcategory = {
+      subcategory: {
+        cSlug: subcategorySlug
+      },
+      curpage: 1
+    };
     try {
-      await app.store.dispatch('getCurrentSubcategory', { route, category })
+      await app.store.dispatch('getCurrentSubcategory', { route, category, subcategory })
     } catch (err) {
       console.log(err)
       return error({
@@ -180,13 +188,13 @@ export default {
   computed: {
     ...mapState({
       category: 'currentCategory',
-      subcategoryProducts: 'currentSubcategory'
+      subcategoryProducts: 'currentSubcategory',
     }),
   },
   methods: {
-      page(){},
-      callback: function(page) {
-      console.log(`Page ${page} was selected. Do something about it`);
+    page(){},
+    callback: function(page) {
+      console.error(`>>>Page ${page} was selected. Do something about it`);
     }
   },
     head () {
