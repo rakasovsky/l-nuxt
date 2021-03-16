@@ -1348,10 +1348,11 @@ header .header-desk__nav ul li a {
   -webkit-writing-mode: vertical-lr;
       -ms-writing-mode: tb-lr;
           writing-mode: vertical-lr;
+  width: 25px;
 }
 
 .vertical-button svg {
-  width: 20px;
+  width: 25px;
   height: 13px;
   margin: auto auto 0;
   -webkit-transition: -webkit-transform .2s ease-in-out;
@@ -3691,6 +3692,7 @@ footer .footer_bottom .copyright p:last-child {
     -webkit-writing-mode: lr;
         -ms-writing-mode: lr;
             writing-mode: lr;
+    width: auto;
   }
   .lumex_team .team_right svg {
     margin: 0;
@@ -3733,6 +3735,7 @@ footer .footer_bottom .copyright p:last-child {
     -webkit-writing-mode: lr;
         -ms-writing-mode: lr;
             writing-mode: lr;
+    width: auto;
   }
   .category .category_container .category_text .vertical-button svg {
     margin: 0;
@@ -3753,7 +3756,28 @@ footer .footer_bottom .copyright p:last-child {
     margin-bottom: 40px;
   }
   .category_diogram .diogram_right {
+    padding-top: 60%;
+    margin-left: 12%;
+    background-size: cover;
+  }
+  .category_diogram .diogram_right .vertical-button {
     width: 100%;
+    min-height: 32px;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  .category_diogram .diogram_right .vertical-button span {
+    -webkit-writing-mode: horizontal-tb;
+        -ms-writing-mode: lr-tb;
+            writing-mode: horizontal-tb;
+    width: auto;
+  }
+  .category_diogram .diogram_right .vertical-button svg {
+    margin: 0;
   }
   .category_diogram .cat_block-img {
     width: 88%;

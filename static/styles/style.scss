@@ -1175,9 +1175,10 @@ header {
     min-height: 320px;
     span {
         writing-mode: vertical-lr;
+        width: 25px;
     }
     svg {
-        width: 20px;
+        width: 25px;
         height: 13px;
         margin: auto auto 0;
         transition: transform .2s ease-in-out;
@@ -3281,6 +3282,7 @@ footer {
             }
                 span {
                     writing-mode:lr; 
+                    width: auto;
             }
              svg {
                 margin: 0;
@@ -3318,6 +3320,7 @@ footer {
 
             span {
                 writing-mode: lr;
+                width: auto;
             }
             svg {
                 margin: 0;
@@ -3336,14 +3339,34 @@ footer {
             margin-bottom: 40px;
         }
         .diogram_right {
-            width: 100%;
-            // margin-left: 12.5%;
+            // width: 100%;
+            padding-top: 60%;
+            margin-left: 12%;
+            background-size: cover;
+            .vertical-button {
+                width: 100%;
+                min-height: 32px;
+                flex-direction: row;
+                justify-content: space-around;
+                span {
+                    writing-mode: horizontal-tb;
+                    width: auto;
+                }
+                svg {
+                    margin: 0;
+                }
+            }
         }
         .cat_block-img {
             width: 88%;
             margin-left: 12%;
         }
     }
+    // .vertical-button {
+    //     span {
+    //         width: 100%;
+    //     }
+    // }
 
     .atс_container  {
         font-size: 13px;
