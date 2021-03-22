@@ -2,34 +2,39 @@
     <div class="antiowerflow_container">     
     <Header />  
     <section class="category">
+        <div class="seo">
+            <h1>Организация систем контроля доступа в Харькове</h1>
+            <h2>Продажа СКУД ( сетевые, биометрические, турникеты, автономные) </h2>
+            <h2>Интеграция систем контроля и управления доступом</h2>
+        </div>
         <div class="category_container">
             <div class="category_cover skud_cover lumex__content">
 
             </div>
             <div class="category_text lumex__video">
                 <div class="cloud__block4">
-                    <h3 class="h_title fs42">Система контроля доступа</h3>
+                    <h3 class="h_title fs42"> {{ $t('scud_top_h')}}</h3>
                     <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Детекция температуры тела, для борьбе с Covid-19</li>
-                        <li><span class="checkmark"></span>Автономные системы</li>
-                        <li><span class="checkmark"></span>Сетевые СКУД</li>
-                        <li><span class="checkmark"></span>Биометрические СКУД</li>
-                        <li><span class="checkmark"></span>Турникеты и шлагбаумы</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li1')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li2')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li3')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li4')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li5')}}</li>
                     </ul>
-                    <p class="fs24" style="margin-top: 20px;">Интеграция систем контроля и управления доступом:</p>
+                    <p class="fs24" style="margin-top: 20px;">{{ $t('scud_top_h2')}}</p>
                       <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Установка, настройка биометрических СКУД</li>
-                        <li><span class="checkmark"></span>Установка, ремонт и обслуживание турникетов</li>
-                        <li><span class="checkmark"></span>Установка, обслуживание сетевых и автономных СКУД</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li6')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li7')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li8')}}</li>
                       </ul>
-                    <p class="fs24" style="margin-top: 20px;">В нашем кейсе есть решения для:</p>
+                    <p class="fs24" style="margin-top: 20px;">{{ $t('scud_top_h3')}}</p>
                      <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>IT-компаний</li>
-                        <li><span class="checkmark"></span>Складов</li>
-                        <li><span class="checkmark"></span>Парковок</li>
-                        <li><span class="checkmark"></span>Производственных помещений</li>
-                        <li><span class="checkmark"></span>Офисных помещений</li>
-                        <li><span class="checkmark"></span>Бизнес-центров</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li9')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li10')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li11')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li12')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li13')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_top_li14')}}</li>
                       </ul>
                 </div>
                 <a href="" class="primary_button vertical-button">
@@ -208,6 +213,21 @@
 
 <script>
 export default {
+    head: {
+        title: 'Продажа и обслуживание систем контроля доступа в Харькове',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Lumex - системы безопасности и связи: Продажа, установка и настройка видеодомофонов, турникетов и шлагбаумов, систем контроля доступа, детекция температуры тела, для борьбы с Covid-19. Готовые решения для IT-компаний, Бизнес-центров, Производственных помещений, Складов и Парковок'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Система контроля доступа, домофон, видеодомофон, турникеты, шлагбаумы, детекция температуры COV19'
+          }
+        ],
+    },
     mounted () {
 
         const tl = gsap.timeline();

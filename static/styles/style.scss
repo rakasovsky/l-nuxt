@@ -698,6 +698,14 @@ header {
     }
 }
 
+
+// HIDDEN SEO 
+
+.seo {
+    display: none
+}
+
+
 .lumex__main {
     padding-top: $pt;
     display: flex;
@@ -1122,6 +1130,7 @@ header {
     // Изображения для страниц категорий
     .srvc {
         background-image: url(../assets/img/category/tel/electronic-repairs-min.jpg);
+        background-size: cover;
     }
     .cloud_img{
         background-image: url(../assets/img/category/tel/cloudcalls.jpg);

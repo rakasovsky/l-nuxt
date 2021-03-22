@@ -1,5 +1,11 @@
 <template>
 <div>
+  <div class="seo">
+      <h1>Ip АТС</h1>
+      <h2>Видеонаблюдение</h2>
+      <h2>Системы контроля доступа</h2>
+      <h2>Сервисный центр</h2>
+  </div>
   <section class="who-we-are">
             <div class="who-we-are__container">
                 <div class="who-we-are__row">
@@ -13,13 +19,12 @@
                         <div class="content">
                             <div></div>
                             <div>
-                                <p class="fs28">Системы безопасности и связи</p>
+                                <p class="fs28">{{ $t('top_title')}}</p>
                                 <p class="fs80"><span class="lumex">L</span>umex</p>
                             </div>
                             <div class="bot">
                                 <p class="fs24">
-                                    Комплексные решения, максимально адаптированные под индивидуальные<br>
-                                    потребности клиента
+                                     {{ $t('top_title2')}}
                                 </p>
                                 <div class="transform90">
                                     <span class="fs15"><span class="lumex">L</span>umex / main</span>
@@ -307,7 +312,7 @@
 
                 <h3 class="h_title fs42">Корпоративная связь <br>
                    для крупных предприятий</h3>
-                <p class="fc_grey">
+                <p class="fc_white">
                     Коробочная версия виртуальной АТС или аппаратные IP-АТС. Полное сопровождение под ключ
                 </p>
             </div>
@@ -336,7 +341,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Облачная АТС</p>
-                                <p class="fc_grey">
+                                <p class="fc_white">
                                     Сервис, объединяющий телефонные номера компании в одну сеть,
                                     получайте весь функционал IP-АТС, не покупая дорогостоящее оборудование
                                 </p>
@@ -413,7 +418,7 @@
                             </div>
                             <div class="card-content">
                                 <p class="c_title fs24">Аппаратное видеонаблюдение</p>
-                                <p class="fc_grey">
+                                <p class="fc_white">
                                     Классическая система, включающая в себя камеры,
                                     видеорегистратор, накопитель. Предлагаем решения IP, HD-TVI, HD-CVI от известных
                                     брендов, таких как Hikvision, Dahua, Trassir
@@ -535,6 +540,11 @@
             hid: 'description',
             name: 'description',
             content: 'Интеграция сиcтем безопасности и связи. Аппаратные и облачные решения для бизнеса. Сервисное обслуживание систем и проектов.'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Видеонаблюдение, Системы контроля доступа, Телефония, Ip атс, Asterisk, GSM шлюз,виртуальная атс, ip-телефония, мини атс, колл центр, ip атс, айпи телефония'
         }
         ],
     },

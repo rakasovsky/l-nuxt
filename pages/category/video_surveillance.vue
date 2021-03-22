@@ -2,32 +2,34 @@
     <div class="antiowerflow_container">     
     <Header />  
     <section class="category">
+        <div class="seo">
+            <h1>Монтаж и настройка видеонаблюдения в Харькове</h1>
+            <h2>Продажа видеонаблюдения</h2>
+            <h2>Постгарантийный сервис: видеорегистраторы, камеры</h2>
+        </div>
         <div class="category_container">
             <div class="category_cover cctv_cover lumex__content">
 
             </div>
             <div class="category_text lumex__video">
                 <div class="cloud__block4">
-                    <h3 class="h_title fs42">Видеонаблюдение
-                    </h3>
+                    <h3 class="h_title fs42">{{ $t('video_top_h')}}</h3>
                     <p class="fs24">
-                        Имея богатый опыт в построении различных систем видеонаблюдения - предлагаем
-                        современные решения безопасности по задачам и потребностям клиента.
-                        В нашем кейсе решений по видеонаблюдению есть:                   
+                        {{ $t('video_top')}}                  
                     </p>
                     <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Облачное видеонаблюдение</li>
-                        <li><span class="checkmark"></span>Умное видеонаблюдение</li>
-                        <li><span class="checkmark"></span>IP-Видеонаблюдение</li>
-                        <li><span class="checkmark"></span>HD-видеонаблюдение (HD-TVI/HD-CVI/AHD)</li>
-                        <li><span class="checkmark"></span>Сервис (ремонт и обслуживание систем видеонаблюдения)</li>
+                        <li><span class="checkmark"></span>{{ $t('video_top_li1')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_top_li2')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_top_li3')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_top_li4')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_top_li5')}}</li>
                     </ul>
                 </div>
                 <a href="" class="primary_button vertical-button">
                     <span>Video Surveillance</span>
                 </a>
                 <div class="transform90">
-                    <span class="fs15">Ваша безопасность</span>
+                    <span class="fs15">{{ $t('l_sec')}}</span>
                 </div>
             </div>
         </div>
@@ -38,26 +40,26 @@
         <div class="team_left">
             <div>
                 <p class="label txt3"><span class="lumex">L</span>umex / Cloud Video Surveillance</p>
-                <h3 class="h_title fs42 txt3">Облачное видеонаблюдение</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('video_cloud1')}}</h3>
                 <p class="txt3" style="margin-bottom: 10px;">
-                   Вам нужна только камера, остальное оборудование находится в нашем дата-центре.
+                   {{ $t('video_cloud2')}}
                 </p>
                 <p  class="txt3">
-                  Подключая камеры видеонаблюдения к облаку, вы получите:
+                  {{ $t('video_cloud3')}}
                 </p>
                 <p  class="txt3">
                     <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>удаленный архив</li>
-                        <li><span class="checkmark"></span>удобное, эргономичное приложение</li>
-                        <li><span class="checkmark"></span>отсутствие потребности в покупке дорогостоящего оборудования</li>
-                        <li><span class="checkmark"></span>доступ к камерам и к архиву из любой точки мира</li>
+                        <li><span class="checkmark"></span>{{ $t('video_cloud_li1')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_cloud_li2')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_cloud_li3')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('video_cloud_li4')}}</li>
                     </ul>
                 </p>
             </div>
         </div>
         <div class="team_right cloud_cctv cctv txt3">
             <a href="" class="primary_button vertical-button">
-                <span>Облачное видеонаблюдение</span>
+                <span>{{ $t('video_cloud1')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -70,26 +72,19 @@
         <div class="diogram_left">
             <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / Smart Video Surveillance</p>
-                <h3 class="h_title fs42 txt3">Умное видеонаблюдение</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('video_smart1')}}</h3>
                 <p class="txt3 mb10" >
-                    Надежные, удобные, быстрые системы видеонаблюдения, имеющие разные модули
-                    видеоаналитики, позволят Вам реализовать определение лиц, пола и возраста,
-                    автомобильных номеров, детектирование задымления, выявление оставленных и забытых
-                    предметов, анализ посетителей.     
+                   {{ $t('video_smart2')}}    
                 </p>
                 <p class="txt3 mb10">
-                    Для торговых сетей предусмотрена аналитика и контроль кассовых операций. Анализ
-                    работы сотрудников зала и посетителей. Аналитика очередей и качества обслуживания.
-                    Для парковок, предлагаем систему автомобильных номеров, в которой вы получаете
-                    статистику по въезду, выезду, а также автоматическое открытие шлагбаума, для
-                    автомобилей, с номерами в белом списке.
+                   {{ $t('video_smart3')}}
                 </p>
-                <p class="txt3">Эти и ряд других модулей видеоаналитики доступны для реализации Ваших задач.</p>
+                <p class="txt3">{{ $t('video_smart4')}}</p>
             </div>
         </div>
        <div class="diogram_right cat_block-img smart_tv txt3">
             <a href="" class="primary_button vertical-button">
-                <span>Умное видеонаблюдение</span>
+                <span>{{ $t('video_smart1')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -200,6 +195,21 @@
 
 <script>
 export default {
+    head: {
+        title: '| Lumex.in.ua | Харьков |  Купить Видеонаблюдение Облачное видеонаблюдение Умное видеонаблюдение ',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Lumex - системы безопасности и связи на рынке услуг с 2002 года. Продажа, монтаж и подключение любых систем видеонаблюдения (IP/HD-TVI/HD-CVI/AHD) Облачное видеонаблюдение Настройка удаленного доступа Удобное приложение Доступ к камерам и архиву из любой точки мира'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Видеонаблюдение, IP-Видеонаблюдение, HD-TVI, HD-CVI, AHD, монтаж, установка, обслуживание'
+        }
+        ],
+    },
     mounted () {
 
         const tl = gsap.timeline();

@@ -17,15 +17,15 @@
         <div class="modal-wrapper content-padding">
           <div class=" header-block">
             <p class="h1-header">
-              Cart
+              
             </p>
             <div class="close" @click="$modal.hide('customer-cart')">
               <CloseOrDeleteButton />
             </div>
           </div>
-          <div v-if="getProductsInCart.length === 0" class="">
+          <div v-if="getProductsInCart.length === 0" class="empty_cart">
             <p>
-              Товаров пока нет, но это легко можно исправить :)
+              Корзина временно недоступна
             </p>
           </div>
           <template v-else>
@@ -165,6 +165,13 @@ export default {
   display: flex;
   flex-direction: column;
   align-items: stretch;
+}
+.empty_cart {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 .bottom {
   flex-shrink: 0;

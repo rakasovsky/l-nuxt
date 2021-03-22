@@ -669,6 +669,10 @@ header .header-desk__nav ul li a {
   margin-right: 14%;
 }
 
+.seo {
+  display: none;
+}
+
 .lumex__main {
   padding-top: calc(100% / 9);
   display: -webkit-box;

@@ -2,29 +2,31 @@
     <div class="antiowerflow_container">     
     <Header />  
     <section class="category">
+        <div class="seo">
+            <h1>Облачная атс, виртуальная атс,  ip атс, ip-телефония,айпи телефония, мини атс</h1>
+            <h2>Индивидуальная настройка Asterisk</h2>
+            <h2>АТС Panasonic</h2>
+        </div>
         <div class="category_container">
             <div class="category_cover lumex__content">
 
             </div>
             <div class="category_text lumex__video">
                 <div class="cloud__block4">
-                    <!-- <h3 class="h_title fs42">Телефония
-                    </h3> -->
+                    <h3 class="h_title fs42">{{ $t('tel_h')}}</h3>
                     <p class="fs24">
-                        Индивидуальный подход к каждому клиенту, мы вникаем в потребности
-                        и особенности Вашего бизнеса. Экспертная оценка задач, составление
-                        технического задания и коммерческого предложения:                    
+                        {{ $t('tel_top')}}                   
                     </p>
                     <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Система оценки качества работы операторов</li>
-                        <li><span class="checkmark"></span>Телеграм-бот: мониторинг сервисов, уведомления</li>
-                        <li><span class="checkmark"></span>Статистика, наглядный и информативный веб-интерфейс</li>
-                        <li><span class="checkmark"></span>Контроль утерянных звонков</li>
-                        <li><span class="checkmark"></span>Отправка отчетов на почту о работе Call-центра</li>
-                        <li><span class="checkmark"></span>Интеграция с 1С</li>
-                        <li><span class="checkmark"></span>Интеграция с CRM-системами</li>
-                        <li><span class="checkmark"></span>Студийная запись голосовых приветствий на студии с профессиональными актерами</li>
-                        <li><span class="checkmark"></span>Открыты для реализации идей и задач заказчика</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li1')}} </li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li2')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li3')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li4')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li5')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li6')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li7')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li8')}}</li>
+                        <li><span class="checkmark"></span> {{ $t('tel_top_li9')}}</li>
                     </ul>
                 </div>
                 <a href="" class="primary_button vertical-button">
@@ -42,28 +44,21 @@
         <div class="team_left">
             <div>
                 <p class="label txt3"><span class="lumex">L</span>umex / Cloudcalls</p>
-                <h3 class="h_title fs42 txt3">Облачная телефония</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('tel_h2')}}</h3>
                 <p class="txt3 mb10">
-                    Для клиентов, у которых динамично развивающийся бизнес мы рекомендуем
-                    использовать Облачную телефонию. Данное решение дает возможность получить
-                    все достоинства IP-телефонии без первоначальных затрат на дорогостоящее
-                    оборудование.
+                  {{ $t('tel_top_p1')}}
                 </p>
                 <p  class="txt3 mb10">
-                    Наши сервера находятся в дата-центрах, что позволяет давать
-                    максимальный аптайм сервиса - до 99.9%. Репликация серверов, бесперебойное
-                    питание, несколько каналов интернет - обеспечивает высокий уровень
-                    отказоустойчивости.
+                     {{ $t('tel_top_p2')}}
                 </p>
                 <p  class="txt3">
-                    Для подключения GSM-каналов, мы предлагаем в аренду
-                    слоты для SIM-карточек.
+                   {{ $t('tel_top_p3')}}
                 </p>
             </div>
         </div>
         <div class="team_right cloud_img txt3">
             <a href="" class="primary_button vertical-button">
-                <span>Облачная АТС</span>
+                <span>{{ $t('tel_h2')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -76,32 +71,27 @@
         <div class="diogram_left">
             <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / Asterisk <span class="lumex">*</span></p>
-                <h3 class="h_title fs42 txt3">Виртуальная АТС<br>
-                    Коробочная версия</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('tel_h3')}}<br>
+                    {{ $t('tel_h3_1')}}</h3>
                 <p class="txt3 mb10">
-                    Для тех, кто хочет использовать собственное оборудование у нас есть
-                    предложение - коробочная версия виртуальной IP-АТС.    
+                     {{ $t('tel_top_p4')}}   
                 </p>
                 <p class="txt3" style="margin-bottom: 20px;">
-                    Мы устанавливаем
-                    оборудование “под ключ”, а также готовы сопровождать Вашу телефонию, вождать Вашу телефонию,
-                    предлагая обслуживание, обновление системы. 
+                   {{ $t('tel_top_p5')}}
                 </p>
-                <h3 class="fs20 txt3" style="margin-bottom: 20px;">В коробочную версию входит:</h3>
+                <h3 class="fs20 txt3" style="margin-bottom: 20px;"> {{ $t('tel_top_p6')}}</h3>
 
-                <p class="txt3 mb10"><b>Сервер</b> - мы подберем для Вас оборудование соответствующее требованиям по
-                    стоимости, надежности, отказоустойчивости</p>
-                <p class="txt3 mb10"><b>Настройка программной части</b>, веб-интерфейс с личным кабинетом, статистикой звонков и записью телефонных разговоров.</p> 
-                <p class="txt3 mb10"><b>GSM-шлюз</b> - оборудование, для подключения мобильных SIM-карт в IP-АТС</p>   
-                <p class="txt3" style="margin-bottom: 20px;"><b>IP-телефон</b> - телефонный аппарат, для работы с IP-АТС, условно разделяем на 5 типов:</p>
+                <p class="txt3 mb10"><b> {{ $t('tel_top_p7')}}</b> -  {{ $t('tel_top_p7_2')}}</p>
+                <p class="txt3 mb10"><b> {{ $t('tel_top_p8')}}</b> {{ $t('tel_top_p8_2')}}</p> 
+                <p class="txt3 mb10"><b> {{ $t('tel_top_p9')}}</b> -  {{ $t('tel_top_p9_2')}}</p>   
+                <p class="txt3" style="margin-bottom: 20px;"><b> {{ $t('tel_top_p10')}}</b> -  {{ $t('tel_top_p10_2')}}</p>
                 <ul class="category-list jt">
-                    <li class="txt3"><span class="checkmark"></span>Начального уровня, базовый аппарат</li>
-                    <li class="txt3"><span class="checkmark"></span>Многофункциональный, корпоративного уровня</li>
-                    <li class="txt3"><span class="checkmark"></span>Премиум линейка, с сенсорным экраном, ОС Android</li>
-                    <li class="txt3"><span class="checkmark"></span>DECT-телефон - переносной, беспроводной IP-телефон</li>
-                    <li class="txt3"><span class="checkmark"></span>Softphone - Программный IP + гарнитура - решение для колл-центров,
-                        когда нужны свободные руки для операторов</li>
-                    <li class="txt3"><span class="checkmark"></span>Аналоговый телефон + FXS порт</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li1')}}</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li2')}}</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li3')}}</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li4')}}</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li5')}}</li>
+                    <li class="txt3"><span class="checkmark"></span>{{ $t('tel_ip_li6')}}</li>
                 </ul>
             </div>
         </div>
@@ -140,23 +130,18 @@
         <div class="team_left">
             <div>
                 <p class="label "><span class="lumex">L</span>umex / IP-АТС</p>
-                <h3 class="h_title fs42 ">Аппаратные IP-АТС</h3>
+                <h3 class="h_title fs42 ">{{ $t('tel_ip_atc1')}}</h3>
                 <p class="mb10">
-                    Также мы имеем богатый опыт интеграции аппаратных IP-АТС. Есть авторизация
-                    Panasonic, что позволяет давать расширенную гарантию на АТС Panasonic.
+                    {{ $t('tel_ip_atc2')}}
                 </p>
                 <p class="">
-                    Аппаратные IP-АТС - решения для компаний, которым нужна телефония без
-                    сложных алгоритмов, надежные и шаблонные. Единая архитектура, программное
-                    обеспечение, разветвленная сеть сервисных центров. Аппаратные IP-АТС состоят
-                    из аппаратной части - Базовый блок, платы расширения и программная часть,
-                    которая лицензируется. 
+                  {{ $t('tel_ip_atc3')}}
                 </p>
             </div>
         </div>
         <div class="team_right">
             <a href="" class="primary_button vertical-button">
-                <span>Аппаратные АТС</span>
+                <span>{{ $t('tel_ip_atc1')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -168,37 +153,35 @@
     <!-- TABLE -->
     <section class="tel_table-wrapper">
         <div class="text">
-            <h3 class="h_title fs42 ">Выбор IP-АТС,<br> сравнение решений</h3>
+            <h3 class="h_title fs42 ">{{ $t('tel_table_h')}}<br>{{ $t('tel_table_h1')}}</h3>
         </div>
         <div class="atс_container">
             <table>
                 <thead>
                 <tr>
                     <th></th>
-                    <th class="col">Облачная АТС</th>
-                    <th class="col">Коробочная версия виртуальной IP-АТС</th>
-                    <th class="col">Аппаратная IP-АТС</th>
+                    <th class="col">{{ $t('tel_table_col1')}}</th>
+                    <th class="col">{{ $t('tel_table_col2')}}</th>
+                    <th class="col">{{ $t('tel_table_col3')}}</th>
                 </tr>
                 </thead>
                 <tbody>
                 <tr>
-                    <th class="row">Первоначальные вложения на закупку оборудования</th>
+                    <th class="row">{{ $t('tel_table_row1')}}</th>
                     <td>-</td>
                     <td>от 300 $</td>
                     <td>от 500 $</td>
                 </tr>
             
                 <tr>
-                    <th class="row">Настройка IP-АТС.
-                        Пусконаладка.</th>
+                    <th class="row">{{ $t('tel_table_row2')}}</th>
                     <td>-</td>
                     <td>от 600 $</td>
                     <td>от 300 $</td>
                 </tr>
             
                 <tr>
-                    <th class="row">Расширение,
-                        масштабируемость</th>
+                    <th class="row">{{ $t('tel_table_row3')}}</th>
                     <td>+</td>
                     <td>+ <br>
                         (настройка)</td>
@@ -208,10 +191,7 @@
                 </tr>
             
                 <tr>
-                    <th class="row">Внедрение
-                        дополнительного
-                        функционала.
-                        Разработка</th>
+                    <th class="row">{{ $t('tel_table_row4')}}</th>
                     <td>+</td>
                     <td>+</td>
                     <td>Выбор из доступных к
@@ -219,27 +199,25 @@
                         сервисов</td>
                 </tr>
                 <tr>
-                    <th class="row">Обслуживание</th>
+                    <th class="row">{{ $t('tel_table_row5')}}</th>
                     <td>+ <br> (входит в стоимость сервиса)</td>
                     <td>+ <br> (цена зависит от задачи и условий обслуживания)</td>
                     <td>+ <br> (цена зависит от задачи и условий обслуживания)</td>
                 </tr>
                 <tr>
-                    <th class="row">Мониторинг сервисов
-                        Online. Графики
-                        нагрузок и т.п</th>
+                    <th class="row">{{ $t('tel_table_row6')}}</th>
                     <td>+</td>
                     <td>+ (20$/месяц)</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th class="row">Интеграция с 1С, CRM системами, телеграмбот и т.д</th>
+                    <th class="row">{{ $t('tel_table_row7')}}</th>
                     <td>+</td>
                     <td>+</td>
                     <td>-</td>
                 </tr>
                 <tr>
-                    <th class="row">Стоимость сервиса</th>
+                    <th class="row">{{ $t('tel_table_row8')}}</th>
                     <td>От 600грн/мес</td>
                     <td>-</td>
                     <td>-</td>
@@ -253,24 +231,24 @@
         <div class="team_left">
             <div>
                 <p class="label"><span class="lumex">L</span>umex / Service</p>
-                <h3 class="h_title fs42 ">Сервисный центр</h3>
+                <h3 class="h_title fs42 ">{{ $t('tel_service_h')}}</h3>
                 <p class="mb10">
-                    Мы имеем свой сервис, что позволяет оперативно проводить ремонт базовых блоков АТС, плат расширения, блоков питания, системных телефонов, IP-телефонов и другого сетевого оборудования.   
+                    {{ $t('tel_service_p1')}}
                 </p>
                 <p class="mb10">
-                    Возможность предоставления оборудования на подмену, на время ремонта - позволяет Вам не нести финансовые потери, в случае простаивания бизнеса без связи, на время ремонта АТС 
+                    {{ $t('tel_service_p2')}}
                 </p>
                 <p class="mb10">
-                    Если у вас нет возможности снять и привезти АТС к нам в сервис, то наши специалисты смогут выехать и провести диагностику на объекте.
+                    {{ $t('tel_service_p3')}}
                 </p>
                 <p class="">
-                    Гарантия на ремонт - 6 месяцев
+                    {{ $t('tel_service_p4')}}
                 </p>
             </div>
         </div>
         <div class="team_right service_img">
             <a href="" class="primary_button vertical-button">
-                <span>Сервис</span>
+                <span>{{ $t('l_service')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -284,6 +262,21 @@
 
 <script>
 export default {
+    head: {
+        title: 'Lumex.in.ua | Харьков | Купить IP АТС  Виртуальная АТС GSM-шлюз',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Современные коммуникационные технологии | продажа и обслуживание оборудование для цифровых и аналоговых атс | GSM-шлюзы | АТС Panasonic'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Облачная телефония, Виртуальная АТС, GSM-шлюз, IP-АТС, продажа, установка, сервис'
+          }
+        ],
+    },
     mounted () {
 
         const tl = gsap.timeline();

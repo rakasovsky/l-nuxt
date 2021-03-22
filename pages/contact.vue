@@ -1,6 +1,11 @@
 <template>
     <div>
     <Header />
+        <div class="seo">
+            <h1>Люмекс Сервис | Продажа и обслуживание видеонаблюдения | атс | скуд</h1>
+            <h2>Сервисный центр</h2>
+            <h2>Точка выдачи</h2>
+        </div>
         <div class="top">
         </div>
         <div class="contact_container">
@@ -15,7 +20,7 @@
                 </div>
                 <div class="contact_map lumex__content">
                     <div id="map" style="width: 50vw; height: 100%; margin-left: 15%;">
-                        <GMap
+                        <!-- <GMap
                         ref="gMap"
                         language="ru"
                         style="height: 100%"
@@ -40,8 +45,10 @@
                             </GMapInfoWindow>
                         </GMapMarker>
                      
-                        </GMap>
+                        </GMap> -->
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2564.7343920955113!2d36.23160531571502!3d49.99758897941549!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4127a0e5bf0e8cb1%3A0xd59c30fffef7c545!2z0LLRg9C70LjRhtGPINCh0YPQvNGB0YzQutCwLCAyNiwg0KXQsNGA0LrRltCyLCDQpdCw0YDQutGW0LLRgdGM0LrQsCDQvtCx0LvQsNGB0YLRjCwgNjEwMDA!5e0!3m2!1suk!2sua!4v1615919982234!5m2!1suk!2sua" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
                     </div>
+
                     <div class="lumex_info content">
                         <h4 class="title fs24"><span class="lumex">L</span>umex</h4>
                         <p>Харьков</p>
@@ -61,6 +68,21 @@
 
 <script>
 export default {
+    head: {
+        title: 'Lumex.in.ua | Харьков | Купить IP АТС  Видеонаблюдение Ремонт',
+        meta: [
+        {
+            hid: 'description',
+            name: 'description',
+            content: 'Офис фирмы Люмекс | продажа и обслуживание оборудования атс | видеонаблюдение | системы контроля доступа'
+        },
+        {
+            hid: 'keywords',
+            name: 'keywords',
+            content: 'Облачная телефония, Виртуальная АТС, GSM-шлюз, IP-АТС, продажа, установка, сервис'
+          }
+        ],
+    },
 
     data() {
         return {
