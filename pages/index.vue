@@ -90,7 +90,7 @@
                             <p class="fc_grey">
                                Для противостояния эпидемии Covid-19,  мы предлагаем  для вас решения для контроля температуры тела и детекция наличия маски в автоматическом режиме 
                             </p>
-                            <a href="#" class="primary_button">
+                            <a href="/category/scud" class="primary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                 </svg>
@@ -511,13 +511,13 @@
                 </div>
             </div>
             <div class="team_right srvc txt3">
-                <a href="" class="primary_button vertical-button">
+                <div class="primary_button vertical-button">
                     <span>Service</span>
                     <svg>
                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                         </path>
                     </svg>
-                </a>
+                </div>
             </div>
         </section>
         <!-- ABOUT US -->

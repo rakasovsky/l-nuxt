@@ -98,33 +98,27 @@
         <div class="team_left">
             <div>
                 <p class="label "><span class="lumex">L</span>umex / IP-Video Surveillance</p>
-                <h3 class="h_title fs42 ">IP-видеонаблюдение</h3>
+                <h3 class="h_title fs42 ">{{ $t('video_ip1')}}</h3>
                 <p class="mb10">
-                    Цифровое видеонаблюдение построенное на компьютерной сети. Имеет высокое качество
-                    изображения, отсутствие шумов.
+                   {{ $t('video_ip2')}}
                 </p>
                 <p class="mb10">
-                   Питание IP-камер по технологии PoE (power over ethernet) позволяет уйти от внешних
-                   блоков питания и дополнительных проводов, тем самым обеспечить простоту подключения
-                   и снижение цены на кабельные сети. 
+                  {{ $t('video_ip3')}} 
                 </p>
                 <p class="mb10">
-                    Безопасность коммуникаций обеспечивается дополнительным шифрованием, что
-                    позволяет предотвращать вмешательство из-вне
+                   {{ $t('video_ip4')}}
                 </p>
                 <p class="mb10">
-                    Интеллектуальные камеры, имеющие встроенные алгоритмы, которые могут распознавать
-                    номера машин, определять количество людей в кадре и другие аналитические средства.
+                    {{ $t('video_ip5')}}
                 </p>
                 <p class="">
-                    Встроенный звук, интегрированный контроль PTZ, порты входа-выхода - далеко не все
-                    достоинства IP-видеонаблюдения.
+                    {{ $t('video_ip6')}}
                 </p>
             </div>
         </div>
         <div class="team_right ip_cctv cctv">
             <a href="" class="primary_button vertical-button">
-                <span>IP-видеонаблюдение</span>
+                <span>{{ $t('video_ip1')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -137,23 +131,21 @@
         <div class="diogram_left">
             <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / HD-Video Surveillance</p>
-                <h3 class="h_title fs42 txt3">HD-видеонаблюдение (HD-TVI/HD-CVI/AHD) </h3>
+                <h3 class="h_title fs42 txt3">{{ $t('video_hd1')}} (HD-TVI/HD-CVI/AHD) </h3>
                 <p class="txt3 mb10">
-                HD-видеонаблюдение - это следующее поколение аналоговых систем, которое позволяет
-                передавать видеопоток от камер наблюдения по кооксиальному кабелю или витой паре.    
+                    {{ $t('video_hd2')}}   
                 </p>
                 <p class="txt3 mb10">
-                   Оптимальное решение для обновления старых аналоговых систем, используя старые
-                   кабельные сети.
+                   {{ $t('video_hd3')}}
                 </p>
-                <p class="txt3 mb10">Если есть потребность в бюджетном решении видеонаблюдения - то стоит обратить
-                                внимание именно на HD-видеонаблюдение.
+                <p class="txt3 mb10">
+                    {{ $t('video_hd4')}}
                 </p>
             </div>
         </div>
            <div class="diogram_right cat_block-img hd_cctv txt3">
             <a href="" class="primary_button vertical-button">
-                <span>HD-видеонаблюдение</span>
+                <span>{{ $t('video_hd1')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>
@@ -166,22 +158,18 @@
         <div class="team_left">
             <div>
                 <p class="label"><span class="lumex">L</span>umex / Service</p>
-                <h3 class="h_title fs42 ">Сервисный центр</h3>
+                <h3 class="h_title fs42 ">{{ $t('video_service1')}}</h3>
                 <p class="mb10">
-                    Наш сервис производит не только ремонт систем видеонаблюдения, камер,
-                    видеорегистраторов, но и обслуживание существующих систем. Обновление прошивок,
-                    диагностика, ремонт, настройка, юстировка. 
+                    {{ $t('video_service2')}}
                 </p>
                 <p class="">
-                    Также мы являемся интеграторами, а именно - мы производим монтаж, установку и
-                    настройку систем видеонаблюдения. Работаем по городу и области, также возможны
-                    выезды по всей Украине.
+                    {{ $t('video_service3')}}
                 </p>
             </div>
         </div>
         <div class="team_right cctv_service_img cctv">
             <a href="" class="primary_button vertical-button">
-                <span>Сервис</span>
+                <span>{{ $t('video_service4')}}</span>
                 <svg>
                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor">
                     </path>

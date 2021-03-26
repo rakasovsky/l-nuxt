@@ -139,7 +139,7 @@
             <!-- MOBILE MENU -->
 
             <div class="mob_menu">
-                <nuxt-link to="/" class="mob_logo"><img src="~/static/assets/img/lumex_logo.svg" alt=""></nuxt-link >
+                <nuxt-link to="/" class="mob_logo"><img src="~/static/assets/img/lumex_logo.svg" alt="Lumex logo"></nuxt-link >
                 <nav role="navigation">
                     <div id="menuToggle">
                         <input type="checkbox" />
@@ -147,7 +147,7 @@
                         <span></span>
                         <span></span>
                         <ul id="menu">
-                            <nuxt-link to="/" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt=""></nuxt-link>
+                            <nuxt-link to="/" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt="Lumex logo"></nuxt-link>
                             <li class="m_li">Телефония<div>▾</div>
                                 <ul class="dropdown_container_mobile">
                                        <nuxt-link to="/category/telephony"><li class="menu-item">Телефония</li></nuxt-link>

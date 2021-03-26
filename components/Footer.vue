@@ -6,23 +6,23 @@
         <a href="#" class="footer-logo"><img src="../static/assets/img/lumex_logo.svg" alt=""></a>
         <div class="footer_container">
             <div class="footer_about">
-                <p class="label fs24">О нас</p>
+                <p class="label fs24">{{$t('footer_slogan1')}}</p>
                 <p>
-                    Облачные и аппаратные решения в области безопасности и связи. Сервис и обслуживание.
+                   {{$t('footer_slogan1_1')}}
                 </p>
             </div>
             <div class="footer_contacts">
-                <p class="label fs24">Контакты</p>
-                <p><nuxt-link :to="localePath('/contact')">{{ $t('contact_info')}}</nuxt-link></p>
-                <p><a href="tel://380577143074">+380 57 714-3074</a></p>
-                <p><a href="tel://0661082211">+380 66 108-2211</a></p>
-                <a href="mailto:info@lumex.in.ua"> info@lumex.in.ua</a>
-                <a href="mailto:support@lumex.in.ua"> support@lumex.in.ua</a>
+                <p class="label fs24">{{$t('l_contacts')}}</p>
+                <p class="link_f"><nuxt-link :to="localePath('/contact')">{{ $t('contact_info')}}</nuxt-link></p>
+                <p class="link_f"><a href="tel://380577143074">+380 57 714-3074</a></p>
+                <p class="link_f"><a href="tel://0661082211">+380 66 108-2211</a></p>
+                <p class="link_f"><a href="mailto:info@lumex.in.ua"> info@lumex.in.ua</a></p>
+                <p class="link_f"><a href="mailto:support@lumex.in.ua"> support@lumex.in.ua</a></p>
             </div>
             <div class="footer_about">
-                <p class="label fs24">Работая с нами</p>
+                <p class="label fs24">{{$t('footer_slogan2')}}</p>
                 <p>
-                    Вы получаете: высокое качество обслуживание от специалистов. Гарантию. Быструю обработку заказов. Оборудование на подмену. Свяжитесь с нами сейчас!
+                    {{$t('footer_slogan2_1')}}
                 </p>
             </div>
         </div>

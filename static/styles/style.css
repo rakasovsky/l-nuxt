@@ -1281,6 +1281,7 @@ header .header-desk__nav ul li a {
 
 .lumex_team .srvc {
   background-image: url(../assets/img/category/tel/electronic-repairs-min.jpg);
+  background-size: cover;
 }
 
 .lumex_team .cloud_img {
@@ -2510,6 +2511,10 @@ footer .footer_container .footer_contacts {
   width: 20%;
   margin: 0 50px;
   padding-left: 3%;
+}
+
+footer .footer_container .footer_contacts .link_f {
+  height: 33px;
 }
 
 footer .footer_bottom {

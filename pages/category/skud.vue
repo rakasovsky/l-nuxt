@@ -52,14 +52,12 @@
         <div class="team_left">
             <div>
                 <p class="label txt3"><span class="lumex">L</span>umex / COVID-19</p>
-                <h3 class="h_title fs42 txt3">Измерение температуры тела. Противодействие COVID-19  </h3>
+                <h3 class="h_title fs42 txt3">{{ $t('scud_cov1')}}</h3>
                 <p class="txt3" style="margin-bottom: 10px;">
-                    Терминалы для идентификации по лицу, измерение температуры тела, наличие маски -
-                        позволяют обезопасить попадание зараженного человека на территорию, тем самым
-                        снижая вероятность заражения короно-вирусом Covid 19
+                    {{ $t('scud_cov2')}}
                 </p>
                 <p  class="txt3">
-                  Такие системы также поддерживают учет рабочего времени и подключение в локальную сеть.
+                  {{ $t('scud_cov3')}}
                 </p>
             </div>
         </div>
@@ -78,19 +76,17 @@
         <div class="diogram_left">
             <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / Access Control</p>
-                <h3 class="h_title fs42 txt3">Автономные СКУД</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('scud_auto1')}}</h3>
                 <p class="txt3 mb10" >
-                    Самыми простыми системами контроля доступа являются автономные.
-                    В простейшей схеме предусмотрен контроллер, кнопка открытия двери, электро-замок и
-                    бесперебойный блок питания.   
+                   {{ $t('scud_auto2')}}   
                 </p>
                 <p class="txt3 mb10">
-                   Считыватели могут быть
+                  {{ $t('scud_auto3')}}
                 </p>
                 <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Считыватель карт и ключей RFID</li>
-                        <li><span class="checkmark"></span>Биометрический считыватель</li>
-                        <li><span class="checkmark"></span>Кодовая клавиатура</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_auto_li1')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_auto_li2')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_auto_li3')}}</li>
                 </ul>
             </div>
         </div>
@@ -110,33 +106,28 @@
         <div class="team_left">
             <div>
                 <p class="label "><span class="lumex">L</span>umex / Network Access Control</p>
-                <h3 class="h_title fs42 ">Сетевые СКУД</h3>
+                <h3 class="h_title fs42 ">{{ $t('scud_network1')}}</h3>
                 <p class="mb10">
-                   Сетевые системы контроля доступа имеют разветвленную архитектуру, которая позволяет
-                    строить систему на большое количество точек прохода:
+                   {{ $t('scud_network2')}}
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    <strong>Главный контроллер</strong>, с сетевым интерфейсом, который управляется отдельным ПО, имеет учет рабочего времени и дополнительные возможности.
+                     {{ $t('scud_network3')}}
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    <strong> Дверной контроллер</strong>, который отвечает за конкретную точку прохода и является
-                    исполнительным устройством, все данные о входе и выходе он передает на главный
-                    контроллер.
+                    {{ $t('scud_network4')}}
                 </p>
                 <p class="mb10" style="text-indent: 1.5em;">
-                    <strong> Считыватель</strong> - конечное устройство, которое принимает карты доступа или
-                    биометрические данные и передает на контроллер. Именно контроллер принимает
-                    решение - открывать дверь или нет. 
+                    {{ $t('scud_network5')}}
                 </p>
                 <p class="mb10">
-                   Основными достоинствами сетевых СКУД являются:
+                    {{ $t('scud_network6')}}
                 </p>
                 <ul style="margin-top: 20px;" class="category-list">
-                        <li><span class="checkmark"></span>Высокий уровень безопасности</li>
-                        <li><span class="checkmark"></span>Учет рабочего времени</li>
-                        <li><span class="checkmark"></span>Разветвленная архитектура</li>
-                        <li><span class="checkmark"></span>Больше количество точек прохода</li>
-                        <li><span class="checkmark"></span>Единое ПО</li>
+                        <li><span class="checkmark"></span> {{ $t('scud_network_li1')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_network_li2')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_network_li3')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_network_li4')}}</li>
+                        <li><span class="checkmark"></span>{{ $t('scud_network_li5')}}</li>
                 </ul>
             </div>
         </div>
@@ -155,17 +146,15 @@
         <div class="diogram_left">
             <div class="cloud__block4 jt">
                 <p class="label txt3"><span class="lumex">L</span>umex / Biometric Security System</p>
-                <h3 class="h_title fs42 txt3">Биометрические СКУД</h3>
+                <h3 class="h_title fs42 txt3">{{ $t('scud_bio1')}}</h3>
                 <p class="txt3 mb10">
-                    Наиболее распространенным методом идентификации является распознование по
-                    отпечатку пальца, по геометрии лица или сетчатке глаза.    
+                    {{ $t('scud_bio2')}}    
                 </p>
                 <p class="txt3 mb10">
-                   Биометрическая СКУД обеспечивает лучшую защиту по сравнению с традиционными
-                   средствами учета и контроля доступа – бесконтактными картами, брелоками. 
+                    {{ $t('scud_bio3')}}
                 </p>
                 <p class="txt3 mb10">
-                   Карту доступа можно потерять, обменять, скопировать или подделать. 
+                   {{ $t('scud_bio4')}} 
                 </p>
             </div>
         </div>
@@ -184,16 +173,12 @@
         <div class="team_left">
             <div>
                 <p class="label"><span class="lumex">L</span>umex / Access Turnstile</p>
-                <h3 class="h_title fs42 ">Турникеты, шлагбаумы</h3>
+                <h3 class="h_title fs42 ">{{ $t('scud_turn1')}}</h3>
                 <p class="mb10">
-                    Являются исполнительными устройствами для ограничения доступа.
-                    Могут подключаться как к сетевым, так и автономным СКУД.
-                    Такие системы могут использоваться на производстве, КПП, государственных
-                    учреждениях и т.д. 
+                    {{ $t('scud_turn2')}} 
                 </p>
                 <p class="">
-                    Для автоматизации точки прохода можно оборудовать видеонаблюдение, которое
-                    распознает автомобильные номера, лица людей
+                    {{ $t('scud_turn3')}}
                 </p>
             </div>
         </div>

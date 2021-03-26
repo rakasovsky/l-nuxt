@@ -30,10 +30,10 @@
                     </ul>
                 </div>
                 <a href="" class="primary_button vertical-button">
-                    <span>Наши разработки</span>
+                    <span>{{ $t('l_res')}}</span>
                 </a>
                 <div class="transform90">
-                    <span class="fs15">Наши преимущества</span>
+                    <span class="fs15">{{ $t('l_res2')}}</span>
                 </div>
             </div>
         </div>
@@ -169,45 +169,45 @@
                 <tr>
                     <th class="row">{{ $t('tel_table_row1')}}</th>
                     <td>-</td>
-                    <td>от 300 $</td>
-                    <td>от 500 $</td>
+                    <td>{{ $t('l_from')}} 300 $</td>
+                    <td>{{ $t('l_from')}} 500 $</td>
                 </tr>
             
                 <tr>
                     <th class="row">{{ $t('tel_table_row2')}}</th>
                     <td>-</td>
-                    <td>от 600 $</td>
-                    <td>от 300 $</td>
+                    <td>{{ $t('l_from')}} 600 $</td>
+                    <td>{{ $t('l_from')}} 300 $</td>
                 </tr>
             
                 <tr>
                     <th class="row">{{ $t('tel_table_row3')}}</th>
                     <td>+</td>
                     <td>+ <br>
-                        (настройка)</td>
+                        ({{ $t('l_c1')}})</td>
                     <td>+ <br>
-                        (покупка плат,
-                        лицензий)</td>
+                      {{ $t('l_c2')}}
+                        </td>
                 </tr>
             
                 <tr>
                     <th class="row">{{ $t('tel_table_row4')}}</th>
                     <td>+</td>
                     <td>+</td>
-                    <td>Выбор из доступных к
-                        продаже расширений и
-                        сервисов</td>
+                    <td>
+                        {{ $t('l_c5')}}
+                    </td>
                 </tr>
                 <tr>
                     <th class="row">{{ $t('tel_table_row5')}}</th>
-                    <td>+ <br> (входит в стоимость сервиса)</td>
-                    <td>+ <br> (цена зависит от задачи и условий обслуживания)</td>
-                    <td>+ <br> (цена зависит от задачи и условий обслуживания)</td>
+                    <td>+ <br> ({{ $t('l_c5')}})</td>
+                    <td>+ <br> ({{ $t('l_c4')}})</td>
+                    <td>+ <br> ({{ $t('l_c4')}})</td>
                 </tr>
                 <tr>
                     <th class="row">{{ $t('tel_table_row6')}}</th>
                     <td>+</td>
-                    <td>+ (20$/месяц)</td>
+                    <td>+ (20 {{ $t('l_usd')}})</td>
                     <td>-</td>
                 </tr>
                 <tr>
@@ -218,7 +218,7 @@
                 </tr>
                 <tr>
                     <th class="row">{{ $t('tel_table_row8')}}</th>
-                    <td>От 600грн/мес</td>
+                    <td>{{ $t('l_from')}} 600 {{ $t('l_uah')}}</td>
                     <td>-</td>
                     <td>-</td>
                 </tr>
