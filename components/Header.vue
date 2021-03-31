@@ -24,10 +24,10 @@
                             <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
                             <ol class="sub-menu scroll-t">
-                                <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                               </ol>
                             <!-- DROPDOWN -->
                             <!-- JUST TEST -->
@@ -38,11 +38,11 @@
                         <nuxt-link :to="localePath('/category/video_surveillance')"><span>{{ $t('video_surveillance')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_smart">Умное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_ip">IP-видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_hd">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_service">Сервисный центр</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_cloud')">{{ $t('menu_v1')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_smart')">{{ $t('menu_v2')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_ip')">{{ $t('menu_v3')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_hd')">{{ $t('menu_v4')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_service')">{{ $t('menu_t4')}}</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -52,11 +52,11 @@
                         <nuxt-link :to="localePath('/category/skud')"><span>{{ $t('skud')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_auto">Автономные СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_net">Сетевые СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_bio">Биометрические СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_turnstile">Турникеты, шлагбаумы</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_cov19')">{{ $t('m_s1')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_auto')">{{ $t('m_s2')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_net')">{{ $t('m_s3')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_bio')">{{ $t('m_s4')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_turnstile')">{{ $t('m_s5')}}</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -92,10 +92,10 @@
                             <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
                             <ol class="sub-menu">
-                                <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
-                                <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                               </ol>
                             <!-- DROPDOWN -->
                         </div>
@@ -105,11 +105,11 @@
                         <nuxt-link :to="localePath('/category/video_surveillance')"><span>{{ $t('video_surveillance')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu">
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_cloud">Облачное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_smart">Умное видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_ip">IP-видеонаблюдение</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_hd">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/video_surveillance#v_service">Сервисный центр</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_cloud')">{{ $t('menu_v1')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_smart')">{{ $t('menu_v2')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_ip')">{{ $t('menu_v3')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_hd')">{{ $t('menu_v4')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_service')">{{ $t('menu_t4')}}</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -119,11 +119,11 @@
                         <nuxt-link :to="localePath('/category/skud')"><span>{{ $t('skud')}}</span><span>▾</span></nuxt-link>
                         <!-- DROPDOWN -->
                         <ol class="sub-menu scroll-t">
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_cov19">COVID-19</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_auto">Автономные СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_net">Сетевые СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_bio">Биометрические СКУД</nuxt-link></li>
-                            <li class="menu-item"><nuxt-link to="/category/skud#s_turnstile">Турникеты, шлагбаумы</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_cov19')">{{ $t('m_s1')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_auto')">{{ $t('m_s2')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_net')">{{ $t('m_s3')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_bio')">{{ $t('m_s4')}}</nuxt-link></li>
+                            <li class="menu-item"><nuxt-link :to="localePath('/category/skud#s_turnstile')">{{ $t('m_s5')}}</nuxt-link></li>
                           </ol>    
                         <!-- DROPDOWN -->
                     </div>
@@ -148,37 +148,46 @@
                         <span></span>
                         <ul id="menu">
                             <nuxt-link to="/" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt="Lumex logo"></nuxt-link>
-                            <li class="m_li">Телефония<div>▾</div>
+                            <li class="m_li">{{ $t('telephony')}}<div>▾</div>
                                 <ul class="dropdown_container_mobile">
-                                       <nuxt-link to="/category/telephony"><li class="menu-item">Телефония</li></nuxt-link>
-                                       <nuxt-link to="/category/telephony#t_cloud"><li class="menu-item">Облачная телефония</li></nuxt-link>
-                                       <nuxt-link to="/category/telephony#t_ip"><li class="menu-item">Виртуальная АТС</li></nuxt-link>
-                                       <nuxt-link to="/category/telephony#t_hardware"><li class="menu-item">Аппаратные IP-АТС</li></nuxt-link>
-                                       <nuxt-link to="/category/telephony#t_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                                       <nuxt-link :to="localePath('/category/telephony')"><li class="menu-item">{{ $t('telephony')}}</li></nuxt-link>
+                                       <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                       <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                       <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                                       <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li">Видеонаблюдение<div>▾</div>
+                            <li class="m_li">{{ $t('video_surveillance')}}<div>▾</div>
                                 <ul class="dropdown_container_mobile">
-                                    <nuxt-link to="/category/video_surveillance"><li class="menu-item">Видеонаблюдение</li></nuxt-link>
-                                    <nuxt-link to="/category/video_surveillance#v_cloud"><li class="menu-item">Облачное видеонаблюдени</li></nuxt-link>
-                                    <nuxt-link to="/category/video_surveillance#v_smart"><li class="menu-item">Умное видеонаблюдени</li></nuxt-link>
-                                    <nuxt-link to="/category/video_surveillance#v_ip"><li class="menu-item">IP-видеонаблюдени</li></nuxt-link>
-                                    <nuxt-link to="/category/video_surveillance#v_hd"><li class="menu-item">HD-видеонаблюдение (HD-TVI, HD-CVI, AHD)</li></nuxt-link> 
-                                    <nuxt-link to="/category/video_surveillance#v_service"><li class="menu-item">Сервисный центр</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/video_surveillance')"><li class="menu-item">{{ $t('video_surveillance')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/video_surveillance#v_cloud')"><li class="menu-item">{{ $t('menu_v1')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/video_surveillance#v_smart')"><li class="menu-item">{{ $t('menu_v2')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/video_surveillance#v_ip')"><li class="menu-item">{{ $t('menu_v3')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/video_surveillance#v_hd')"><li class="menu-item">{{ $t('menu_v4')}}</li></nuxt-link> 
+                                    <nuxt-link :to="localePath('/category/video_surveillance#v_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li">Контроль доступа<div>▾</div>
+                            <li class="m_li">{{ $t('skud')}}<div>▾</div>
                                   <ul class="dropdown_container_mobile">
-                                    <nuxt-link to="/category/skud"><li class="menu-item">Контроль доступа</li></nuxt-link>
-                                    <nuxt-link to="/category/skud#s_cov19"><li class="menu-item">COVID-19</li></nuxt-link>
-                                    <nuxt-link to="/category/skud#s_auto"><li class="menu-item">Автономные СКУД</li></nuxt-link>
-                                    <nuxt-link to="/category/skud#s_net"><li class="menu-item">Сетевые СКУД</li></nuxt-link>
-                                    <nuxt-link to="/category/skud#s_bio"><li class="menu-item">Биометрические СКУД</li></nuxt-link> 
-                                    <nuxt-link to="/category/skud#s_turnstile"><li class="menu-item">Турникеты, шлагбаумы</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/skud')"><li class="menu-item">{{ $t('skud')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/skud#s_cov19')"><li class="menu-item">{{ $t('m_s1')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/skud#s_auto')"><li class="menu-item">{{ $t('m_s2')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/skud#s_net')"><li class="menu-item">{{ $t('m_s3')}}</li></nuxt-link>
+                                    <nuxt-link :to="localePath('/category/skud#s_bio')"><li class="menu-item">{{ $t('m_s4')}}</li></nuxt-link> 
+                                    <nuxt-link :to="localePath('/category/skud#s_turnstile')"><li class="menu-item">{{ $t('m_s5')}}</li></nuxt-link>
                                 </ul>
                             </li>
                             <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li>
-                            <li class="m_li"><nuxt-link to="/contact">Контакты</nuxt-link></li>
+                            <li class="m_li"><nuxt-link :to="localePath('/contact')">{{ $t('l_contacts')}}</nuxt-link></li>
+                            <div class="lang_switcher_m ">
+                                <nuxt-link
+                                    v-for="locale in $i18n.locales"
+                                    v-if="locale.code !== $i18n.locale"
+                                    :key="locale.code"
+                                    :to="switchLocalePath(locale.code)">
+                                    {{ locale.name }}
+                                </nuxt-link>
+                            </div>
                         </ul>
                     </div>
                 </nav>

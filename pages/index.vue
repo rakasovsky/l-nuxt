@@ -40,11 +40,12 @@
         <section class="lumex__main">
             <div class="cloud__block1 cat_block">
                 <p class="label fs15"><span class="lumex">L</span>umex / Cloudcalls</p>
-                <h3 class="h_title fs42">Облачная АТС - <br>
-                    сервис телефонии<br>
-                     для Вашего бизнеса</h3>
+                <h3 class="h_title fs42">
+                     {{ $t('main_top')}}<br>
+                     {{ $t('main_top1_1')}}<br>
+                     {{ $t('main_top1_2')}}</h3>
                 <p>
-                    Объединяем телефонные номера в одну сеть. Контроль телефонных звонков через личный кабинет. Интеграция с 1с, Битрикс24 и другими CRM системами. Звонок с сайта, SMS сообщения и другие необходимые функции для современных задач
+                    {{ $t('main_top2')}}
                 </p>
             </div>
 
@@ -53,13 +54,17 @@
                     <div class="title__front dark-grey">
                         <div>
                             <!-- <p class="label fc_grey">Cloudcalls</p> -->
-                            <p class="fs24">Нужно ли тратить деньги на оборудование и его настройку, когда можно заказать сервис?</p>
+                            <p class="fs24">
+                                   {{ $t('main_top3')}}
+                            </p>
                         </div>
                     </div>
                     <div class="title__back yellow">
                         <div>
-                            <p>Сервис облачной телефонии предусматривает оплату за аренду оборудования, использование вычислительных ресурсов и обслуживание системы.<br>
-                            К каждому клиенту у нас индивидуальный подход и мы можем настроить облачную АТС именно под Ваши задачи</p>
+                            <p>
+                                {{ $t('main_top3_1')}}<br>
+                                {{ $t('main_top3_2')}}
+                            </p>
                             <nuxt-link to="/category/telephony#t_cloud" class="secondary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
@@ -74,21 +79,17 @@
                 <div class="title">
                     <div class="title__front grey">
                         <p class="label">
-                            Защита от Covid-19:
+                             {{ $t('main_top4')}}
                         </p>
                         <p class="fs24">
-                            Камеры, которые
-                            измеряют температуру,
-                            детектирование наличие
-                            маски и соблюдение
-                            социальной дистанции
+                            {{ $t('main_top4_1')}}
                         </p>
                     </div>
                     <div class="title__back dark-grey">
                         <div>
                             <h3 class="label fc_grey">Covid-19</h3>
                             <p class="fc_grey">
-                               Для противостояния эпидемии Covid-19,  мы предлагаем  для вас решения для контроля температуры тела и детекция наличия маски в автоматическом режиме 
+                                 {{ $t('main_top4_2')}}
                             </p>
                             <a href="/category/scud" class="primary_button">
                                 <svg class="btn_svg">
@@ -104,20 +105,17 @@
                 <div class="title">
                     <div class="title__front dark-grey">
                         <div>
-                            <p class="label fc_grey">Снижение потерь</p>
+                            <p class="label fc_grey">{{ $t('main_top5')}}</p>
                             <p class="fs24">
-                                Минимизация
-                                убытков от
-                                мошенничества,
-                                воровства и хищений,
-                                а также ошибок
-                                сотрудников
+                                 {{ $t('main_top5_1')}}
                             </p>
                         </div>
                     </div>
                     <div class="title__back yellow">
                         <div>
-                            <p>Видеонаблюдение и охранные системы для обеспечения максимальной безопасности жизни и вашего имущества. Контролируйте вашу собственность и бизнес из любой точки мира</p>
+                            <p>
+                                {{ $t('main_top5_2')}}
+                            </p>
                             <a href="#" class="secondary_button">
                                 <svg class="btn_svg">
                                     <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
@@ -132,22 +130,17 @@
                 <div class="title">
                     <div class="title__front yellow">
                         <p class="label fc_dark">
-                            Видеоаналитика для бизнеса 
+                            {{ $t('main_top6')}}
                         </p>
                         <p class="fs24">
-                            Контроль кассовых
-                            операций, счетчик
-                            объектов, детектор
-                            нахождения на
-                            рабочем месте,
-                            счетчик посетителей
+                            {{ $t('main_top6_1')}}
                         </p>
                     </div>
                     <div class="title__back">
                         <div>
-                            <h3 class="label">Контроль кассовых операций</h3>
+                            <h3 class="label">{{ $t('main_top7')}}</h3>
                             <p>
-                               Умное видеонаблюдение, обеспечивающий контроль кассовых операций, минимизирует убытки в розничной торговле. Содействует решениям конфликтных ситуаций с покупателями и персоналом
+                                {{ $t('main_top7_1')}}
                             </p>
                             <nuxt-link to="/category/video_surveillance#v_smart" class="primary_button">
                                 <svg class="btn_svg">
@@ -163,20 +156,18 @@
                 <div class="title">
                     <div class="title__front yellow">
                         <div>
-                            <p class="label fc_dark">Облачное видеонаблюдение</p>
+                            <p class="label fc_dark">
+                                {{ $t('main_top8')}}
+                            </p>
                             <p class="fs24 fc_dark">
-                                Сервис,
-                                предоставляющий
-                                доступ к вашим
-                                камерам и архиву из
-                                любой точки мира
+                               {{ $t('main_top8_1')}}
                             </p>
                         </div>
                     </div>
                     <div class="title__back dark-grey">
                         <div>
-                            <p class="fc_white">Используйте сервис облачного видеонаблюдения для удаленного доступа к камерам видеонаблюдения в реальном времени, а также доступ к архиву.<br>
-                             Удаленное хранение арпхива позволит повысить уровень безопасности объекта.
+                            <p class="fc_white">{{ $t('main_top8_2')}}<br>
+                             {{ $t('main_top8_3')}}
                              </p>
                               <nuxt-link to="/category/video_surveillance#v_cloud" class="primary_button">
                                 <svg class="btn_svg">
@@ -190,12 +181,10 @@
 
             <div class="cloud__block4 cat_block">
 
-                <h3 class="h_title fs42">Корпоративная связь<br>
-                    для крупных предприятий</h3>
+                <h3 class="h_title fs42">{{ $t('main_top9')}}<br>
+                    {{ $t('main_top9_1')}}</h3>
                 <p class="fc_grey">
-                    Коробочная версия виртуальной АТС или
-                    аппаратные IP-АТС. Полное сопровождение
-                    под ключ
+                   {{ $t('main_top9_2')}}
                 </p>
             </div>
         </section>
@@ -205,9 +194,9 @@
         <section class="lumex__main_mobile">
             <div class="cloud__block1 ">
                 <p class="label fs15"><span class="lumex">L</span>umex / Cloudcalls</p>
-                <h3 class="h_title fs42">Облачная АТС - <br>
-                    сервис телефонии<br>
-                     для Вашего бизнеса</h3>
+                <h3 class="h_title fs42">{{ $t('main_top')}} <br>
+                    {{ $t('main_top1_1')}}<br>
+                     {{ $t('main_top1_2')}}</h3>
             </div>
             <div class="blocks_horizont">
                 <div class="blocks_scroll">
@@ -217,13 +206,9 @@
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
-                                        <p class="label fc_white">Защита от Covid-19:</p>
+                                        <p class="label fc_white">{{ $t('main_top4')}}</p>
                                         <p class="fs24 fc_white">   
-                                            Камеры, которые
-                                            измеряют температуру,
-                                            детектирование наличие
-                                            маски и соблюдение
-                                            социальной дистанции
+                                            {{ $t('main_top4_1')}}
                                         </p>
                                     </div>
                                 </div>
@@ -235,14 +220,9 @@
                             <div class="title">
                                 <div class="title__front grey">
                                     <div>
-                                        <p class="label fc_white">Снижение потерь</p>
+                                        <p class="label fc_white">{{ $t('main_top5')}}</p>
                                         <p class="fs24 fc_white">  
-                                            Минимизация
-                                            убытков от
-                                            мошенничества,
-                                            воровства и хищений,
-                                            а также ошибок
-                                            сотрудников
+                                            {{ $t('main_top5_1')}}
                                         </p>
                                     </div>
                                 </div>
@@ -253,14 +233,9 @@
                             <div class="title">
                                 <div class="title__front dark-grey">
                                     <div>
-                                        <p class="label fc_white"> Видеоаналитика для бизнеса </p>
+                                        <p class="label fc_white"> {{ $t('main_top6')}} </p>
                                         <p class="fs24 fc_white">   
-                                            Контроль кассовых
-                                            операций, счетчик
-                                            объектов, детектор
-                                            нахождения на
-                                            рабочем месте,
-                                            счетчик посетителей
+                                            {{ $t('main_top6_1')}}
                                         </p>
                                     </div>
                                 </div>
@@ -279,7 +254,7 @@
                                 <div class="title__front yellow">
                                     <div>
                                         <p class="label">Cloudcalls</p>
-                                        <p class="fs24">Нужно ли тратить деньги на оборудование и его настройку, когда можно использовать сервис?</p>
+                                        <p class="fs24">{{ $t('main_top3')}}</p>
                                     </div>
                                 </div>
                             </div>
@@ -290,14 +265,10 @@
                                 <div class="title__front yellow">
                                     <div>
                                     <p class="label">
-                                       Облачное видеонаблюдение
+                                       {{ $t('main_top8')}}
                                     </p>
                                     <p class="fs24">     
-                                        Сервис,
-                                        предоставляющий
-                                        доступ к вашим
-                                        камерам и архиву из
-                                        любой точки мира
+                                        {{ $t('main_top8_1')}}
                                     </p>
                                     </div>
                                 </div>
@@ -310,10 +281,10 @@
 
             <div class="cloud__block4 ">
 
-                <h3 class="h_title fs42">Корпоративная связь <br>
-                   для крупных предприятий</h3>
+                <h3 class="h_title fs42">{{ $t('main_top9')}}<br>
+                   {{ $t('main_top9_1')}}</h3>
                 <p class="fc_white">
-                    Коробочная версия виртуальной АТС или аппаратные IP-АТС. Полное сопровождение под ключ
+                   {{ $t('main_top9_2')}}
                 </p>
             </div>
         </section>
@@ -324,13 +295,12 @@
             <div class="our_products">
                 <div class="card_wrapper mop">
                     <div class="left fl">
-                        <h3 class="h_title fs42">Решения по телефонии для Вашего бизнеса	</h3>
+                        <h3 class="h_title fs42">{{ $t('main_atc1')}}</h3>
                         <p class="text fc_grey">
-                            Современные решения на базе аппаратных и программных IP-АТС. Построение контакт-центров,
-                            запись телефонных разговоров. Объединение филиалов компании в одну систему. Реализация IPАТС для интернет-магазинов и диспетчерских служб такси.
+                            {{ $t('main_atc2')}}
                         </p>
                         <p class="text fc_grey" style="margin-top:20px">
-                            Интеграция телефонии с 1C, CRM-системами, базами данных.
+                           {{ $t('main_atc3')}}
                         </p>
                     </div>
                     <div class="right">
@@ -340,10 +310,11 @@
                                 <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Облачная АТС</p>
+                                <p class="c_title fs24">
+                                    {{ $t('main_atc4')}}
+                                </p>
                                 <p class="fc_white">
-                                    Сервис, объединяющий телефонные номера компании в одну сеть,
-                                    получайте весь функционал IP-АТС, не покупая дорогостоящее оборудование
+                                    {{ $t('main_atc5')}}
                                 </p>
                             </div>
                             <div class="card-button_container">
@@ -361,11 +332,9 @@
                                 <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Виртуальная IP-АТС</p>
+                                <p class="c_title fs24">{{ $t('main_atc6')}}</p>
                                 <p>
-                                    Коробочная версия программной IP-АТС. Масштабируемое,
-                                    гибкое, настраиваемое решение на базе серверного оборудования, и операционной
-                                    системы Linux
+                                   {{ $t('main_atc7')}}
                                 </p>
                             </div>
                             <div class="card-button_container">
@@ -382,10 +351,9 @@
                                 <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Аппаратная IP-АТС</p>
+                                <p class="c_title fs24">{{ $t('main_atc8')}}</p>
                                 <p>
-                                    Специализированное оборудование, с предустановленным ПО от
-                                    мировых производителей - Panasonic, Cisco, Avaya и т.д
+                                    {{ $t('main_atc9')}}
                                 </p>
                             </div>
                             <div class="card-button_container">

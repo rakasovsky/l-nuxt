@@ -2585,6 +2585,15 @@ footer .footer_bottom .copyright p:last-child {
 }
 
 @media (max-width: 1440px) {
+  .sticky .sticky_container {
+    width: 45%;
+  }
+  .sticky .sticky-nav {
+    width: 50%;
+  }
+  .sticky .contacts p {
+    font-size: 15px;
+  }
   .sticky .contacts {
     padding: 20px;
   }
@@ -2663,6 +2672,9 @@ footer .footer_bottom .copyright p:last-child {
   }
   .catalog_page-wrapper .catalog_page-bottom .catalog_category {
     width: 80%;
+  }
+  footer .footer_container .footer_contacts {
+    width: 25%;
   }
 }
 
