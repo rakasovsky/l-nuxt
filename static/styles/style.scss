@@ -2218,8 +2218,7 @@ footer {
    
 }
 
-@media (max-width:1440px) { 
-
+@media (max-width:1680px) { 
     .sticky .sticky_container {
         width: 45%;
     }
@@ -2244,6 +2243,12 @@ footer {
     .sticky .button {
         width: 50px;
     }
+
+}
+
+@media (max-width:1440px) { 
+
+  
         
    .nav_dropdown {
         width: 100%;

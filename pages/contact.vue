@@ -11,8 +11,8 @@
         <div class="contact_container">
             <div class="wrapper">
                 <div class="contact_form  lumex__video">
-                    <h3 class="h_title fs42 fc_white">Обратная связь</h3>
-                    <p class="label fc_grey">Облачные и аппаратные решения в области безопасности и связи. Сервис и обслуживание.</p>
+                    <h3 class="h_title fs42 fc_white">{{$t('contact_page1')}}</h3>
+                    <p class="label fc_grey">{{$t('contact_page2')}}</p>
                     <div class="alert_msg">
 
                     </div>

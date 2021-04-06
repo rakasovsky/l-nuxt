@@ -319,7 +319,7 @@
                             </div>
                             <div class="card-button_container">
                                
-                                <nuxt-link to="/category/telephony#t_cloud" class="primary_button">
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')" class="primary_button">
                                     <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -338,7 +338,7 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <nuxt-link to="/category/telephony#t_ip" class="primary_button">
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -357,7 +357,7 @@
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <nuxt-link to="/category/telephony#t_hardware" class="primary_button">
+                                <nuxt-link nuxt-link :to="localePath('/category/telephony#t_hardware')" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -371,7 +371,9 @@
             <div class="our_products col">
                 <div class="card_wrapper mop">
                     <div class="left fl">
-                        <h3 class="h_title fs42">Видеонаблюдение</h3>
+                        <h3 class="h_title fs42">
+                             {{ $t('main_sur')}}
+                        </h3>
                         <div class="text">
                             <!-- <p class="fc_grey">
                                 Решения по безопасности, видеоаналитики. Контроль персонала, кассовых операций и другая автоматизация с помощью камер видеонаблюдения.
@@ -385,15 +387,13 @@
                                 <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Аппаратное видеонаблюдение</p>
+                                <p class="c_title fs24"> {{ $t('main_sur1')}}</p>
                                 <p class="fc_white">
-                                    Классическая система, включающая в себя камеры,
-                                    видеорегистратор, накопитель. Предлагаем решения IP, HD-TVI, HD-CVI от известных
-                                    брендов, таких как Hikvision, Dahua, Trassir
+                                     {{ $t('main_sur2')}}
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <nuxt-link to="/category/video_surveillance#v_ip" class="primary_button">
+                                <nuxt-link :to="localePath('/category/video_surveillance#v_ip')" class="primary_button">
                                     <svg class="btn_svg" enable-background="new 0 0 21 14" viewBox="0 0 21 14">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -406,15 +406,13 @@
                                 <img src="~/static/assets/img/ukraine.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Умное видеонаблюдение</p>
+                                <p class="c_title fs24">{{ $t('main_sur3')}}</p>
                                 <p>
-                                    Профессиональные решения для производства, бизнеса и
-                                    других структур - включает нейро-аналитику, детекцию лиц, контроль кассовых
-                                    операций, определение автомобильных номеров и т.д
+                                    {{ $t('main_sur4')}}
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                 <nuxt-link to="/category/video_surveillance#v_smart" class="primary_button">
+                                 <nuxt-link :to="localePath('/category/video_surveillance#v_smart')" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -427,15 +425,13 @@
                                 <img src="~/static/assets/img/cloud-7.jpg" alt="">
                             </div>
                             <div class="card-content">
-                                <p class="c_title fs24">Облачное видеонаблюдение</p>
+                                <p class="c_title fs24">{{ $t('main_sur5')}}</p>
                                 <p>
-                                    Сервис позволяющий архивировать данные с ваших
-                                    камер наблюдения и предоставлять доступ к архиву и камерам в реальном времени из
-                                    любой точки мира
+                                   {{ $t('main_sur6')}}
                                 </p>
                             </div>
                             <div class="card-button_container">
-                                <nuxt-link to="/category/video_surveillance#v_cloud" class="primary_button">
+                                <nuxt-link :to="localePath('/category/video_surveillance#v_cloud')" class="primary_button">
                                     <svg class="btn_svg">
                                         <path d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z" fill="currentColor"></path>
                                     </svg>
@@ -463,18 +459,18 @@
             <div class="team_left main">
                 <div>
                     <p class="label txt3"><span class="lumex">L</span>umex / Service</p>
-                    <h3 class="h_title fs42 txt3">Сервисный центр</h3>
+                    <h3 class="h_title fs42 txt3">{{$t('main_service')}}</h3>
                     <p class="txt3">
-                        Мы имеем свой сервис, что позволяет оперативно проводить ремонт базовых блоков АТС, плат расширения, блоков питания, системных телефонов, IP-телефонов и другого сетевого оборудования.   
+                        {{$t('main_service1')}}
                     </p>
                     <p class="txt3">
-                        Возможность предоставления оборудования на подмену, на время ремонта - позволяет Вам не нести финансовые потери, в случае простаивания бизнеса без связи, на время ремонта АТС 
+                        {{$t('main_service2')}}
                     </p>
                     <p class="txt3">
-                        Если у вас нет возможности снять и привезти АТС к нам в сервис, то наши специалисты смогут выехать и провести диагностику на объекте.
+                        {{$t('main_service3')}}
                     </p>
                     <p class="txt3">
-                        Гарантия на ремонт - 6 месяцев
+                       {{$t('main_service4')}}
                     </p>
                 </div>
             </div>
