@@ -84,7 +84,8 @@ export default {
 
     mounted () {
         $("#ajax_form").submit(function(e) {
-        const str = $(this).serialize();
+            e.preventDefault();
+            const str = $(this).serialize();
 
         $.ajax({
             type: "POST",

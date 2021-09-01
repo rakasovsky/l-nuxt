@@ -162,8 +162,8 @@ function getBreadcrumbs (pageType, route, data) {
       //   title: data.cName,
       //   url: `/subcategory/${data.cSlug}`
       // })
-
-      break
+      // break
+      
     case 'product':
       crumbs.push({
         title: data.category.cName,

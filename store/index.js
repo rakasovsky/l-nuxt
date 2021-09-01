@@ -1,4 +1,4 @@
-import mock from '../utils/mockServer'
+// import mock from '../utils/mockServer'
 
 const options = {
   method: 'GET',
@@ -10,6 +10,7 @@ export const state = () => ({
   categoriesList: [],
   currentSubcategory: {},
   currentCategory: {},
+  currentProducts: [],
   currentProduct: {
     alsoBuyProducts: [],
     interestingProducts: []
@@ -29,6 +30,9 @@ export const mutations = {
   },
   SET_CURRENT_SUBCATEGORY (state, subcategory) {
     state.currentSubcategory = subcategory
+  },
+  SET_CURRENT_PRODUCTS (state, products) {
+    state.currentProducts = products
   },
   SET_CURRENT_PRODUCT (state, product) {
     state.currentProduct = product
@@ -111,14 +115,14 @@ export const actions = {
     await dispatch('setBreadcrumbs', crumbs)
   },
 
-  async getCurrentSubcategory ({ commit, dispatch }, { route, category, subcategory }) {
+  async getCurrentSubcategory ({ commit, dispatch }, { category, subcategory }) {
     console.error('>>>getCurrentSubcategory', category, subcategory);
     // const sc = encodeURIComponent(route.params.SubcategorySlug);
     const sc = encodeURIComponent(subcategory.subcategory.cSlug);
     const curpage = subcategory.curpage || 0;
-    const pagetotal = 0;
-    const perpage = 12;
-    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&curpage=${curpage}&pagetotal=${pagetotal}&perpage=${perpage}&orderby=`;
+    // const pagetotal = 0;
+    const perpage = 4;
+    const url = `http://phpnuxt.vior.link/handlers/api.php?category=${category.cSlug}&subcategory=${sc}&curpage=${curpage}&perpage=${perpage}&orderby=`;
     const result = await fetch(url, { options });
     const json = await result.json();
     json.curpage = parseInt(json.curpage);

@@ -136,8 +136,7 @@
 
                          <div class="pagination_block">
                             <p>Selected page: {{subcategoryProducts.curpage}}</p>
-                            <pagination :records="subcategoryProducts.pagetotal" v-model="subcategoryProducts.curpage" :per-page="subcategoryProducts.perpage" @paginate="callback">
-                            </pagination>
+                            <pagination :records="subcategoryProducts.pagetotal" v-model="subcategoryProducts.curpage" :per-page="subcategoryProducts.perpage" @paginate="paginator"/>
                         </div>
 
 
@@ -176,7 +175,7 @@ export default {
       curpage: 1
     };
     try {
-      await app.store.dispatch('getCurrentSubcategory', { route, category, subcategory })
+      await app.store.dispatch('getCurrentSubcategory', { category, subcategory })
     } catch (err) {
       console.log(err)
       return error({
@@ -193,9 +192,17 @@ export default {
   },
   methods: {
     page(){},
-    callback: function(page) {
-      console.error(`>>>Page ${page} was selected. Do something about it`);
-    }
+    myCallback(page) {
+        this.paginator()
+    },
+    async paginator() {
+        const category = this.$store.state.currentCategory
+        const subcategory = this.$store.state.currentSubcategory
+        await this.$store.dispatch('getCurrentSubcategory', { category, subcategory })
+    },
+    setPage: function(pageNumber) {
+        this.currentPage = pageNumber;
+    },
   },
     head () {
     return {
