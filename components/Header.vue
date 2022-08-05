@@ -28,6 +28,8 @@
                                 <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/asterisk_install')"><li class="menu-item">Установка Asterisk</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/sks')"><li class="menu-item">Монтаж СКС</li></nuxt-link>
                               </ol>
                             <!-- DROPDOWN -->
                             <!-- JUST TEST -->
@@ -62,7 +64,7 @@
                     </div>
                   </li>
                   <li>
-                    <nuxt-link to="/catalog">Каталог</nuxt-link>
+                    <!-- <nuxt-link to="/catalog">Каталог</nuxt-link> -->
                      <!-- <nuxt-link to="/under_construction">Каталог</nuxt-link> -->
                   </li>
                 </ul>
@@ -129,7 +131,7 @@
                     </div>
                   </li>
                   <li>
-                    <nuxt-link to="/catalog">Каталог</nuxt-link>
+                    <!-- <nuxt-link to="/catalog">Каталог</nuxt-link> -->
                     <!-- <nuxt-link to="/under_construction">Каталог</nuxt-link> -->
                   </li>
                 </ul>
@@ -177,7 +179,7 @@
                                     <nuxt-link :to="localePath('/category/skud#s_turnstile')"><li class="menu-item">{{ $t('m_s5')}}</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li>
+                            <!-- <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li> -->
                             <li class="m_li"><nuxt-link :to="localePath('/contact')">{{ $t('l_contacts')}}</nuxt-link></li>
                             <div class="lang_switcher_m ">
                                 <nuxt-link

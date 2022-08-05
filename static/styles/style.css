@@ -560,6 +560,10 @@ header .header-desk__nav ul li a {
   display: none;
 }
 
+.sks p {
+  margin-bottom: 10px;
+}
+
 .who-we-are {
   scrollbar-width: none;
   padding-bottom: 120px;
@@ -772,7 +776,7 @@ header .header-desk__nav ul li a {
 }
 
 .lumex__main .cloud__block2 .title .title__front div p {
-  width: 300px;
+  max-width: 301px;
 }
 
 .lumex__main .cloud__block2 .title .title__back {
@@ -1280,7 +1284,7 @@ header .header-desk__nav ul li a {
 }
 
 .lumex_team .srvc {
-  background-image: url(../assets/img/category/tel/electronic-repairs-min.jpg);
+  background-image: url(../assets/img/category/tel/electronic-repairs-min.webp);
   background-size: cover;
 }
 
@@ -1521,6 +1525,18 @@ header .header-desk__nav ul li a {
   background-size: cover;
 }
 
+.np_text_wrapper {
+  margin-bottom: 32px;
+}
+
+.np_text_wrapper .h_title {
+  margin-bottom: 24px;
+}
+
+.np_fix {
+  height: 100%;
+}
+
 .category_diogram2 .diogram_left {
   width: 30%;
   padding-top: 0px;
@@ -1589,6 +1605,7 @@ header .header-desk__nav ul li a {
 
 .category-list {
   position: relative;
+  margin-bottom: 25px;
 }
 
 .category-list li {
@@ -1688,6 +1705,60 @@ header .header-desk__nav ul li a {
   top: 0;
   background-color: #231f20;
   color: white;
+}
+
+.bp_page_wrapper {
+  padding-top: 220px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: white;
+}
+
+.bp_head {
+  max-width: 75%;
+  -ms-flex-preferred-size: 75%;
+      flex-basis: 75%;
+  max-width: 1154px;
+  margin: 0px auto;
+  padding-bottom: 160px;
+}
+
+.bp_container {
+  width: 100%;
+  background-color: #efeeee;
+}
+
+.bp_container .wrapper {
+  max-width: 1154px;
+  margin: 0px auto;
+}
+
+.bp_container .wrapper img {
+  width: 100%;
+  position: relative;
+  top: -75px;
+}
+
+.bp_container .wrapper .article {
+  max-width: 640px;
+  margin: 0px auto;
+}
+
+.page_form {
+  margin-top: 42px;
+}
+
+.page_form form .form-control {
+  border-bottom: 1px solid black !important;
+}
+
+.page_form form .form_button {
+  margin-top: 40px !important;
 }
 
 .catalog_main {
@@ -2021,6 +2092,19 @@ ul .checkmark:after {
   border-width: 0 3px 3px 0;
   -webkit-transform: rotate(45deg);
   transform: rotate(45deg);
+}
+
+.mark2 {
+  background-color: #ff0000 !important;
+}
+
+.mark2:after {
+  content: "X" !important;
+  border: none !important;
+  -webkit-transform: rotate(0deg) !important;
+          transform: rotate(0deg) !important;
+  left: 4px !important;
+  top: -1px !important;
 }
 
 .pagination_block {

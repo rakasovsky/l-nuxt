@@ -98,27 +98,27 @@
         <div class="diogram_right jt">
             <section class="atc_img-wrapper">
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">Базовый</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_1')}}</p>
                     <img src="~/static/assets/img/category/tel/gxp1610-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">Функциональный</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_2')}}</p>
                     <img src="~/static/assets/img/category/tel/gxp2160-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">Премиум</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_3')}}</p>
                     <img src="~/static/assets/img/category/tel/gxv3380-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">Беспроводной</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_4')}}</p>
                     <img src="~/static/assets/img/category/tel/dp722-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">Гарнитура</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_5')}}</p>
                     <img src="~/static/assets/img/category/tel/softphone-min.png" alt="">
                 </div>
                 <div class="atc_img-container">
-                    <p class="label fs24 fc_grey">VoIP-шлюз</p>
+                    <p class="label fs24 fc_grey">{{ $t('tel_var_6')}}</p>
                     <img src="~/static/assets/img/category/tel/voip-fxs-min.png" alt="">
                 </div>
             </section>

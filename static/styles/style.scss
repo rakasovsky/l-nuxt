@@ -623,6 +623,12 @@ header {
 .who-we-are::-webkit-scrollbar {
     display: none;
 }
+
+.sks {
+    p{
+        margin-bottom: 10px;
+    }
+}
 .who-we-are {
     scrollbar-width: none;
     padding-bottom: 120px;
@@ -667,6 +673,7 @@ header {
                     -o-object-fit: cover;
                     object-fit: cover;
                 }
+                
             }
             .lumex__content {
                 padding-top: 175px;
@@ -760,7 +767,7 @@ header {
                     max-width: 320px;
                     margin-left: auto;
                     p {
-                        width: 300px;
+                        max-width: 301px;
                     }
                 }
             }
@@ -1129,7 +1136,7 @@ header {
 
     // Изображения для страниц категорий
     .srvc {
-        background-image: url(../assets/img/category/tel/electronic-repairs-min.webp;
+        background-image: url(../assets/img/category/tel/electronic-repairs-min.webp);
         background-size: cover;
     }
     .cloud_img{
@@ -1325,6 +1332,16 @@ header {
 
 
 }
+.np_text_wrapper  {
+    .h_title {
+        margin-bottom:24px;
+    }
+    margin-bottom: 32px;
+}
+
+.np_fix {
+    height: 100%;
+}
 .category_diogram2{
     .diogram_left {
         width: 30%;
@@ -1375,6 +1392,7 @@ header {
 
 .category-list {
     position: relative;
+    margin-bottom: 25px;
     li {
         padding-left: 25px;
         position: relative;
@@ -1454,6 +1472,53 @@ header {
     background-color: #231f20;
     color: white;
 }
+
+
+//BLOG Page
+
+.bp_page_wrapper {
+    padding-top: 220px;
+    display: flex;
+    flex-direction:column;
+    background-color: white;
+}
+.bp_head {
+    max-width: 75%;
+    flex-basis: 75%;
+    max-width: 1154px;
+    margin: 0px auto;
+    padding-bottom: 160px;
+}
+.bp_container {
+    width: 100%;
+    background-color: #efeeee;
+    
+    .wrapper {
+        max-width: 1154px;
+        margin: 0px auto;
+        img {
+            width: 100%;
+            position: relative;
+            top: -75px;
+        }
+        .article {
+            max-width: 640px;
+            margin: 0px auto;
+        }
+    }
+}
+.page_form {
+    margin-top: 42px;
+    form {
+        .form-control{
+            border-bottom: 1px solid black!important;
+        }
+        .form_button {
+            margin-top: 40px!important;
+        }
+    }
+}
+
 
 // CATALOG Page
 .catalog_main {
@@ -1689,6 +1754,7 @@ header {
 
             }
         }
+
     }
 
     ul .checkmark {
@@ -1706,6 +1772,17 @@ header {
         border-width: 0 3px 3px 0;
         -webkit-transform: rotate(45deg);
         transform: rotate(45deg);
+    }
+
+    .mark2 {
+        background-color: #ff0000!important;
+    }
+    .mark2:after {
+        content: "X"!important;
+        border: none!important;
+        transform: rotate(0deg)!important;
+        left: 4px!important;
+        top: -1px!important;
     }
 
 

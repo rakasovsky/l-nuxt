@@ -156,6 +156,14 @@ export default {
   tel_table_col2: "Коробочная версия виртуальной IP-АТС",
   tel_table_col3: "Аппаратная IP-АТС",
 
+
+  tel_var_1: "Базовый",
+  tel_var_2: "Функциональный",
+  tel_var_3: "Премиум",
+  tel_var_4: "Беспроводной",
+  tel_var_5: "Гарнитура",
+  tel_var_6: "VoIP-шлюз",
+
   l_from: "от",
   l_uah: "грн/мес",
   l_usd: "$/мес",

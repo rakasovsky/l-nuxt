@@ -29,6 +29,7 @@ module.exports = {
     script: [
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js",async: false,defer: true},
       { src: "https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/ScrollTrigger.min.js",async: false,defer: true},
+      { src: "https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"}
     ]
   },
   router: {
@@ -94,7 +95,7 @@ module.exports = {
     ],
     lazy: true,
     langDir: 'lang/',
-    defaultLocale: 'ru',
+    defaultLocale: 'ua',
     }]
   ],
 
