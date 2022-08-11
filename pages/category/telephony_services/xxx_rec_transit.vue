@@ -11,19 +11,19 @@
         <div class="category_cover skud_cover lumex__content"></div>
         <div class="category_text lumex__video">
           <div class="cloud__block4 sks">
-            <h3 class="h_title fs42">{{ $t("tscb1_n") }}</h3>
+            <h3 class="h_title fs42">{{ $t("tstrec1") }}</h3>
             <p class="fs24">
-              {{ $t("tscb1") }}
+              {{ $t("tstrec1_1") }}
             </p>
             <p class="fs24">
-              {{ $t("tscb1_1") }}
+              {{ $t("tstrec1_2") }}
             </p>
           </div>
           <a href="" class="primary_button vertical-button">
-            <span>IP-АТСAsterisk</span>
+            <span>IVR</span>
           </a>
           <div class="transform90">
-            <span class="fs15">Asterisk</span>
+            <span class="fs15">Lumex IVR</span>
           </div>
         </div>
       </div>
@@ -32,60 +32,11 @@
     <section class="lumex_team joc" id="s_cov19">
       <div class="team_left">
         <div>
-          <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsc2") }}</h3>
-          <p class="txt3">{{ $t("tsc2_1") }}</p>
-          <p class="txt3">{{ $t("tsc2_2") }}</p>
-          <p class="txt3">{{ $t("tsc2_3") }}</p>
-          <p class="txt3">{{ $t("tsc2_4") }}</p>
-          <p class="txt3">{{ $t("tsc2_5") }}</p>
-          <p class="txt3">{{ $t("tsc2_6") }}</p>
-        </div>
-      </div>
-      <div class="team_right cov19_skud cctv txt3">
-        <a href="" class="primary_button vertical-button">
-          <span>Asterisk</span>
-          <svg>
-            <path
-              d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </section>
-
-    <section class="category_diogram category_diogram2 joc2" id="s_auto">
-      <div class="diogram_left">
-        <div class="cloud__block4 jt">
-          <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsc3") }}</h3>
-          <p class="txt3">{{ $t("tsc3_1") }}</p>
-          <p class="txt3">{{ $t("tsc3_2") }}</p>
-          <p class="txt3">{{ $t("tsc3_3") }}</p>
-        </div>
-      </div>
-      <div class="diogram_right cat_block-img auto_skud np_fix txt3">
-        <a href="" class="primary_button vertical-button">
-          <span>What We Do</span>
-          <svg>
-            <path
-              d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z"
-              fill="currentColor"
-            ></path>
-          </svg>
-        </a>
-      </div>
-    </section>
-    <section class="lumex_team joc" id="s_cov19">
-      <div class="team_left">
-        <div>
-          <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsc4") }}</h3>
-          <p class="txt3">{{ $t("tsc4_1") }}</p>
-          <p class="txt3">{{ $t("tsc4_2") }}</p>
-          <p class="txt3">{{ $t("tsc4_3") }}</p>
-          <p class="txt3">{{ $t("tsc4_4") }}</p>
+          <p class="label txt3">
+            <span class="lumex">L</span>umex / Interactive voice response
+          </p>
+          <h3 class="h_title fs24 txt3">{{ $t("tstrec2") }}</h3>
+          <p class="txt3">{{ $t("tstrec2_1") }}</p>
         </div>
       </div>
       <div class="team_right cov19_skud cctv txt3">
@@ -104,8 +55,8 @@
       <div class="diogram_left">
         <div class="cloud__block4 jt">
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tswp5") }}</h3>
-          <p class="txt3">{{ $t("tswp5_1") }}</p>
+          <h3 class="h_title fs24 txt3">{{ $t("tstrec3") }}</h3>
+          <p class="txt3">{{ $t("tstrec3_1") }}</p>
         </div>
       </div>
       <div class="diogram_right cat_block-img auto_skud np_fix txt3">
@@ -124,15 +75,36 @@
       <div class="team_left">
         <div>
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsc5") }}</h3>
-          <p class="txt3">{{ $t("tsc5_1") }}</p>
-          <p class="txt3">{{ $t("tsc5_2") }}</p>
-          <p class="txt3">{{ $t("tsc5_3") }}</p>
+          <h3 class="h_title fs24 txt3">{{ $t("tstrec4") }}</h3>
+          <p class="txt3">{{ $t("tstrec4_1") }}</p>
+          <p class="txt3">{{ $t("tstrec4_2") }}</p>
+          <p class="txt3">{{ $t("tstrec4_3") }}</p>
         </div>
       </div>
       <div class="team_right cov19_skud cctv txt3">
         <a href="" class="primary_button vertical-button">
           <span>Asterisk</span>
+          <svg>
+            <path
+              d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z"
+              fill="currentColor"
+            ></path>
+          </svg>
+        </a>
+      </div>
+    </section>
+        <section class="category_diogram category_diogram2 joc2" id="s_auto">
+      <div class="diogram_left">
+        <div class="cloud__block4 jt">
+          <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
+          <h3 class="h_title fs24 txt3">{{ $t("tstrec5") }}</h3>
+          <p class="txt3">{{ $t("tstrec5_1") }}</p>
+          <p class="txt3">{{ $t("tstrec5_2") }}</p>
+        </div>
+      </div>
+      <div class="diogram_right cat_block-img auto_skud np_fix txt3">
+        <a href="" class="primary_button vertical-button">
+          <span>What We Do</span>
           <svg>
             <path
               d="m14.4 1-.7.7 5 4.8h-18.7v1h18.8l-5.2 5.5.8.7 6.3-6.7z"

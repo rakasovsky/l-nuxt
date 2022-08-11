@@ -41,7 +41,7 @@
           <p class="txt3">{{ $t("tswp2_2") }}</p>
         </div>
       </div>
-      <div class="team_right cov19_skud cctv txt3">
+      <div class="team_right cov19_skud cctv webpanel1 txt3">
         <a href="" class="primary_button vertical-button">
           <span>Asterisk</span>
           <svg>
@@ -65,7 +65,7 @@
           <p class="txt3">{{ $t("tswp3_4") }}</p>
         </div>
       </div>
-      <div class="diogram_right cat_block-img auto_skud np_fix txt3">
+      <div class="diogram_right cat_block-img webpanel2 np_fix txt3">
         <a href="" class="primary_button vertical-button">
           <span>What We Do</span>
           <svg>
@@ -86,7 +86,7 @@
           <p class="txt3">{{ $t("tswp4_2") }}</p>
         </div>
       </div>
-      <div class="team_right cov19_skud cctv txt3">
+      <div class="team_right cov19_skud webpanel3 txt3">
         <a href="" class="primary_button vertical-button">
           <span>Asterisk</span>
           <svg>
@@ -98,7 +98,7 @@
         </a>
       </div>
     </section>
-    <section class="category_diogram category_diogram2 joc2" id="s_auto">
+    <section class="category_diogram category_diogram2joc2" id="s_auto">
       <div class="diogram_left">
         <div class="cloud__block4 jt">
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
@@ -106,7 +106,7 @@
           <p class="txt3">{{ $t("tswp5_1") }}</p>
         </div>
       </div>
-      <div class="diogram_right cat_block-img auto_skud np_fix txt3">
+      <div class="diogram_right cat_block-img webpanel4 np_fix txt3">
         <a href="" class="primary_button vertical-button">
           <span>What We Do</span>
           <svg>
@@ -124,9 +124,13 @@
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
           <h3 class="h_title fs24 txt3">{{ $t("tswp6") }}</h3>
           <p class="txt3">{{ $t("tswp6_1") }}</p>
+          <div class="webpanel_img_wrapper">
+            <img src="../../../static/assets/img/dashboard/d5_1-min.png" alt=""/>
+            <img src="../../../static/assets/img/dashboard/d5_2-min.png" alt=""/>
+          </div>
         </div>
       </div>
-      <div class="team_right cov19_skud cctv txt3">
+      <div class="team_right cov19_skud cctv webpanel5_1 txt3">
         <a href="" class="primary_button vertical-button">
           <span>Asterisk</span>
           <svg>
@@ -190,5 +194,12 @@ export default {
 <style scoped>
 .lumex_team .team_left div {
   max-width: 100%;
+}
+ .webpanel_img_wrapper{
+    display:flex;
+    flex-direction: column;
+  }
+  .txt3 {
+  margin-bottom: 12px;
 }
 </style>

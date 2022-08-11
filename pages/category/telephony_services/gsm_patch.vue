@@ -109,4 +109,7 @@ export default {
 .lumex_team .team_left div {
   max-width: 100%;
 }
+.txt3 {
+  margin-bottom: 12px;
+}
 </style>

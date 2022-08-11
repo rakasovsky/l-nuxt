@@ -23,14 +23,41 @@
                         <div class="nav-trigger">
                             <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
-                            <ol class="sub-menu scroll-t">
+                            <div class="sub-menu scroll-t new-menu">
+                              <ol class="">
+                                {{ $t('menu_t_cat1')}}
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                
+                              </ol>
+                            <ol class="">
+                                {{ $t('menu_t_cat2')}}
+                                <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/gsm_patch')"><li class="menu-item">{{ $t('menu_t_integation')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/asterisk_install')"><li class="menu-item">{{ $t('menu_t_install')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/sks')"><li class="menu-item">{{ $t('menu_t_sks')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/ivr')"><li class="menu-item">{{ $t('menu_t_ivr')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/mod_atc')"><li class="menu-item">{{ $t('menu_t_mod')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/protect_ipatc')"><li class="menu-item">{{ $t('menu_t_protect')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/queue')"><li class="menu-item">{{ $t('menu_t_transit')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/tech_support')"><li class="menu-item">{{ $t('menu_t_support')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/quality')"><li class="menu-item">{{ $t('menu_t_quality')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/ip_employess')"><li class="menu-item">{{ $t('menu_t_employees')}}</li></nuxt-link>
+                            </ol>
+                            <ol class="">
+                               {{ $t('menu_t_cat3')}}
                                 <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
-                                <nuxt-link :to="localePath('/category/telephony_services/asterisk_install')"><li class="menu-item">Установка Asterisk</li></nuxt-link>
-                                <nuxt-link :to="localePath('/category/telephony_services/sks')"><li class="menu-item">Монтаж СКС</li></nuxt-link>
-                              </ol>
+                            </ol>
+                            <ol class="">
+                                {{ $t('menu_t_cat4')}}
+                                <nuxt-link :to="localePath('/category/telephony_services/callback')"><li class="menu-item">{{ $t('menu_t_callback')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/webpanel')"><li class="menu-item">{{ $t('menu_t_dashboard')}}</li></nuxt-link>
+                            </ol>
+                            </div>  
                             <!-- DROPDOWN -->
                             <!-- JUST TEST -->
                         </div>
@@ -45,7 +72,7 @@
                             <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_ip')">{{ $t('menu_v3')}}</nuxt-link></li>
                             <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_hd')">{{ $t('menu_v4')}}</nuxt-link></li>
                             <li class="menu-item"><nuxt-link :to="localePath('/category/video_surveillance#v_service')">{{ $t('menu_t4')}}</nuxt-link></li>
-                          </ol>    
+                        </ol>    
                         <!-- DROPDOWN -->
                     </div>
                   </li>
@@ -93,12 +120,47 @@
                             <!-- <nuxt-link to="/category/telephony"><span>Телефония</span><span>▾</span></nuxt-link> -->
                             <nuxt-link :to="localePath('/category/telephony')"><span>{{ $t('telephony')}}</span><span>▾</span></nuxt-link>
                             <!-- DROPDOWN -->
-                            <ol class="sub-menu">
+                            <!-- <ol class="sub-menu">
                                 <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
                                 <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                            </ol> -->
+                              <div class="sub-menu new-menu">
+                              <ol class="">
+                                {{ $t('menu_t_cat1')}}
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                
                               </ol>
+                            <ol class="">
+                                {{ $t('menu_t_cat2')}}
+                                <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/gsm_patch')"><li class="menu-item">{{ $t('menu_t_integation')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/asterisk_install')"><li class="menu-item">{{ $t('menu_t_install')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/sks')"><li class="menu-item">{{ $t('menu_t_sks')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/ivr')"><li class="menu-item">{{ $t('menu_t_ivr')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/mod_atc')"><li class="menu-item">{{ $t('menu_t_mod')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/protect_ipatc')"><li class="menu-item">{{ $t('menu_t_protect')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/queue')"><li class="menu-item">{{ $t('menu_t_transit')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/tech_support')"><li class="menu-item">{{ $t('menu_t_support')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/quality')"><li class="menu-item">{{ $t('menu_t_quality')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/ip_employess')"><li class="menu-item">{{ $t('menu_t_employees')}}</li></nuxt-link>
+                            </ol>
+                            <ol class="">
+                               {{ $t('menu_t_cat3')}}
+                                <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                            </ol>
+                            <ol class="">
+                                {{ $t('menu_t_cat4')}}
+                                <nuxt-link :to="localePath('/category/telephony_services/callback')"><li class="menu-item">{{ $t('menu_t_callback')}}</li></nuxt-link>
+                                <nuxt-link :to="localePath('/category/telephony_services/webpanel')"><li class="menu-item">{{ $t('menu_t_dashboard')}}</li></nuxt-link>
+                            </ol>
+                            </div>
                             <!-- DROPDOWN -->
                         </div>
                     </li>
@@ -150,16 +212,40 @@
                         <span></span>
                         <ul id="menu">
                             <nuxt-link to="/" class="mob_logo-drp"><img src="~/static/assets/img/lumex_logo_white.svg" alt="Lumex logo"></nuxt-link>
-                            <li class="m_li">{{ $t('telephony')}}<div>▾</div>
+                            <li class="fs26">{{ $t('telephony')}}</li>
+                            <li class="m_li">{{ $t('menu_t_cat1')}}<div>▾</div>
                                 <ul class="dropdown_container_mobile">
                                        <nuxt-link :to="localePath('/category/telephony')"><li class="menu-item">{{ $t('telephony')}}</li></nuxt-link>
                                        <nuxt-link :to="localePath('/category/telephony#t_cloud')"><li class="menu-item">{{ $t('menu_t1')}}</li></nuxt-link>
                                        <nuxt-link :to="localePath('/category/telephony#t_ip')"><li class="menu-item">{{ $t('menu_t2')}}</li></nuxt-link>
                                        <nuxt-link :to="localePath('/category/telephony#t_hardware')"><li class="menu-item">{{ $t('menu_t3')}}</li></nuxt-link>
-                                       <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li">{{ $t('video_surveillance')}}<div>▾</div>
+                             <li class="m_li">{{ $t('menu_t_cat2')}}<div>▾</div>
+                                <ul class="dropdown_container_mobile">
+                                        <nuxt-link :to="localePath('/category/telephony#t_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/gsm_patch')"><li class="menu-item">{{ $t('menu_t_integation')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/asterisk_install')"><li class="menu-item">{{ $t('menu_t_install')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/sks')"><li class="menu-item">{{ $t('menu_t_sks')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/ivr')"><li class="menu-item">{{ $t('menu_t_ivr')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/mod_atc')"><li class="menu-item">{{ $t('menu_t_mod')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/protect_ipatc')"><li class="menu-item">{{ $t('menu_t_protect')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/queue')"><li class="menu-item">{{ $t('menu_t_transit')}}</li></nuxt-link>
+                                        <nuxt-link :to="localePath('/category/telephony_services/tech_support')"><li class="menu-item">{{ $t('menu_t_support')}}</li></nuxt-link>
+                                </ul>
+                            </li>
+                             <li class="m_li">{{ $t('menu_t_cat3')}}<div>▾</div>
+                                <ul class="dropdown_container_mobile">
+                                   
+                                </ul>
+                            </li>
+                             <li class="m_li">{{ $t('menu_t_cat4')}}<div>▾</div>
+                                <ul class="dropdown_container_mobile">
+                                         <nuxt-link :to="localePath('/category/telephony_services/callback')"><li class="menu-item">{{ $t('menu_t_callback')}}</li></nuxt-link>
+                                         <nuxt-link :to="localePath('/category/telephony_services/webpanel')"><li class="menu-item">{{ $t('menu_t_dashboard')}}</li></nuxt-link>
+                                </ul>
+                            </li>
+                            <li class="m_li fs26">{{ $t('video_surveillance')}}<div>▾</div>
                                 <ul class="dropdown_container_mobile">
                                     <nuxt-link :to="localePath('/category/video_surveillance')"><li class="menu-item">{{ $t('video_surveillance')}}</li></nuxt-link>
                                     <nuxt-link :to="localePath('/category/video_surveillance#v_cloud')"><li class="menu-item">{{ $t('menu_v1')}}</li></nuxt-link>
@@ -169,7 +255,7 @@
                                     <nuxt-link :to="localePath('/category/video_surveillance#v_service')"><li class="menu-item">{{ $t('menu_t4')}}</li></nuxt-link>
                                 </ul>
                             </li>
-                            <li class="m_li">{{ $t('skud')}}<div>▾</div>
+                            <li class="m_li fs26">{{ $t('skud')}}<div>▾</div>
                                   <ul class="dropdown_container_mobile">
                                     <nuxt-link :to="localePath('/category/skud')"><li class="menu-item">{{ $t('skud')}}</li></nuxt-link>
                                     <nuxt-link :to="localePath('/category/skud#s_cov19')"><li class="menu-item">{{ $t('m_s1')}}</li></nuxt-link>
@@ -180,8 +266,8 @@
                                 </ul>
                             </li>
                             <!-- <li class="m_li"><nuxt-link to="/catalog">Каталог</nuxt-link></li> -->
-                            <li class="m_li"><nuxt-link :to="localePath('/contact')">{{ $t('l_contacts')}}</nuxt-link></li>
-                            <div class="lang_switcher_m ">
+                            <li class="m_li fs26"><nuxt-link :to="localePath('/contact')">{{ $t('l_contacts')}}</nuxt-link></li>
+                            <div class="lang_switcher_m fs26">
                                 <nuxt-link
                                     v-for="locale in $i18n.locales"
                                     v-if="locale.code !== $i18n.locale"

@@ -290,6 +290,9 @@ p {
 .fs24 {
     font-size: clamp(13px, 2vw, 24px);
 }
+.fs26{
+    font-size: 26px!important;
+}
 .fs28 {
     font-size: clamp(15px, 2.2vw, 28px) ;
 }
@@ -302,6 +305,7 @@ p {
     margin-bottom: .75em;
     // max-width: 7.5em;
 }
+
 
 .sticky {
     display: flex;
@@ -351,6 +355,9 @@ p {
                 height: 100px;
               
                 .scroll-t {
+                    top: 60px;
+                }
+                .new-menu {
                     top: 60px;
                 }
             }
@@ -575,7 +582,7 @@ header {
     color: white;
     top: 110px;
     min-width: 310px;
-    max-width: 400px;
+    // max-width: 800px;
     padding: 30px;
     white-space: nowrap;
     .menu-item {
@@ -609,6 +616,13 @@ header {
 
 .nav-trigger:hover .sub-menu{
     display: block;
+}
+.nav-trigger:hover .new-menu {
+    display: flex;
+    left: -37%;
+    ol {
+        margin: 0 15px;  
+    }
 }
 
 
@@ -1175,6 +1189,38 @@ header {
         padding-top: 0;
     }
 
+    .webpanel1{
+        background-image: url(../assets/img/dashboard/d_1png-min.png);
+        background-size: cover;
+        padding-top: 25%;
+    }
+    .webpanel3{
+        background-image: url(../assets/img/dashboard/d_3-min.png);
+        background-size: cover;
+       
+    }
+    .webpanel5_1{
+        background-image: url(../assets/img/dashboard/d5_3-min.png);
+        background-size: cover;
+        
+    }
+    .webpanel5_2{
+        background-image: url(../assets/img/dashboard/d_1png-min.png);
+        background-size: cover;
+        padding-top: 25%;
+    }
+
+}
+.webpanel2{
+    background-image: url(../assets/img/dashboard/d_2-min.png);
+    background-size: contain;
+    padding-top: 15%;
+    background-repeat: no-repeat;
+}
+.webpanel4{
+    background-image: url(../assets/img/dashboard/d_4-min.png);
+    background-size: cover;
+    padding-top: 25%;
 }
 .lumex_team + .rev{
     flex-direction: row-reverse;
@@ -2911,7 +2957,7 @@ footer {
           }
 
           .m_li{
-            font-size: 26px;  
+            font-size: 20px;  
             margin-left: 8.33333%;
             margin-bottom: .75em;
                 div {

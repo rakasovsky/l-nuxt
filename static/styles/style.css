@@ -279,6 +279,10 @@ p {
   font-size: clamp(13px, 2vw, 24px);
 }
 
+.fs26 {
+  font-size: 26px !important;
+}
+
 .fs28 {
   font-size: clamp(15px, 2.2vw, 28px);
 }
@@ -362,6 +366,10 @@ p {
 }
 
 .sticky .sticky-nav ul li .scroll-t {
+  top: 60px;
+}
+
+.sticky .sticky-nav ul li .new-menu {
   top: 60px;
 }
 
@@ -513,7 +521,6 @@ header .header-desk__nav ul li a {
   color: white;
   top: 110px;
   min-width: 310px;
-  max-width: 400px;
   padding: 30px;
   white-space: nowrap;
 }
@@ -550,6 +557,17 @@ header .header-desk__nav ul li a {
 
 .nav-trigger:hover .sub-menu {
   display: block;
+}
+
+.nav-trigger:hover .new-menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  left: -37%;
+}
+
+.nav-trigger:hover .new-menu ol {
+  margin: 0 15px;
 }
 
 .mob_menu {
@@ -1329,6 +1347,41 @@ header .header-desk__nav ul li a {
   background-image: url(../assets/img/category/skud/face.jpg);
   background-size: cover;
   padding-top: 0;
+}
+
+.lumex_team .webpanel1 {
+  background-image: url(../assets/img/dashboard/d_1png-min.png);
+  background-size: cover;
+  padding-top: 25%;
+}
+
+.lumex_team .webpanel3 {
+  background-image: url(../assets/img/dashboard/d_3-min.png);
+  background-size: cover;
+}
+
+.lumex_team .webpanel5_1 {
+  background-image: url(../assets/img/dashboard/d5_3-min.png);
+  background-size: cover;
+}
+
+.lumex_team .webpanel5_2 {
+  background-image: url(../assets/img/dashboard/d_1png-min.png);
+  background-size: cover;
+  padding-top: 25%;
+}
+
+.webpanel2 {
+  background-image: url(../assets/img/dashboard/d_2-min.png);
+  background-size: contain;
+  padding-top: 15%;
+  background-repeat: no-repeat;
+}
+
+.webpanel4 {
+  background-image: url(../assets/img/dashboard/d_4-min.png);
+  background-size: cover;
+  padding-top: 25%;
 }
 
 .lumex_team + .rev {
@@ -3240,7 +3293,7 @@ footer .footer_bottom .copyright p:last-child {
     color: white;
   }
   header .m_li {
-    font-size: 26px;
+    font-size: 20px;
     margin-left: 8.33333%;
     margin-bottom: .75em;
   }
