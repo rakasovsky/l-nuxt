@@ -1466,6 +1466,10 @@ header .header-desk__nav ul li a {
   background-image: url(../assets/img/category/skud/acces2.jpg);
 }
 
+.category .category_container .webpanel {
+  background-image: url(../assets/img/dashboard/g1.png);
+}
+
 .category .category_container .category_cover:before {
   content: '';
   display: block;

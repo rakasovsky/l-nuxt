@@ -8,7 +8,7 @@
         <h2>Интеграция систем контроля и управления доступом</h2>
       </div>
       <div class="category_container">
-        <div class="category_cover skud_cover lumex__content"></div>
+        <div class="category_cover webpanel lumex__content"></div>
         <div class="category_text lumex__video">
           <div class="cloud__block4 sks">
             <h3 class="h_title fs42">{{ $t("tswp1") }}</h3>

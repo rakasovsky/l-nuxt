@@ -21,9 +21,9 @@
             <p class="">
               {{ $t("tsqua1_4") }}
             </p>
-            <p class="">
+            <!-- <p class="">
               {{ $t("tsqua1_5") }}
-            </p>
+            </p> -->
           </div>
           <a href="" class="primary_button vertical-button">
             <span>IP-АТСAsterisk</span>
@@ -39,7 +39,8 @@
       <div class="team_left">
         <div>
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsqua2") }}</h3>
+          <h3 class="h_title fs24 txt3">{{ $t("tsqua1_5") }}</h3>
+          <p class="txt3">{{ $t("tsqua2") }}</p>
           <p class="txt3">{{ $t("tsqua2_1") }}</p>
           <p class="txt3">{{ $t("tsqua2_2") }}</p>
           <p class="txt3">{{ $t("tsqua2_3") }}</p>
@@ -63,7 +64,7 @@
       <div class="diogram_left">
         <div class="cloud__block4 jt">
           <p class="label txt3"><span class="lumex">L</span>umex / Asterisk</p>
-          <h3 class="h_title fs24 txt3">{{ $t("tsqua3") }}</h3>
+          <p class="txt3">{{ $t("tsqua3") }}</p>
           <p class="txt3">{{ $t("tsqua3_1") }}</p>
           <p class="txt3">{{ $t("tsqua3_2") }}</p>
           <p class="txt3">{{ $t("tsqua3_3") }}</p>
@@ -206,6 +207,6 @@ export default {
   margin-bottom: 12px;
 }
 .h_title {
-    max-width: auto;
+    max-width: 35em;
 }
 </style>

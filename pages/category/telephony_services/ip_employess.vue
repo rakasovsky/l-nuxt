@@ -398,6 +398,6 @@ export default {
   margin-bottom: 12px;
 }
 .h_title {
-    max-width: auto;
+    max-width: 35em;
 }
 </style>
